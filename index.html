@@ -150,7 +150,20 @@
     		height: 100%;
 		}
 
-		
+		.spinitem {
+		  	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	transition: all 2s ease;
+		}
+		.spinitem:hover {
+		  -webkit-transform: rotate(1800deg);
+	-moz-transform: rotate(1800deg);
+	-o-transform: rotate(1800deg);
+	-ms-transform: rotate(1800deg);
+	transform: rotate(1800deg);
+		}
 
 	</style>
 </head>
@@ -160,7 +173,7 @@
 <div id="fullpage">
 	<div class="section " id="section0">
 		<div class="content">
-		<img style="width:50px; height: 50px;" src="imgs/logo.png" />
+		<img class="spinitem" style="width:50px; height: 50px;" src="imgs/logo.png" />
 			<h1>Invide Labs</h1>
 			<p>We Launched An App Within 20 Hours</p><br/><a href="#" style="font-size: 1em;color:#333;">Scroll down to know more</a>
 		</div>
