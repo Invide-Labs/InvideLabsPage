@@ -151,19 +151,17 @@
 		}
 
 		.spinitem {
-		  	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
-	-o-transition: all 2s ease;
-	-ms-transition: all 2s ease;
-	transition: all 2s ease;
+		  	-webkit-animation: rotate 2s ease forwards;
+    animation: rotate 2s ease forwards;
 		}
-		.spinitem:hover {
-		  -webkit-transform: rotate(1800deg);
-	-moz-transform: rotate(1800deg);
-	-o-transform: rotate(1800deg);
-	-ms-transform: rotate(1800deg);
-	transform: rotate(1800deg);
-		}
+
+@-webkit-keyframes rotate {
+    100% { -webkit-transform: rotate(1800deg); }
+}
+
+@keyframes rotate {   
+  100% { transform: rotate(1800deg); }    
+}
 
 	</style>
 </head>
