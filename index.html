@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta name=viewport content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Invide Labs - App Development</title>
 	<meta name="author" content="Pradeep Sharma" />
@@ -26,265 +27,9 @@
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="custom.css" />
 
-	<style>
-		/* Reset CSS
-		 * --------------------------------------- */
-		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-		form,fieldset,input,textarea,p,blockquote,th,td {
-		    padding: 0;
-		    margin: 0;
-		}
-		a{
-			text-decoration:none;
-		}
-		table {
-		    border-spacing: 0;
-		}
-		fieldset,img {
-		    border: 0;
-		}
-		address,caption,cite,code,dfn,em,strong,th,var {
-		    font-weight: normal;
-		    font-style: normal;
-		}
-		strong{
-			font-weight: bold;
-		}
-		ol,ul {
-		    list-style: none;
-		    margin:0;
-		    padding:0;
-		}
-		caption,th {
-		    text-align: left;
-
-		}
-		h1,h2,h3,h4,h5,h6 {
-		    font-weight: normal;
-		    font-size: 100%;
-		    margin:0;
-		    padding:0;
-		    color:#444;
-		}
-		q:before,q:after {
-		    content:'';
-		}
-		abbr,acronym { border: 0;
-		}
-
-
-		/* Custom CSS
-		 * --------------------------------------- */
-
-		
-		@font-face {
-			font-family: 'Bebas';
-		    src: url( "fonts/Bebas/BEBAS.ttf");
-		}
-		@font-face {
-			font-family: 'SourceSansPro-Light';
-		    src: url( "fonts/source-sans-pro/SourceSansPro-Light.otf");
-		}
-		/*@font-face {
-			font-family: 'SourceSansPro-Regular';
-		    src: url( "fonts/source-sans-pro/SourceSansPro-Regular.otf");
-		}*/
-		/*@font-face {
-			font-family: 'SourceSansPro-Black';
-		    src: url( "fonts/source-sans-pro/SourceSansPro-black.otf");
-		}
-		@font-face {
-			font-family: 'Focus-Regular';
-		    src: url( "fonts/focus/Focus-Regular.ttf");
-		}
-		@font-face {
-			font-family: 'FortuneCity';
-		    src: url( "fonts/fortuneCity/FortuneCity.ttf");
-		}
-		@font-face {
-			font-family: 'HalloSans';
-		    src: url( "fonts/Hallo-Sans/HalloSans.otf");
-		}*/
-		body{
-			font-family: 'SourceSansPro-Light', sans-serif; 
-			/*font-family: "ProximaNovaCond-Black", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-			color: #F2F2F2;
-		}
-		h1{
-			font-family: 'Bebas', sans-serif; 
-			font-size: 6em;
-			padding-left: 2%;
-			padding-right: 2%;
-		}
-		h2{
-			font-family: 'SourceSansPro-Regular', sans-serif; 
-			font-size: 4em;
-			padding-left: 3%;
-			padding-right: 3%;
-		}
-		p{
-			font-size: 2em;
-			font-family: 'SourceSansPro-Light', sans-serif;
-			padding-left: 4%;
-			padding-right: 4%;
-		}
-		.content{
-			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
-			text-align: center;
-		}
-
-		/* Section 1
-		 * --------------------------------------- */
-		#section0{
-			background-color: #fff;
-		}
-		#section0 h1{
-			color: #F44336;
-		}
-		#section0 p{
-			color: #333;
-			opacity: 0.8;
-		}
-
-		/* Section 2
-		 * --------------------------------------- */
-		#section1{
-			/*background-color: #2EBE21;*/
-		}
-		#section1 h1{
-			color: #333;
-		}
-		#section1 h2{
-			color: #2EBE21;
-			opacity: 0.8;
-		}
-		#section1 p{
-			color: #2EBE21;
-			opacity: 0.8;
-		}
-
-
-		/* Section 3
-		 * --------------------------------------- */
-		#section2{
-			background-color: #EAE1C0;
-		}
-		#section2 h1{
-			color: #555;
-		}
-		#section2 p{
-			color: #444;
-			opacity: 0.6;
-		}
-
-		/* Section 4
-		 * --------------------------------------- */
-		#section3{
-			background-color: #DE564B;
-		}
-		#section3 h1{
-			color: #fff;
-		}
-		#section3 p{
-			color: #F2F2F2;
-			opacity: 0.7;
-		}
-
-		/* Section 5
-		 * --------------------------------------- */
-		#section4{
-			background-color: #1BBC9B;
-		}
-		#section4 h1{
-			color: #fff;
-		}
-		#section4 p{
-			color: #fff;
-			opacity: 0.9;
-		}
-
-		img {
-			background-size: cover;
-    		background-repeat: no-repeat;
-    		max-height: 100%;
-    		max-width: 100%;
-    		align-self: center;
-    		object-fit: contain;
-		}
-
-		.content.containercenter {
-			height: 100%;
-			display: flex;               
-  			justify-content: center;
-		}
-
-		.spinitem {
-		  	-webkit-animation: rotate 4s ease forwards;
-    animation: rotate 4s ease forwards;
-		}
-
-@-webkit-keyframes rotate {
-    100% { -webkit-transform: rotate(1800deg); }
-}
-
-@keyframes rotate {   
-  100% { transform: rotate(1800deg); }    
-}
-
-	.bottomCenter {
-		width: 120px; height: auto; position: absolute;left: 50%;bottom: 0px; z-index: 10; margin-bottom: 4%;
-		margin-left: -60px;
-	}
-
-/*@media only screen and (max-height: 320px)
-.btn-continue {
-    background-image: url("imgs/btn-more-small.png");
-    margin-left: -25px;
-    height: 16px;
-    width: 16px;
-}
-.btn-continue {
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-image: url("imgs/btn-more.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    bottom: 0;
-    left: 50%;
-    margin-left: -30px;
-    outline: none;
-    padding: 12px;
-    position: absolute;
-    text-indent: -9999em;
-    height: 32px;
-    width: 32px;
-    z-index: 2;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: transparent;
-}
-.bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-}
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-a {
-    background: transparent;
-}
-*/
-
-	</style>
 </head>
 <body>
 
@@ -324,9 +69,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="content">
 		<h1>WHAT WE DO</h1>
 		<br/>
-			<p style="opacity:0.9;color:#333">We Build Apps With High Impact And Low Risk</p><br/>
+			<p style="opacity:0.9;color:#333">Build Apps With High Impact And Low Risk</p><br/>
 			<p>
-				We have developed our own development framework keeping in mind lean startup philosophy. We have deep understanding of latest technologies, trends, user behaviour and growth hacks. We can help you out thinking lean from product's perspective and develop minimum viable product(MVP) quickly. The iterative process after MVP helps reach the product market fit at blazing fast speed with accuracy.
+				We have developed a framework keeping in mind lean startup philosophy with deep understanding of latest technologies, trends, user behaviour. We help businesses go live fast by developing minimum viable product(MVP). Through iterations we get you to the product market fit faster.
 			</p>
 		</div>
 	</div>
@@ -414,7 +159,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</div>
 	<div class="section" id="section2">
 		<div class="content">
-			<h1 style="font-size: 3em;">CONTACT US</h1><br/>	
+			<h1>CONTACT US</h1><br/>	
 			<p> hello@invidelabs.com<br/>
 			+91-9999289225<br/>
 				Gurgaon, India
@@ -432,7 +177,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'navigation': true,
 	'navigationPosition': 'right',
 	'navigationColor': '#000',
-	'navigationTooltips': ['Intro', 'Who We Are','What We Do', 'Portfolio', 'Contact Us' ],
+	// 'navigationTooltips': ['Intro', 'Who We Are','What We Do', 'Portfolio', 'Contact Us' ],
 	'slidesNavigation': true,
 	'slidesNavPosition': 'bottom',
 	'scrollBar': false,
@@ -466,6 +211,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'afterSlideLoad': null,
 	'onSlideLeave': null
 	});
+
+document.onload(function(){
+	fullPage.moveSlideRight();
+	fullPage.moveSlideRight();
+	var list;
+	list = document.querySelectorAll(".fp-slidesNav ul li");
+	for (var i = 0; i < list.length; ++i) {
+	    list[i].addEventListener("click", fullPage.moveSlideRight());
+	}
+});
+	
 
 </script>
 
