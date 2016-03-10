@@ -194,8 +194,8 @@
 		}
 
 		.spinitem {
-		  	-webkit-animation: rotate 4s ease forwards;
-    animation: rotate 4s ease forwards;
+		  	-webkit-animation: rotate 3s ease forwards;
+    animation: rotate 3s ease forwards;
 		}
 
 @-webkit-keyframes rotate {
