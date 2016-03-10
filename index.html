@@ -47,7 +47,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<div class="section " id="section0">
 		<div class="content">
 		<img class="spinitem" style="width:48px; height: 48px;padding: 12px;" src="imgs/logo.png" />
-			<h1>INVIDE LABS</h1>
+			<h1>INVIDE <span style="color: #333">LABS</span></h1>
 			<p>We Launched An App Within 20 Hours</p><br/><br/><br/>
 			<a class="btn-continue animated bounce" style="color: #111111; opacity: 0.4;" onclick="fullpage.moveSectionDown()" data-ga="More" href="#scroll">Know More<br/><img src="imgs/btn-more-small.png"></a>
 		</div>
@@ -163,7 +163,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<p> hello@invidelabs.com<br/>
 			+91-9999289225<br/>
 				Gurgaon, India
-			</p>
+			</p> <br/>
+			<span style="color: #767676">&#9400 Invide Labs</span>
 		</div>
 	</div>
 </div>
@@ -177,7 +178,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'navigation': true,
 	'navigationPosition': 'right',
 	'navigationColor': '#000',
-	// 'navigationTooltips': ['Intro', 'Who We Are','What We Do', 'Portfolio', 'Contact Us' ],
+	'navigationTooltips': ['Intro', 'Who We Are','What We Do', 'Portfolio', 'Contact Us' ],
 	'slidesNavigation': true,
 	'slidesNavPosition': 'bottom',
 	'scrollBar': false,
@@ -211,17 +212,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'afterSlideLoad': null,
 	'onSlideLeave': null
 	});
-
-document.onload(function(){
-	fullPage.moveSlideRight();
-	fullPage.moveSlideRight();
-	var list;
-	list = document.querySelectorAll(".fp-slidesNav ul li");
-	for (var i = 0; i < list.length; ++i) {
-	    list[i].addEventListener("click", fullPage.moveSlideRight());
-	}
-});
-	
 
 </script>
 
