@@ -147,12 +147,21 @@
 		img {
 			background-size: cover;
     		background-repeat: no-repeat;
-    		height: 100%;
+    		max-height: 100%;
+    		max-width: 100%;
+    		align-self: center;
+    		object-fit: contain;
+		}
+
+		.content.containercenter {
+			height: 100%;
+			display: flex;               
+  			justify-content: center;
 		}
 
 		.spinitem {
-		  	-webkit-animation: rotate 2s ease forwards;
-    animation: rotate 2s ease forwards;
+		  	-webkit-animation: rotate 4s ease forwards;
+    animation: rotate 4s ease forwards;
 		}
 
 @-webkit-keyframes rotate {
@@ -163,6 +172,50 @@
   100% { transform: rotate(1800deg); }    
 }
 
+/*@media only screen and (max-height: 320px)
+.btn-continue {
+    background-image: url("imgs/btn-more-small.png");
+    margin-left: -25px;
+    height: 16px;
+    width: 16px;
+}
+.btn-continue {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-image: url("imgs/btn-more.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    bottom: 0;
+    left: 50%;
+    margin-left: -30px;
+    outline: none;
+    padding: 12px;
+    position: absolute;
+    text-indent: -9999em;
+    height: 32px;
+    width: 32px;
+    z-index: 2;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+a {
+    background: transparent;
+}
+*/
+
 	</style>
 </head>
 <body>
@@ -171,10 +224,12 @@
 <div id="fullpage">
 	<div class="section " id="section0">
 		<div class="content">
-		<img class="spinitem" style="width:50px; height: 50px;" src="imgs/logo.png" />
+		<img class="spinitem" style="width:48px; height: 48px;padding: 12px;" src="imgs/logo.png" />
 			<h1>Invide Labs</h1>
-			<p>We Launched An App Within 20 Hours</p><br/><a href="#" style="font-size: 1em;color:#333;">Scroll down to know more</a>
+			<p>We Launched An App Within 20 Hours</p><br/><br/><br/>
+			<a class="btn-continue animated bounce" style="color: #111111; opacity: 0.4;" onclick="fullpage.moveSectionDown()" data-ga="More" href="#scroll">Know More<br/><img src="imgs/btn-more-small.png"></a>
 		</div>
+		
 	</div>
 
 	<div class="section" id="section3">
@@ -224,38 +279,38 @@ the product market fit bang on.
 			</div>
 		</div>
 		<div class="slide" id="slide1">
-			<div class="content" style="height:100%;">
+			<div class="content containercenter">
 			<img src="imgs/4.jpg" />
 				<h1></h1>
 			</div>
 		</div>
 		<div class="slide" id="slide2">
-			<div class="content" style="height:100%;">
+			<div class="content containercenter">
 			<img src="imgs/5.jpg" />
 			</div>
 		</div>
 		<div class="slide" id="slide3">
-			<div class="content" style="height:100%;">
+			<div class="content containercenter">
 				<img src="imgs/6.jpg" />
 			</div>
 		</div>
 		<div class="slide" id="slide4">
-			<div class="content" style="height:100%;">
+			<div class="content containercenter">
 				<img src="imgs/8.jpg" />
 			</div>
 		</div>
 		<div class="slide" id="slide5">
-			<div class="content" style="height:100%;">
+			<div class="content containercenter">
 				<img src="imgs/9.jpg" />
 			</div>
 		</div>
 		<div class="slide" id="slide6">
-			<div class="content" style="height:100%;">
+			<div class="content containercenter">
 				<img src="imgs/2.jpg" />
 			</div>
 		</div>
 		<div class="slide" id="slide6">
-			<div class="content" style="height:100%;">
+			<div class="content containercenter">
 				<img src="imgs/3.jpg" />
 			</div>
 		</div>
@@ -281,9 +336,45 @@ the product market fit bang on.
 <script type="text/javascript" src="javascript.fullPage.min.js"></script>
 <script type="text/javascript">
 	fullpage.initialize('#fullpage', {
-		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-		menu: '#menu',
-		css3:true
+     //navigation
+    'anchors': ['intro', 'whoWeAre', 'whatWeDo', 'portfolio', 'contactUs'],
+	'menu': '#menu',
+	'navigation': true,
+	'navigationPosition': 'right',
+	'navigationColor': '#000',
+	'navigationTooltips': [],
+	'slidesNavigation': true,
+	'slidesNavPosition': 'bottom',
+	'scrollBar': false,
+
+	//scrolling
+	'css3': true,
+	'scrollingSpeed': 700,
+	'autoScrolling': true,
+	'easingcss3': 'ease',
+	'loopHorizontal': true,
+	'touchSensitivity': 5,
+
+	//Accessibility
+	'keyboardScrolling': true,
+	'recordHistory': true,
+
+	//design
+	'controlArrows': true,
+
+	//Custom selectors
+	'sectionSelector': '.section',
+	'slideSelector': '.slide',
+
+
+	//events
+	'afterLoad': null,
+	'onLeave': null,
+	'afterRender': null,
+	'afterResize': null,
+	'afterReBuild': null,
+	'afterSlideLoad': null,
+	'onSlideLeave': null
 	});
 
 </script>
