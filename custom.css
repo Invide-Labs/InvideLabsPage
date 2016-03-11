@@ -277,3 +277,7 @@ a {
     opacity: 1;
   }
 }
+
+.left-icon {
+	vertical-align: middle; width: 16px; height: 16px;padding-right: 0.4%;
+}
