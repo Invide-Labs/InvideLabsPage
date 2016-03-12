@@ -29,7 +29,7 @@
 
 <link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
 <link rel="stylesheet" type="text/css" href="custom.css" />
-
+<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
 </head>
 <body>
 
@@ -157,7 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</div>
 		</div>
 	</div>
-	<div class="section" id="section2">
+	<div class="section fp-auto-height" id="section2">
 		<div class="content">
 			<h1>CONTACT US</h1><br/>	
 			<p><img class="left-icon" src="imgs/mail.png" /> hello@invidelabs.com<br/>
@@ -165,8 +165,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<img class="left-icon" src="imgs/skype.png" /> invide.labs<br/>
 				Gurgaon, India
 			</p> <br/>
-			<span style="color: #767676">&#9400 Invide Labs</span><br/>
-			
+			<br/>
+			<div class="typezone">
+				<textarea id="msgArea" onfocus="showSendButton()" onblur="hideSendButton()" type="text" placeholder="Say something"></textarea>
+				<a id="sendMessageLink" onmousedown="buildMessageAndSend(); return false;" href="#" class="typezoneOverlayButton">Send</a>
+			</div><br/>
+			<br/>
+			<!-- <textarea></textarea> -->
+			<span style="color: #767676">&#9400 Invide Labs</span>
 		</div>
 	</div>
 </div>
@@ -220,8 +226,74 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </script>
 
+<script>
+function showSendButton(){
+	document.getElementById('sendMessageLink').style.visibility = "visible";
+}
+function hideSendButton(){
+	document.getElementById('sendMessageLink').style.visibility = "hidden";	
+}
+</script>
 
+<script>
+var myFirebaseRef = new Firebase("https://radiant-torch-8284.firebaseio.com/");
+var msgRef;
+var emails="";
+function broadcast(){
+	myFirebaseRef.child("broadcast").on("value", function(snapshot) {
+		if(snapshot.val()!=null)
+	     alert(snapshot.val());
+	});
+}
 
+function sendQuery(name, email, message){
+	if(msgRef==null) msgRef = myFirebaseRef;
+	msgRef = msgRef.push({
+  		name: name,
+  		email: email,
+  		message: message
+	});
+}
+function buildMessageAndSend(){
+	// alert("Sending message");
+	var msgArea = document.getElementById("msgArea");
+	var message = msgArea.value;
+	// alert(message);
+	if(message==""){
+		msgArea.placeholder = "Write to us about your project, we will reply as soon as we are online.";
+		return false;
+	}
+	msgArea.value = "";
+	if(emails=="")
+		emailsFound = findEmailAddresses(message);
+	if(emails=="" && emailsFound.length>0){
+		emails = emailsFound;
+		msgArea.placeholder = "Message sent!\nAnything else you would like to tell us, don't hesitate to share with us.";
+		sendQuery("User", emailsFound, message);
+	} else if(emails.length>0){
+		msgArea.placeholder = "Message sent!\nAnything else you would like to tell us, don't hesitate to share with us.";
+		sendQuery("User", emails, message);
+	} else {
+		msgArea.placeholder = "Your email, if you want us to respond";
+		sendQuery("Anonymous", "", message);
+	}
+	// hideSendButton();
+	return true;
+}
+
+function findEmailAddresses(StrObj) {
+        var separateEmailsBy = ", ";
+        var email = ""; // if no match, use this
+        var emailsArray = StrObj.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+        if (emailsArray) {
+            email = "";
+            for (var i = 0; i < emailsArray.length; i++) {
+                if (i != 0) email += separateEmailsBy;
+                email += emailsArray[i];
+            }
+        }
+        return email;
+    }
 </script>
 
 </html>
