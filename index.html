@@ -29,7 +29,7 @@
 
 <link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
 <link rel="stylesheet" type="text/css" href="custom.css" />
-<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+<!-- <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script> -->
 </head>
 <body>
 
@@ -48,7 +48,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="content">
 		<img class="spinitem" style="width:48px; height: 48px;padding: 12px;" src="imgs/logo.png" onContextMenu="return false;" />
 			<h1>INVIDE <span style="color: #333">LABS</span></h1>
-			<p>We Launched An App Within <span style="color: #F44336">20 Hours</span></p><br/><br/><br/>
+			<p>Turn Your Idea Into App<br/>
+			<span style="font-size: 50%;">Minimum time
+				<span style="color: #F44336;font-size: 130%;">20 hours</span>
+			</span>
+			</p><br/><br/><br/>
+			<button class="btn" type="button"  onclick="window.location.href = 'https://app.invidelabs.com';"><span>Chat Now</span></button>
 			<a class="btn-continue animated bounce" style="color: #111111; opacity: 0.4;" onclick="fullpage.moveSectionDown()" data-ga="More" href="#scroll">Know More<br/><img src="imgs/btn-more-small.png" onContextMenu="return false;"></a>
 		</div>
 		
@@ -56,22 +61,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	<div class="section" id="section3">
 		<div class="content">
-			<h1>WHO WE ARE</h1>
+			<h1>HANDPICKED TEAM</h1>
 			<p style="opacity:0.9;color:#333"><br/>
-				Developers, Designers, Thinkers<br/>
-				We Have One Thing In Common<br/><br/>
-				<span style="opacity:0.9;color:#fff">Passion To Build Awesome Products</span>
+				Developers, Designers, Managers<br/>
+				Best Talent For Your Idea<br/><br/>
+				<span style="opacity:0.9;color:#fff">Alumni Of IITs, IIMs, Microsoft, Amazon & Google</span>
 			</p>
 		</div>
 	</div>
 
 	<div class="section" id="section4">
 		<div class="content">
-		<h1>WHAT WE DO</h1>
+		<h1>Transparency</h1>
 		<br/>
-			<p style="opacity:0.9;color:#333">Build Apps With High Impact And Low Risk</p><br/>
+			<p style="opacity:0.9;color:#333">We Completely Manage The Development With Transparency</p><br/>
 			<p>
-				We have developed a framework keeping in mind lean startup philosophy with deep understanding of latest technologies, trends, user behaviour. We help businesses go live fast by developing minimum viable product(MVP). Through iterations we get you to the product market fit faster.
+				You can just focus on business now, our experienced product managers will ensure product quality and timely delivery. Use our project dashboard to track and share progress of the project anytime.
 			</p>
 		</div>
 	</div>
@@ -79,9 +84,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<div class="section" id="section1">
 		<div class="slide" id="slide0">
 			<div class="content">
-				<h1>PORTFOLIO</h1>
+				<h1>Showcase</h1>
 				<p>
-					Apps we have developed so far
+					Apps developed in Invide Labs
 				</p>
 				<br/>
 				<br/>
@@ -166,10 +171,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				Gurgaon, India
 			</p> <br/>
 			<br/>
-			<div class="typezone">
+			<button class="btn" type="button"  onclick="window.location.href = 'https://app.invidelabs.com';"><span>Chat Now</span></button>
+			<!-- <div class="typezone">
 				<textarea id="msgArea" onfocus="showSendButton()" onblur="hideSendButton()" type="text" placeholder="Say something"></textarea>
 				<a id="sendMessageLink" onmousedown="buildMessageAndSend(); return false;" href="#" class="typezoneOverlayButton">Send</a>
-			</div><br/>
+			</div> --><br/>
 			<br/>
 			<!-- <textarea></textarea> -->
 			<span style="color: #767676">&#9400 Invide Labs</span>
@@ -196,7 +202,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	//scrolling
 	'css3': true,
-	'scrollingSpeed': 700,
+	'scrollingSpeed': 900,
 	'autoScrolling': true,
 	'easingcss3': 'ease',
 	'loopHorizontal': true,
@@ -227,15 +233,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <script>
+/*
 function showSendButton(){
 	document.getElementById('sendMessageLink').style.visibility = "visible";
 }
 function hideSendButton(){
 	document.getElementById('sendMessageLink').style.visibility = "hidden";	
 }
-</script>
 
-<script>
 var myFirebaseRef = new Firebase("https://radiant-torch-8284.firebaseio.com/");
 var msgRef;
 var emails="";
@@ -282,18 +287,19 @@ function buildMessageAndSend(){
 }
 
 function findEmailAddresses(StrObj) {
-        var separateEmailsBy = ", ";
-        var email = ""; // if no match, use this
-        var emailsArray = StrObj.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-        if (emailsArray) {
-            email = "";
-            for (var i = 0; i < emailsArray.length; i++) {
-                if (i != 0) email += separateEmailsBy;
-                email += emailsArray[i];
-            }
+    var separateEmailsBy = ", ";
+    var email = ""; // if no match, use this
+    var emailsArray = StrObj.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+    if (emailsArray) {
+        email = "";
+        for (var i = 0; i < emailsArray.length; i++) {
+            if (i != 0) email += separateEmailsBy;
+            email += emailsArray[i];
         }
-        return email;
     }
+    return email;
+}
+*/
 </script>
 
 </html>
