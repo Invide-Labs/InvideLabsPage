@@ -1,0 +1,289 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+* --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+padding: 0;
+margin: 0;
+}
+a{
+text-decoration:none;
+}
+table {
+border-spacing: 0;
+}
+fieldset,img {
+border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+font-weight: normal;
+font-style: normal;
+}
+strong{
+font-weight: bold;
+}
+ol,ul {
+list-style: none;
+margin:0;
+padding:0;
+}
+caption,th {
+text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+font-weight: normal;
+font-size: 100%;
+margin:0;
+padding:0;
+}
+q:before,q:after {
+content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+* --------------------------------------- */
+@font-face {
+font-family: 'Bebas';
+src: url( "fonts/Bebas/BEBAS.ttf");
+}
+@font-face {
+font-family: 'SourceSansPro-Light';
+src: url( "fonts/source-sans-pro/SourceSansPro-Light.otf");
+}
+body{
+font-size: 2vh;
+font-family: 'SourceSansPro-Light', sans-serif; 
+color: #F2F2F2;
+}
+
+h1{
+font-family: 'Bebas', sans-serif; 
+font-size: 600%;
+padding-left: 2%;
+padding-right: 2%;
+}
+h2{
+font-family: 'SourceSansPro-Regular', sans-serif; 
+font-size: 300%;
+padding-left: 3%;
+padding-right: 3%;
+}
+p{
+font-size: 200%;
+font-family: 'SourceSansPro-Light', sans-serif;
+padding-left: 4%;
+padding-right: 4%;
+}
+
+.section{
+text-align:center;
+}
+
+
+img {
+background-size: cover;
+background-repeat: no-repeat;
+max-height: 100%;
+max-width: 100%;
+align-self: center;
+object-fit: contain;
+}
+
+.content.containercenter {
+height: 100%;
+display: flex;               
+justify-content: center;
+}
+
+.spinitem {
+-webkit-animation: rotate 3s ease forwards;
+animation: rotate 3s ease forwards;
+}
+
+@-webkit-keyframes rotate {
+100% { -webkit-transform: rotate(1800deg); }
+}
+
+@keyframes rotate {   
+100% { transform: rotate(1800deg); }    
+}
+
+.bottomCenter {
+width: 120px; height: auto; position: absolute;left: 50%;bottom: 0px; z-index: 10; margin-bottom: 10%;
+margin-left: -60px;
+}
+
+.fp-slidesNav{
+white-space: nowrap;
+text-align: center;
+}
+
+.btn-continue {
+animation: 50s fadeIn;
+animation-fill-mode: forwards;
+
+visibility: hidden;
+}
+
+
+@keyframes fadeIn {
+0% {
+opacity: 0;
+}
+100% {
+visibility: visible;
+opacity: 1;
+}
+}
+
+.left-icon {
+vertical-align: middle; width: 16px; height: 16px;padding-right: 0.4%;
+}
+
+
+
+.btn {
+position: relative;
+
+display: block;
+margin: 30px auto;
+padding: 0;
+font-weight: bold;
+
+overflow: hidden;
+
+border-width: 0;
+outline: none;
+border-radius: 2px;
+box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+background-color: #333;
+color: #ecf0f1;
+/*color: #F44336;*/
+
+transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+background-color: #303f9f;
+cursor: pointer;
+}
+
+.btn > * {
+position: relative;
+}
+
+.btn span {
+display: block;
+padding: 12px 24px;
+}
+
+.btn:before {
+content: "";
+
+position: absolute;
+top: 50%;
+left: 50%;
+
+display: block;
+width: 0;
+padding-top: 0;
+
+border-radius: 100%;
+
+background-color: rgba(236, 240, 241, .3);
+
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+width: 120%;
+padding-top: 120%;
+
+transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+
+/* Section 1
+* --------------------------------------- */
+#section0{
+/*background-color: #fff;*/
+}
+#section0 h1{
+color: #F44336;
+}
+#section0 p{
+color: #333;
+opacity: 0.8;
+}
+
+/* Section 2
+* --------------------------------------- */
+#section1{
+/*background-color: #2EBE21;*/
+}
+#section1 h1{
+color: #333;
+}
+#section1 h2{
+color: #2EBE21;
+opacity: 0.8;
+}
+#section1 p{
+color: #2EBE21;
+opacity: 0.8;
+}
+
+
+/* Section 3
+* --------------------------------------- */
+#section2{
+/*background-color: #EAE1C0;*/
+}
+#section2 h1{
+color: #555;
+}
+#section2 p{
+color: #444;
+opacity: 0.6;
+}
+
+/* Section 4
+* --------------------------------------- */
+#section3{
+/*background-color: #DE564B;*/
+}
+#section3 h1{
+color: #fff;
+}
+#section3 p{
+color: #F2F2F2;
+opacity: 0.7;
+}
+
+/* Section 5
+* --------------------------------------- */
+#section4{
+/*background-color: #1BBC9B;*/
+}
+#section4 h1{
+color: #fff;
+}
+#section4 p{
+color: #fff;
+opacity: 0.9;
+}
+
+.bottomCenter {
+	z-index: 123123123213;
+/*width: 120px; height: auto; position: absolute;left: 50%;bottom: 0px; z-index: 100; margin-bottom: 10%;
+margin-left: -60px;*/
+}
