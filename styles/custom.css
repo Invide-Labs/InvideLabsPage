@@ -287,3 +287,20 @@ opacity: 0.9;
 /*width: 120px; height: auto; position: absolute;left: 50%;bottom: 0px; z-index: 100; margin-bottom: 10%;
 margin-left: -60px;*/
 }
+
+.icon {
+	width: 48px;
+}
+
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.caption {
+    display: block;
+    color: #555;
+}
