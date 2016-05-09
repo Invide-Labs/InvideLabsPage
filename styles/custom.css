@@ -151,7 +151,7 @@ vertical-align: middle; width: 16px; height: 16px;padding-right: 0.4%;
 position: relative;
 
 display: block;
-margin: 30px auto;
+margin: 2vh auto;
 padding: 0;
 font-weight: bold;
 
@@ -398,7 +398,7 @@ background-color: #303f9f;
 }
 
 .message .text {
-  font-size: 150%;
+  font-size: 130%;
   /*margin-left: 90px;*/
   padding-left: 50px;
   display: table-cell;
@@ -411,8 +411,8 @@ background-color: #303f9f;
   /*position: absolute;*/
   left: 20px;
   /*display: block;*/
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   display: table-cell;
   vertical-align: middle;
   position: absolute;
