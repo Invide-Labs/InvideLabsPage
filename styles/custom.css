@@ -7,7 +7,8 @@ padding: 0;
 margin: 0;
 }
 a{
-text-decoration:none;
+  text-decoration:none;
+  cursor: pointer;
 }
 table {
 border-spacing: 0;
@@ -238,7 +239,7 @@ color: #2EBE21;
 opacity: 0.8;
 }
 #section1 p{
-color: #2EBE21;
+color: #333;
 opacity: 0.8;
 }
 
@@ -360,20 +361,21 @@ background-color: #303f9f;
   overflow:hidden;
   width:100%;
   -lh-property:0;
-  height:calc(100% - 120px);
+  height: 80%;
 }
 
 .messages-box ul{
   padding:21px 0 10px;
 }
 
-/*.messages-container{
+.messages-container{
   position:absolute;
-  width:100%;
+  max-width: 50%;
+  /*width:100%;
   height:100%;
-  top:0;
-  left:0;
-}*/
+  bottom:0;
+  left:0;*/
+}
 
 .messages-container .wrapper{
   position:absolute;
@@ -392,14 +394,29 @@ background-color: #303f9f;
   position: relative;
   line-height: 20px;
   min-height: 70px;
+  display: table;
+}
+
+.message .text {
+  font-size: 150%;
+  /*margin-left: 90px;*/
+  padding-left: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 120%;
+  text-align: left;
 }
 
 .message .profilePic {
-  position: absolute;
+  /*position: absolute;*/
   left: 20px;
-  display: block;
+  /*display: block;*/
   width: 70px;
   height: 70px;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+
 }
 
 .message .li {
@@ -446,7 +463,98 @@ background-color: #303f9f;
     border:8px solid transparent;
     border-right-color:#333;
 }
+
 .field-tip:hover .tip-content {
     right:-20px;
     opacity:1;
 }
+
+.logo {
+  display: block;
+  width: auto;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 50px;
+}
+
+/*.centered {
+  position: fixed; 
+  top: 50%; 
+  left: 20%; 
+  transform: translate(-50%, -50%);
+}*/
+
+
+.center-parent {
+  position: relative;
+  height: 90vh;
+}
+.center-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+ul.fadeout li:nth-child(1){
+    -webkit-animation: fadeOut 2s linear forwards;
+}
+ul.fadeout li:nth-child(2){
+    -webkit-animation: fadeOut 2s linear 2s forwards;
+}
+ul.fadeout li:nth-child(3){
+    -webkit-animation: fadeOut 2s linear 4s forwards;
+}
+ul.fadeout li:nth-child(1){
+    -webkit-animation: fadeOut 2s linear forwards;
+}
+@-webkit-keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.messages-box ul li { opacity: 0; -webkit-transition: opacity 200ms linear;}
+.messages-box ul.fadeIn li {}
+
+.messages-box ul.fadeIn li:nth-child(1) {-webkit-animation: fadeIn 0.2s linear forwards;}
+.messages-box ul.fadeIn li:nth-child(2) {-webkit-animation: fadeIn 2s linear 1s forwards;}
+.messages-box ul.fadeIn li:nth-child(3) {-webkit-animation: fadeIn 2s linear 3s forwards;}
+.messages-box ul.fadeIn li:nth-child(4) {-webkit-animation: fadeIn 2s linear 5s forwards;}
+.messages-box ul.fadeIn li:nth-child(5) {-webkit-transition-delay: 0.4s}
+.messages-box ul.fadeIn li:nth-child(6) {-webkit-transition-delay: 0.5s}
+.messages-box ul.fadeIn li:nth-child(7) {-webkit-transition-delay: 0.6s}
+.messages-box ul.fadeIn li:nth-child(8) {-webkit-transition-delay: 0.7s}
+.messages-box ul.fadeIn li:nth-child(9) {-webkit-transition-delay: 0.8s}
+.messages-box ul.fadeIn li:nth-child(10){-webkit-transition-delay: 0.9s}
+.messages-box ul.fadeIn li:nth-child(11){-webkit-transition-delay: 1s}
+.messages-box ul.fadeIn li:nth-child(12){-webkit-transition-delay: 1.1s}
+.messages-box ul.fadeIn li:nth-child(13){-webkit-transition-delay: 1.2s}
+.messages-box ul.fadeIn li:nth-child(14){-webkit-transition-delay: 1.3s}
+.messages-box ul.fadeIn li:nth-child(15){-webkit-transition-delay: 1.4s}
+
+.message {
+  opacity: 0;
+  /*visibility: hidden;*/
+}
+
+#section5 .text{
+  font-size: 160%;
+  line-height: 130%;
+}
+
+#section5 ul li { opacity: 0; -webkit-transition: opacity 200ms linear;}
+/*#section5 ul.fadeIn li {opacity: 1;}*/
+#section5 ul.fadeIn li:nth-child(1) {-webkit-animation: fadeIn 0.2s linear forwards;}
+#section5 ul.fadeIn li:nth-child(2) {-webkit-animation: fadeIn 2s linear 1s forwards;}
+#section5 ul.fadeIn li:nth-child(3) {-webkit-animation: fadeIn 2s linear 2s forwards;}
+#section5 ul.fadeIn li:nth-child(4) {-webkit-animation: fadeIn 2s linear 3s forwards;}
+#section5 ul.fadeIn li:nth-child(5) {-webkit-animation: fadeIn 2s linear 4s forwards;}
+#section5 ul.fadeIn li:nth-child(6) {-webkit-animation: fadeIn 2s linear 5s forwards;}
