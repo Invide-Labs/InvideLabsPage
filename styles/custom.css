@@ -101,16 +101,16 @@ justify-content: center;
 }
 
 .spinitem {
--webkit-animation: rotate 3s ease forwards;
-animation: rotate 3s ease forwards;
+-webkit-animation: rotate 2.5s ease forwards;
+animation: rotate 2.5s ease forwards;
 }
 
 @-webkit-keyframes rotate {
-100% { -webkit-transform: rotate(1800deg); }
+100% { -webkit-transform: rotate(1440deg); }
 }
 
 @keyframes rotate {   
-100% { transform: rotate(1800deg); }    
+100% { transform: rotate(1440deg); }    
 }
 
 .bottomCenter {
