@@ -559,3 +559,48 @@ ul.fadeout li:nth-child(1){
 #section5 ul.fadeIn li:nth-child(4) {-webkit-animation: fadeIn 2s linear 3s forwards;}
 #section5 ul.fadeIn li:nth-child(5) {-webkit-animation: fadeIn 2s linear 4s forwards;}
 #section5 ul.fadeIn li:nth-child(6) {-webkit-animation: fadeIn 2s linear 5s forwards;}
+
+
+#menu li {
+  display:inline-block;
+  margin: 10px;
+  color: #000;
+  background:transparent;
+  background: rgba(255,255,255, 0.5);
+  opacity: 0.5;
+  -webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+  background:#666;
+  background: rgba(0,0,0, 0.5);
+  color: #fff;
+}
+#menu li a{
+  text-decoration:none;
+  color: #000;
+}
+#menu li.active a:hover{
+  color: #000;
+}
+#menu li:hover{
+  background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+  padding: 9px 18px;
+  display:block;
+}
+#menu li.active a{
+  color: #fff;
+}
+#menu{
+  position:fixed;
+  top:0;
+  right:0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin:0;
+}
