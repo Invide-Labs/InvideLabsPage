@@ -604,3 +604,7 @@ ul.fadeout li:nth-child(1){
   padding: 0;
   margin:0;
 }
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #ff0033; 
+}
