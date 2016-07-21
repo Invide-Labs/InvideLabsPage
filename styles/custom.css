@@ -226,7 +226,7 @@ color: #333;
 opacity: 0.8;
 }
 
-/* Section 2
+/* Section 1
 * --------------------------------------- */
 #section1{
 /*background-color: #2EBE21;*/
@@ -244,7 +244,7 @@ opacity: 0.8;
 }
 
 
-/* Section 3
+/* Section 2
 * --------------------------------------- */
 #section2{
 /*background-color: #EAE1C0;*/
@@ -257,7 +257,7 @@ color: #444;
 opacity: 0.6;
 }
 
-/* Section 4
+/* Section 2
 * --------------------------------------- */
 #section3{
 /*background-color: #DE564B;*/
@@ -270,7 +270,7 @@ color: #F2F2F2;
 opacity: 0.7;
 }
 
-/* Section 5
+/* Section 4
 * --------------------------------------- */
 #section4{
 /*background-color: #1BBC9B;*/
@@ -281,6 +281,24 @@ color: #fff;
 #section4 p{
 color: #fff;
 opacity: 0.9;
+}
+
+
+/* Section 6
+* --------------------------------------- */
+#section6{
+/*background-color: #2EBE21;*/
+}
+#section6 h1{
+color: #333;
+}
+#section6 h2{
+color: #333;
+opacity: 1;
+font-weight: bold;
+}
+#section6 p{
+color: #333;
 }
 
 .bottomCenter {
@@ -608,3 +626,38 @@ ul.fadeout li:nth-child(1){
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
   background: #cccccc; 
 }
+
+
+#section6 p{
+  font-size: 160%;
+  line-height: 120%;
+}
+
+/*
+#section6 ul li { opacity: 0; -webkit-transition: opacity 200ms linear;-moz-transition: opacity 200ms linear;}
+#section6 ul.fadeIn li:nth-child(1) {-webkit-animation: fadeIn 0.1s linear forwards; -moz-animation: fadeIn 0.1s linear forwards;}
+#section6 ul.fadeIn li:nth-child(2) {-webkit-animation: fadeIn 1s linear 0.5s forwards;-moz-animation: fadeIn 1s linear 0.5s forwards;}
+#section6 ul.fadeIn li:nth-child(3) {-webkit-animation: fadeIn 1s linear 1s forwards;-moz-animation: fadeIn 1s linear 1s forwards;}
+#section6 ul.fadeIn li:nth-child(4) {-webkit-animation: fadeIn 1s linear 1.5s forwards;-moz-animation: fadeIn 1s linear 1.5s forwards;}
+#section6 ul.fadeIn li:nth-child(5) {-webkit-animation: fadeIn 1s linear 2s forwards;-moz-animation: fadeIn 1s linear 2s forwards;}
+#section6 ul.fadeIn li:nth-child(6) {-webkit-animation: fadeIn 1s linear 2.5s forwards;-moz-animation: fadeIn 1s linear 2.5s forwards;}
+*/
+
+
+.profilePicsmall {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+
+.specialWord {
+  font-weight: bold;color: #F44336;font-size: 80%;
+}
+
