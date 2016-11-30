@@ -681,3 +681,39 @@ ul.fadeout li:nth-child(1){
 .message .text {
   color: #525051;
 }
+
+.btn.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.btn.light:before{
+  background-color: #dedede;
+  color: #333;
+}
+
+.btn.light:hover{
+  background-color: #fff;
+  color: #333;
+}
+
+.btn.light{
+  display: inline-flex;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #dedede;
+}
+
+.btn.light span{
+  background-color: inherit;
+  padding-left: 5px;
+  padding-right: 0px;
+}
+
+.btn.light img{
+  padding-right: 0;
+}
