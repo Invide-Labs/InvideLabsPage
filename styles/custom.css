@@ -159,7 +159,7 @@ overflow: hidden;
 
 border-width: 0;
 outline: none;
-border-radius: 2px;
+border-radius: 22px;
 box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 
 background-color: #303f9f;
@@ -719,5 +719,27 @@ ul.fadeout li:nth-child(1){
 }
 
 .uppercase {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
+
+
+.btn.lights {
+  background-color: #fff;
+  color: #333;
+}
+
+.btn.lights:before{
+  background-color: #dedede;
+  color: #333;
+}
+
+.btn.lights:hover{
+  background-color: #fff;
+  color: #333;
+}
+
+.btn.lights{
+  background-color: #dedede;
+}
+
+
