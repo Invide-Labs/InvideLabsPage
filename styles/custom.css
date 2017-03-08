@@ -150,7 +150,7 @@ vertical-align: middle; width: 16px; height: 16px;padding-right: 0.4%;
 .btn {
 position: relative;
 
-display: block;
+/*display: block;*/
 margin: 2vh auto;
 padding: 0;
 font-weight: bold;
@@ -162,15 +162,15 @@ outline: none;
 border-radius: 2px;
 box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 
-background-color: #333;
+background-color: #303f9f;
 color: #ecf0f1;
-/*color: #F44336;*/
-
 transition: background-color .3s;
+margin-right: 2%;
+margin-left: 2%;
 }
 
 .btn:hover, .btn:focus {
-background-color: #303f9f;
+background-color: #333;
 cursor: pointer;
 }
 
@@ -362,7 +362,7 @@ div.item {
     padding: 6px 10px;
     color: #fff;
     /*border: 1px solid #333;*/
-    background-color: #333;
+    background-color: #303f9f;
     border-radius: 3px;
     font-weight: bold;
     line-height: normal;
@@ -376,7 +376,7 @@ div.item {
 }
 
 .xButton:hover, .xButton:focus {
-background-color: #303f9f;
+background-color: #333;
 color: #fff;
 cursor: pointer;
 /*text-shadow: 2px 2px 4px #333;*/
@@ -385,7 +385,7 @@ cursor: pointer;
 
 .btn:before {
 content: "";
-background-color: #333;
+background-color: #303f9f;
 }
 
 .section {
@@ -716,4 +716,8 @@ ul.fadeout li:nth-child(1){
 
 .btn.light img{
   padding-right: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
