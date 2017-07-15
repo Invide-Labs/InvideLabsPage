@@ -992,3 +992,8 @@ h2 {
     padding-right: 8px;
     padding-left: 3px;
 }
+
+.fadeoutCursor {
+    -webkit-animation: fadeOut 6s linear forwards;
+    color: #000;
+}
