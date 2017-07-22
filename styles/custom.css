@@ -104,36 +104,34 @@ acronym {
     src: url("fonts/Bebas/BEBAS.ttf");
 }
 
-@font-face {
-    font-family: 'SourceSansPro-Light';
-    src: url("fonts/source-sans-pro/SourceSansPro-Light.otf");
-}
-
 body {
     font-size: 2vh;
-    font-family: 'SourceSansPro-Light', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: #F2F2F2;
 }
 
 h1 {
-    font-family: 'Bebas', sans-serif;
     font-size: 250%;
     padding-left: 2%;
     padding-right: 2%;
+    font-weight: bold;
 }
 
 h2 {
-    font-family: 'SourceSansPro-Regular', sans-serif;
     font-size: 200%;
     padding-left: 3%;
     padding-right: 3%;
+    font-weight: bold;
 }
 
 p {
-    font-size: 200%;
-    font-family: 'SourceSansPro-Light', sans-serif;
+    font-size: 150%;
     padding-left: 4%;
     padding-right: 4%;
+}
+
+.btn {
+    font-family: 'Quicksand', sans-serif;
 }
 
 .section {
@@ -192,6 +190,7 @@ img {
     animation: 20s fadeIn;
     animation-fill-mode: forwards;
     visibility: hidden;
+    color: #d40c0c;
 }
 
 @keyframes fadeIn {
@@ -518,7 +517,7 @@ div.item {
     padding: 8px 20px 4px 70px;
     position: relative;
     line-height: 20px;
-    min-height: 10vh;
+    min-height: 7vh;
     display: table;
 }
 
@@ -967,7 +966,7 @@ h2 {
 }
 
 .portfolioPic {
-    height: 40vh;
+    height: 30vh;
     width: auto;
 }
 
@@ -980,6 +979,7 @@ h2 {
     padding-right: 8px;
     padding-top: 4px;
     padding-bottom: 4px;
+    margin-right: 4px;
 }
 
 .dropCapLetter {
@@ -996,4 +996,20 @@ h2 {
 .fadeoutCursor {
     -webkit-animation: fadeOut 6s linear forwards;
     color: #000;
+}
+
+.trapezoid {
+    margin: 0 auto;
+    border-top: 4em solid #ea210c;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    min-height: 1em;
+    width: 60%;
+    display: block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    position: relative;
 }
