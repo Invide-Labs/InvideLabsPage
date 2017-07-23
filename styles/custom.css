@@ -998,18 +998,22 @@ h2 {
     color: #000;
 }
 
-.trapezoid {
-    margin: 0 auto;
-    border-top: 4em solid #ea210c;
-    border-left: 1em solid transparent;
-    border-right: 1em solid transparent;
-    min-height: 1em;
-    width: 60%;
-    display: block;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    -o-text-overflow: clip;
-    text-overflow: clip;
+#load {
     position: relative;
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background-color: #fff;
+}
+
+#load .spinitem {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:48px; 
+    height: 48px;
+    padding: 12px;
+    margin: -36px 0 0 -36px;
 }

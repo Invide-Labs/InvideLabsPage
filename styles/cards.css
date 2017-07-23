@@ -4,8 +4,8 @@
 }
 
 .card {
-    width: 60vw;
-    height: 50vh;
+    width: 70vw;
+    height: 60vh;
     background: #fff;
     position: absolute;
     left: 0;
@@ -71,9 +71,9 @@
     top: 2%;
     left: 50%;
     text-align: center;
-    transform: translate(-50%, -1%);
+    transform: translate(-50%, -2%);
     font-weight: bold;
-    font-size: 170%;
+    font-size: 130%;
     opacity: 0.8;
 }
 
