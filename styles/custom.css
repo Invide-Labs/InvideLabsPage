@@ -154,8 +154,8 @@ img {
 }
 
 .spinitem {
-    -webkit-animation: rotate 2.5s ease forwards;
-    animation: rotate 2.5s ease forwards;
+    -webkit-animation: rotate 2.5s ease infinite;
+    animation: rotate 2.5s ease infinite;
 }
 
 @-webkit-keyframes rotate {
