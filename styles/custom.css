@@ -311,15 +311,19 @@ img {
 
 #section2 {
     /*background-color: #EAE1C0;*/
+    background-color: #ffe7d2;
 }
 
 #section2 h1 {
-    color: #555;
+    /*color: #555;*/
+    color: #58402c;
 }
 
 #section2 p {
-    color: #444;
+    /*color: #444;*/
+    color: #58402c;
     opacity: 0.6;
+    font-size: 200%;
 }
 
 
@@ -894,12 +898,12 @@ ul.fadeout li:nth-child(1) {
 }
 
 .btn.light:before {
-    background-color: #dedede;
+    /*background-color: #dedede;*/
     color: #333;
 }
 
 .btn.light:hover {
-    background-color: #fff;
+    background-color: #dedede;
     color: #333;
 }
 
@@ -911,7 +915,7 @@ ul.fadeout li:nth-child(1) {
     padding-left: 24px;
     padding-top: 2px;
     padding-bottom: 2px;
-    background-color: #dedede;
+    /*background-color: #dedede;*/
 }
 
 .btn.light span {
@@ -1016,4 +1020,20 @@ h2 {
     height: 48px;
     padding: 12px;
     margin: -36px 0 0 -36px;
+}
+
+.icon1 {
+    width:12px; 
+    height: 12px;
+    vertical-align: center;
+}
+
+.item .caption{
+    vertical-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.yesWeHaveClass > .item {
+    display: inline-flex;
 }

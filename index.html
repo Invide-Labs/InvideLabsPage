@@ -27,7 +27,7 @@
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#DE564B">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="styles/jquery.fullpage.min.css" />
     <link rel="stylesheet" type="text/css" href="styles/custom.css" />
     <link rel="stylesheet" type="text/css" href="styles/cards.css" />
     <!--[if IE]>
@@ -71,28 +71,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="section" id="section0">
             <div class="content">
 
-                <img class="spinitem-off" style="width:48px; height: 48px;padding: 12px;" src="imgs/logo.png" onContextMenu="return false;" />
+                <img class="spinitem-off" style="width:24px; height: 24px;padding: 12px;position: absolute; top: 3%; left: 2%;" src="imgs/logo.png" onContextMenu="return false;" />
                 <!-- <h1 style="font-size: 130%;">INVIDE <span style="color: #333">LABS</span></h1> -->
+                
+                <span style="font-size: 132%;color: #333; font-weight: bold; text-decoration: line-through;">#FutureOfWork </span>
+                <span style="font-size: 132%;color: #333; padding-left: 10px;">It's here already</span>
                 <br/><br/>
                 <div id="typed-strings">
-                    <p>Where you <b>team up</b> with <span style="color: #333;font-weight: bold;">top 5% tech experts</span></p>
+                    <p>Where you <b>team up</b> with <span style="color: #333;font-weight: bold;">top 1000 tech experts</span></p>
                 </div>
                 <p><span id="typed" style="color: #333; font-size: 160%;"></span><span class="fadeoutCursor">|</span></p>
                 <br/><br/>
-                <p style="font-size: 132%;">Hire experts to win, to build scalable products<br/><br/></p>
-                <div style="display:inline-flex;align-self: center;">
-                    <div class="logo item"><img class="icon" src="imgs/mobile.png" style="-webkit-filter: grayscale(100%) opacity(100%) brightness(50%) contast(50%);filter: grayscale(100%) opacity(100%) brightness(50%) contast(50%);" /><span class="caption">Mobile App</span></div>
-                    <div class="logo item"><img class="icon" src="imgs/messenger.svg" /><span class="caption">Chat Bots</span></div>
-                    <div class="logo item"><img class="icon" src="imgs/desktop.svg" /><span class="caption">Web App</span></div>
-                    <div class="logo item"><img class="icon" src="imgs/iot.svg" /><span class="caption">IOT</span></div>
-                    <!-- <div class="item"><img class="icon" src="imgs/wearable.svg"/><span class="caption">Wearable</span></div> -->
-                    <div class="logo item"><img class="icon" src="imgs/vr.svg" /><span class="caption">Virtual Reality</span></div>
+                <p style="font-size: 132%;">Build your own reliable tech teams on-demand<br/><br/></p>
+                <div style="display:inline-block;align-self: center;" class="yesWeHaveClass">
+                    <span class="item"><img class="icon1" src="imgs/check1.png" /><span class="caption">Highly vetted</span></span>
+                    <span class="item"><img class="icon1" src="imgs/check1.png" /><span class="caption">2-10 yrs experience</span></span>
+                    <span class="item"><img class="icon1" src="imgs/check1.png" /><span class="caption">Trained for remote work</span></span>
+                    <span class="item"><img class="icon1" src="imgs/check1.png" /><span class="caption">Processes designed for success</span></span>
+                    <span class="item"><img class="icon1" src="imgs/check1.png" /><span class="caption">3x productive than an average engineer</span></span>
+                    <span class="item"><img class="icon1" src="imgs/check1.png" /><span class="caption">Manage easily and transparently</span></span>
                 </div>
                 <p><br/>
                     <!-- <span style="font-size: 50%;">Imagine an <a target="_blank" href="https://play.google.com/store/apps/details?id=in.choice.personality">app</a>, built in
 				<span style="color: #F44336;font-size: 130%;">20 hours</span>
 			</span> -->
-                </p><br/>
+                </p>
                 <button class="btn uppercase" type="button" onclick="window.location.href = 'https://app.invidelabs.com';ga('send', 'event', { eventCategory: 'Chat With A Techie Now', eventAction: 'Live Chat Request', eventLabel: 'Homepage Chat', eventValue: 1});"><span>Meet Verified Experts</span></button>
                 <button class="btn lights uppercase" type="button" onclick="window.location.href = 'http://apply.invidelabs.com';ga('send', 'event', { eventCategory: 'Apply As Expert', eventAction: 'Invider Application', eventLabel: 'Homepage Invider Application', eventValue: 2});"><span>Apply As Tech Expert</span></button>
                 <br/>
@@ -110,11 +113,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="center-child">
                         <div>
                             <h2><span class="stepCount">1</span> Chat with reliable experts</h2><br/>
-                            <div class="messages-box">
+                            <div class="messages-box fadeIn">
                                 <div classs="wrapper">
                                     <div style="opacity: 0;">
                                         <div id="typed-strings-advice1">
-                                            <p>Hi, I need help with security of my android app</p>
+                                            <p>my android app</p>
                                         </div>
                                         <div id="typed-strings-advice2">
                                             <p>Finding an expert Invider for you...</p>
@@ -128,7 +131,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <ul class="">
                                         <li class="message">
                                             <div class="profilePic" style="background-image: url('imgs/sachin.jpg');"></div>
-                                            <div class="text" id="typedAdvice1"></div>
+                                            <div class="text">Hi, I need help with security of <span id="typedAdvice1"></span></div>
                                         </li>
                                         <li class="message">
                                             <div class="text">
@@ -151,8 +154,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="section" id="section3">
             <div class="slide" id="slide0">
                 <h2><span class="stepCount">2</span> Invite experts to join your team</h2><br/><br/>
-                <img class="portfolioPic colorEffect lazy" src="imgs/blank.jpg" data-src="imgs/flow_team_join_request.png" onContextMenu="return false;" /><br/><br/>
-                <p style="font-style: italic;">Our recruitment expert helps you select the right fit, inside and outside Invide</p>
+                <img class="portfolioPic colorEffect lazy" src="imgs/blank.jpg" data-src="imgs/flow_team_join_request.png" onContextMenu="return false;" /><br/><br/><br/>
+                <div style="display: block;">
+                <div>
+                <p>Our experienced product managers hand pick the right team members for you</p>
+                </div><br/><br/>
+                <div style="display:inline-flex;align-self: center;">
+                    <div class="logo item"><img class="icon" src="imgs/mobile.png" style="-webkit-filter: grayscale(100%) opacity(100%) brightness(50%) contast(50%);filter: grayscale(100%) opacity(100%) brightness(50%) contast(50%);" /><span class="caption">Mobile App<br/>Team</span></div>
+                    <div class="logo item"><img class="icon" src="imgs/messenger.svg" /><span class="caption">Chat Bot<br/>Team</span></div>
+                    <div class="logo item"><img class="icon" src="imgs/desktop.svg" /><span class="caption">Web App<br/>Team</span></div>
+                    <div class="logo item"><img class="icon" src="imgs/iot.svg" /><span class="caption">IOT<br/>Team</span></div>
+                    <!-- <div class="item"><img class="icon" src="imgs/wearable.svg"/><span class="caption">Wearable</span></div> -->
+                    <div class="logo item"><img class="icon" src="imgs/vr.svg" /><span class="caption">Virtual Reality<br/>Team</span></div>
+                </div>
+                </div>
             </div>
         </div>
 
@@ -327,7 +342,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </p>
                 <br/><br/>
                 <!-- <textarea></textarea> -->
-                <span style="color: #767676">Made with &#9829 on planet earth &#9400 Invide Labs</span>
+                <span style="color: #767676">Made with <span style="color:red;">&#9829</span> on planet earth <span style="font-size:90%;">&#9400</span> Invide Labs</span>
                 </span>
             </div>
         </div>
@@ -342,7 +357,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script type="text/javascript" src="javascripts/vendors/jquery.slimscroll.min.js"></script>
 
-<script type="text/javascript" src="javascripts/jquery.fullPage.js"></script>
+<script type="text/javascript" src="javascripts/jquery.fullpage.min.js"></script>
 <script type="text/javascript" src="javascripts/custom.js"></script>
 <script type="text/javascript" src="javascripts/typed.min.js"></script>
 
@@ -461,14 +476,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             loop: false,
             loopCount: 0,
             onStringTyped: function(self) {
-                // console.log("advice 1 typed");
-                // self.destroy();
+
             },
         });
         var typedQuickAdvice2 = new Typed("#typedAdvice2", {
             stringsElement: '#typed-strings-advice2',
             typeSpeed: 60,
-            startDelay: 4300,
+            startDelay: 2800,
             showCursor: false,
             smartBackspace: true,
             loop: false,
@@ -486,7 +500,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         var typedQuickAdvice3 = new Typed("#typedAdvice3", {
             stringsElement: '#typed-strings-advice3',
             typeSpeed: 60,
-            startDelay: 9000,
+            startDelay: 7000,
             smartBackspace: true,
             loop: false,
             loopCount: 0,
