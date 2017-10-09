@@ -105,9 +105,26 @@ acronym {
 }
 
 body {
-    font-size: 2vh;
     font-family: 'Quicksand', sans-serif;
     color: #F2F2F2;
+}
+
+@media all and (orientation:landscape){
+    body{
+        font-size:2vh;
+    }
+}
+
+@media all and (orientation:portrait){
+    body{
+        font-size:3vw;
+    }
+
+    @media screen and (max-width: 350px){
+        body{
+            font-size:2vw;
+        }
+    }
 }
 
 h1 {
@@ -1037,3 +1054,35 @@ h2 {
 .yesWeHaveClass > .item {
     display: inline-flex;
 }
+
+
+
+/*code anurag added*/
+
+/* smaller than mobile */ 
+@media (max-width: 400px) {
+    #section2{
+      display:none;
+    }
+  }
+  
+  /* smaller than phablet (also point when grid becomes active) */
+  @media (max-width: 550px) {
+    #section2{
+      display:none;
+    }
+  }
+  
+  /* smaller than tablet */
+  @media (max-width: 750px) {
+    #section2{
+      display:none;
+    }
+  }
+  
+  /* smaller than desktop */
+  @media (max-width: 1000px) {}
+  
+  /* smaller than Desktop HD */
+  @media (max-width: 1200px) {}
+  
