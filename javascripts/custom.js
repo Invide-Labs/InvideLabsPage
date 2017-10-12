@@ -31,12 +31,34 @@ var logo_ascii= "If you're a developer, apply to become an Invider here: http://
 
 console.log(logo_ascii);
 
+function mfnc(obj){
+  $(obj).children("ul").css("display","none");
+}
+
+var tou;
 
 
 $(document).ready(function(){
 	$("#demosMenu").change(function(){
 	  window.location.href = $(this).find("option:selected").attr("id") + '.html';
-	});
+  });
+  
+  $("nav>ul>li").mouseenter(function(){
+    $(this).children("ul").fadeIn();
+  });
+
+  $("nav>ul>li").mouseleave(function(){
+    var l = this;
+    tou = setTimeout(mfnc,1000,l);
+  });
+
+  $("nav>ul>li>ul").mouseenter(function(){
+    clearTimeout(tou);
+  });
+
+  $("nav>ul>li>ul").mouseleave(function(){
+    $(this).fadeOut();
+  });
 });
 
 document.onreadystatechange = function () {
