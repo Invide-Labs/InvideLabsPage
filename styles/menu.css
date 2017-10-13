@@ -36,7 +36,7 @@ nav li>ul{
     border-top: 0;
     border-radius: 0 0 0.5em 0.5em;
     width: 15em;
-    margin-top: 1.7em;
+    margin-top: 2.9375em;
     -webkit-transition: display 0s linear 2s infinite alternate; /* Safari */
     transition: display 0s linear 2s infinite alternate;
 }
@@ -78,6 +78,10 @@ nav li:hover{
 }
 .i_name>div>div>p{
     font-size: 1.2vw;
-    margin-bottom: 0.3em;
-    margin-top: 0.5em;
+    align-self: flex-end;
+}
+
+.i_name>div>div{
+    display:flex;
+    
 }
