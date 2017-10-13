@@ -73,8 +73,7 @@ nav li:hover{
 }
 
 .i_name>div>img{
-    width:2vw;
-    height:2vw;
+    height:1.75vw;
 }
 .i_name>div>div>p{
     font-size: 1.2vw;
@@ -83,5 +82,5 @@ nav li:hover{
 
 .i_name>div>div{
     display:flex;
-    
+    padding-left: 0.3em;
 }
