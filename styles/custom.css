@@ -1051,8 +1051,87 @@ h2 {
     padding-right: 8px;
 }
 
+.yesWeHaveClass .item {
+    position:absolute;
+    opacity: 0;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+.yesWeHaveClass .item{
+	animation: topToBottom 18s linear infinite 0s;
+}
+.yesWeHaveClass .item:nth-child(2) { 
+	animation-delay: 3s; 
+	color: #6b889d;
+}
+.yesWeHaveClass .item:nth-child(3) { 
+	animation-delay: 6s; 
+	color: #6b739d;	
+}
+.yesWeHaveClass .item:nth-child(4) { 
+	animation-delay: 9s; 
+	color: #7a6b9d;
+}
+.yesWeHaveClass .item:nth-child(5) { 
+	animation-delay: 12s; 
+	color: #8d6b9d;
+}
+.yesWeHaveClass .item:nth-child(6) {  
+	animation-delay: 15s; 
+	color: #9b6b9d;
+}
+
+@keyframes rotateWordsFirst {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+	25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+
+@keyframes rotateWordsSecond {
+    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
+    10% { opacity: 0.3; width: 0px; }
+	20% { opacity: 1; width: 100%; }
+    27% { opacity: 0; width: 100%; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(-50px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-50px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(-50px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+
 .yesWeHaveClass > .item {
     display: inline-flex;
+    left: 0;
+    justify-content: center;
+    width: 100%;
 }
 
 
