@@ -32,7 +32,7 @@ var logo_ascii= "If you're a developer, apply to become an Invider here: http://
 console.log(logo_ascii);
 
 function mfnc(obj){
-  $(obj).children("ul").css("display","none");
+  $(obj).children("ul").fadeOut();
 }
 
 var tou;
@@ -44,6 +44,7 @@ $(document).ready(function(){
   });
   
   $("nav>ul>li").mouseenter(function(){
+    clearTimeout(tou);
     $(this).children("ul").fadeIn();
   });
 
@@ -57,6 +58,7 @@ $(document).ready(function(){
   });
 
   $("nav>ul>li>ul").mouseleave(function(){
+    clearTimeout(tou);
     $(this).fadeOut();
   });
 

@@ -43,18 +43,15 @@ nav li>ul{
     border-top: 0;
     border-radius: 0 0 0.5em 0.5em;
     width: 15em;
-    margin-top: 2.9375em;
-    -webkit-transition: display 0s linear 2s infinite alternate; /* Safari */
-    transition: display 0s linear 2s infinite alternate;
+    margin-top: 3.2275em;
 }
 
-nav li>ul li{
-    display: block;
-    padding: 0 1em 1em 1em;
-}
 
 nav li>ul li a{
     display: block;
+    padding: 0 1em 1em 1em;
+    color: #999;
+    font-size: 1.3em;
 }
 
 nav li>ul li a:hover{
@@ -85,6 +82,8 @@ nav li>a:hover{
 .i_name>div>div>p{
     font-size: 1em;
     align-self: flex-end;
+    white-space: nowrap;
+    font-weight: 600;
 }
 
 .i_name>div>div{
@@ -94,6 +93,10 @@ nav li>a:hover{
 
 .options{
     width:100%;
+}
+
+.highlight{
+    color:#ea210c;
 }
 
 @media screen and (max-width: 800px) {
