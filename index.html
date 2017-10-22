@@ -31,6 +31,7 @@
     <link rel="stylesheet" type="text/css" href="styles/custom.css" />
     <link rel="stylesheet" type="text/css" href="styles/cards.css" />
     <link rel="stylesheet" type="text/css" href="styles/menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -49,72 +50,83 @@
 
 <body>
 
-
+    <nav id="nav_big"> 
+        <ul>
+            <li>
+                <a class="i_name" href="#intro">
+                    <div>
+                        <img src="favicon/favicon-96x96.png" alt=""/>
+                        <div>
+                            <p>
+                                InvideLabs
+                            </p>
+                            <!-- <svg height="10" width="100"> 
+                                <g fill="none" stroke="black">
+                                    <path stroke=#fdd9d5 stroke-width="10" d="M0  0 l20 0" />
+                                    <path stroke=#fbbdb6 stroke-width="10" d="M20 0 l20 0" />
+                                    <path stroke=#f99186 stroke-width="10" d="M40 0 l20 0" />
+                                    <path stroke=#f5503d stroke-width="10" d="M60 0 l20 0" />
+                                    <path stroke=#ea210c stroke-width="10" d="M80 0 l20 0" />
+                                </g>
+                            </svg> -->
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+            </li>
+            <li>
+                <a href="http://apply.invidelabs.com">Apply as an expert</a>
+            </li>
+            <li>
+                <a href="#contact_us">Download</a>
+            </li>
+            <li>
+                <a href="flow.invidelabs.com">flow</a>
+            </li>
+            <li><a href="https://app.invidelabs.com">Sign Up</a></li>
+            <li><a href="http://workwith.invidelabs.com">Start a Project</a></li>
+        </ul>
+    </nav>
+    <nav id="nav_small">
+        <ul class="logo_bar">
+            <li>
+                <a class="i_name">
+                    <div>
+                        <img src="favicon/favicon-96x96.png" alt=""/>
+                        <div>
+                            <p>
+                                InvideLabs
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li><i class="fa fa-bars"></i></li>
+        </ul>
+        <ul class="options">
+            <li>
+                <a href="http://apply.invidelabs.com">Apply as an expert</a>
+            </li>
+            <!-- <li><a href="#contact_us">Download</a></li> -->
+            <li>
+                <a href="flow.invidelabs.com">flow</a>
+            </li>
+            <li>
+                <a href="https://app.invidelabs.com">Sign Up</a>
+            </li>
+            <li><a href="http://workwith.invidelabs.com">Start a Project</a></li>
+        </ul>
+    </nav>
+    
+            <!-- Google Tag Manager -->
+   
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CSDZNZ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-        <nav>
-                <ul>
-                    <li>
-                        <a class="i_name">
-                            <div>
-                                <img src="favicon/favicon-96x96.png" alt=""/>
-                                <div>
-                                    <p>
-                                        InvideLabs
-                                    </p>
-                                    <!-- <svg height="10" width="100"> 
-                                        <g fill="none" stroke="black">
-                                            <path stroke=#fdd9d5 stroke-width="10" d="M0  0 l20 0" />
-                                            <path stroke=#fbbdb6 stroke-width="10" d="M20 0 l20 0" />
-                                            <path stroke=#f99186 stroke-width="10" d="M40 0 l20 0" />
-                                            <path stroke=#f5503d stroke-width="10" d="M60 0 l20 0" />
-                                            <path stroke=#ea210c stroke-width="10" d="M80 0 l20 0" />
-                                        </g>
-                                    </svg>-->
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a>Make team of experts</a>
-                        <ul>
-                            <li><a>Mobile App team</a></li>
-                            <li><a>Chat bot team</a></li>
-                            <li><a>Web app team</a></li>
-                            <li><a>IOT team</a></li>
-                            <li><a>virtual reality team</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a>About us</a>
-                        <ul>
-                            <li><a>How It works</a></li>
-                            <li><a>Who we are</a></li>
-                            <li><a>Manifesto</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a>Solution</a>
-                        <ul>
-                            <li><a>flow</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a>Support</a>
-                    </li>
-                    <li><a>Pricing</a></li>
-                    <li><a>Sign Up</a></li>
-                    <li><a>Start a Project</a></li>
-                </ul>
-            </nav>
-    
-        
-
-    <!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBNSX9"
+     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBNSX9"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
         (function(w, d, s, l, i) {
@@ -491,7 +503,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 var loadedSlide = $(this);
                 //first slide of the second section
                 if (anchorLink == 'quick_advice') {
-                    console.log("message page loaded");
+                    // console.log("message page loaded");
                     // $( ".message ul" ).addClass( "fadeIn" );
                     // $('.flash').animate({opacity: 0}, {queue: true, duration: 'slow'});
                     if (!messageBoxAnimationCompleted) {
@@ -499,7 +511,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         messageBoxAnimationCompleted = true;
                     }
                     $('.messages-box ul').each(function(index, e) {
-                        console.log("message #" + index);
+                        // console.log("message #" + index);
                         $(this).addClass("fadeIn");
                         /*$(this).css("visibility","visible");
                         $('.flash').css("visibility","hidden");
@@ -507,7 +519,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     });
                 } else if (anchorLink == 'remote_management') {
                     $('#section5 ul').each(function(index, e) {
-                        console.log("use case #" + index);
+                        // console.log("use case #" + index);
                         $(this).addClass("fadeIn");
                     });
                 }
@@ -586,7 +598,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
     $(".moveNextButton").click(function(event) {
         event.preventDefault();
-        console.log($(this).attr('href'));
+        // console.log($(this).attr('href'));
         var theCard = $(this).parents('.card');
         theCard[0].addEventListener('webkitAnimationEnd', function(event) {
             theCard.hide();

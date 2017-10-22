@@ -59,6 +59,28 @@ $(document).ready(function(){
   $("nav>ul>li>ul").mouseleave(function(){
     $(this).fadeOut();
   });
+
+  $("nav i").click(function (){
+    var k = $(".options").css("display");
+    if(k == "none"){
+      $(".options").css("display","flex");
+    }
+    else{
+      $(".options").css("display","none");
+    }
+  })
+
+  $(".i_name").click(function (){
+    var k = $(".options").css("display");
+    if(k == "none"){
+      // $(".options").css("display","flex");
+    }
+    else{
+      $(".options").css("display","none");
+    }
+  })
+
+
 });
 
 document.onreadystatechange = function () {

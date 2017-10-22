@@ -9,6 +9,13 @@ nav{
     display: flex;
 }
 
+#nav_big{
+    display: flex;
+}
+#nav_small{
+    display: none;
+}
+
 nav ul li{
     display:inline-flex;
     vertical-align: bottom;
@@ -54,7 +61,7 @@ nav li>ul li a:hover{
     color:#ea210c;
 }
 
-nav li:hover{
+nav li>a:hover{
     color:#ea210c;
 }
 
@@ -73,14 +80,122 @@ nav li:hover{
 }
 
 .i_name>div>img{
-    height:1.75vw;
+    height:1em;
 }
 .i_name>div>div>p{
-    font-size: 1.2vw;
+    font-size: 1em;
     align-self: flex-end;
 }
 
 .i_name>div>div{
     display:flex;
     padding-left: 0.3em;
+}
+
+.options{
+    width:100%;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        height:auto;
+    }
+
+    #nav_big{
+        display: none;
+    }
+    #nav_small{
+        display: flex;
+    }
+    nav ul {
+        /* width: 100%; */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo_bar{
+        /* padding: 1em 1em; */
+        margin: 1em 1em;
+    }
+    .options{
+        width:100%;
+        display: none; /*onclick it will turn to flex */
+        flex-direction: column;
+    }
+    .options>li{
+        padding:1em 4em;
+    }
+     .options>li :hover{
+         color:#ea210c;
+     }
+    nav i{
+        border:1px solid #999;
+        border-radius: 4px;
+        padding: 8px;
+    }
+
+    nav i:hover{
+        border:1px solid #ea210c;
+        color: #ea210c;
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (                min-resolution: 192dpi) and (min-width: 700px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 700px) { 
+    /* Medium screen, retina, stuff to override above media query */
+    
+    nav>ul>li>a{
+        font-size: 1em;
+    }
+
+    @media only screen and (orientation:portrait){
+        nav {
+            flex-direction: column;
+            height:auto;
+        }
+    
+        #nav_big{
+            display: none;
+        }
+        #nav_small{
+            display: flex;
+        }
+        nav ul {
+            /* width: 100%; */
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .logo_bar{
+            /* padding: 1em 1em; */
+            margin: 1em 1em;
+        }
+        .options{
+            width:100%;
+            display: none; /*onclick it will turn to flex */
+            flex-direction: column;
+        }
+        .options>li{
+            padding:1em 4em;
+        }
+         .options>li :hover{
+             color:#ea210c;
+         }
+        nav i{
+            border:1px solid #999;
+            border-radius: 4px;
+            padding: 1em;
+        }
+    
+        nav i:hover{
+            border:1px solid #ea210c;
+            color: #ea210c;
+        }
+    }
 }
