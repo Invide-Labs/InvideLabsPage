@@ -1138,25 +1138,46 @@ h2 {
 
 /*code anurag added*/
 
+.on_small{
+    display: none;
+}
 /* smaller than mobile */ 
 @media (max-width: 400px) {
-    #section2{
-      display:none;
+    .on_small{
+        display:inline-block;
     }
+
+    .on_large.btn.light, .on_large{
+        display:none;
+    }
+
+    
   }
   
   /* smaller than phablet (also point when grid becomes active) */
   @media (max-width: 550px) {
-    #section2{
-      display:none;
+    .on_small{
+        display:inline-block;
     }
+
+    .on_large.btn.light, .on_large{
+        display:none;
+    }
+
+    
   }
   
   /* smaller than tablet */
   @media (max-width: 750px) {
-    #section2{
-      display:none;
+    .on_small{
+        display:inline-block;
     }
+
+    .on_large.btn.light, .on_large{
+        display:none;
+    }
+
+    
   }
   
   /* smaller than desktop */
