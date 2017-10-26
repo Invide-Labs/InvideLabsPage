@@ -1,0 +1,13 @@
+
+#message{
+    display:flex;
+   
+    color: #999;
+    position: absolute;
+    margin-top: 10em;
+    /* z-index: 999999; */
+}
+
+#heading{
+    font-size:5em;
+}
