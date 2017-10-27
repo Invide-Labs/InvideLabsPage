@@ -1,13 +1,15 @@
 
 #message{
-    display:flex;
+    display:block;
    
     color: #999;
     position: absolute;
     margin-top: 10em;
     /* z-index: 999999; */
 }
-
+.title{
+    font-size: 2.5em;
+}
 #heading{
     font-size:5em;
 }
