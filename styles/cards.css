@@ -1,0 +1,104 @@
+#cardsPage {
+    height: 90vh;
+    background-color: rgb(228, 240, 252);
+}
+
+.card {
+    width: 70vw;
+    height: 60vh;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    opacity: 1;
+    -webkit-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+}
+
+.card.style1 {
+    background-color: #ea210c;
+    color: #fff;
+}
+
+.card.style2 {
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+    color: #fff;
+}
+
+.card.style3 {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: #fff;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card.style4 {
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+    color: #fff;
+}
+
+.card.style5 {
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+    color: #fff;
+}
+
+.card {
+    color: #fff !important;
+}
+
+.light.text {
+    color: #fff !important;
+}
+
+.card .center {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.card .pageIndex {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -2%);
+    font-weight: bold;
+    font-size: 130%;
+    opacity: 0.8;
+}
+
+.card .cardFooter {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -1%);
+    font-weight: bold;
+    font-size: 90%;
+    text-decoration: none;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 200%;
+        opacity: 0;
+    }
+}
+
+.card.move {
+    animation: slide 2s linear;
+}
