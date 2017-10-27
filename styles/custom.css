@@ -1146,16 +1146,23 @@ h2 {
     .on_small{
         display:inline-block;
     }
-
     .on_large.btn.light, .on_large{
         display:none;
     }
-
-    
-  }
+}
   
-  /* smaller than phablet (also point when grid becomes active) */
-  @media (max-width: 550px) {
+/* smaller than phablet (also point when grid becomes active) */
+@media (max-width: 550px) {
+    .on_small{
+        display:inline-block;
+    }
+    .on_large.btn.light, .on_large{
+        display:none;
+    }
+}
+  
+/* smaller than tablet */
+@media (max-width: 750px) {
     .on_small{
         display:inline-block;
     }
@@ -1163,26 +1170,11 @@ h2 {
     .on_large.btn.light, .on_large{
         display:none;
     }
-
-    
-  }
+}
   
-  /* smaller than tablet */
-  @media (max-width: 750px) {
-    .on_small{
-        display:inline-block;
-    }
-
-    .on_large.btn.light, .on_large{
-        display:none;
-    }
-
-    
-  }
+/* smaller than desktop */
+@media (max-width: 1000px) {}
   
-  /* smaller than desktop */
-  @media (max-width: 1000px) {}
-  
-  /* smaller than Desktop HD */
-  @media (max-width: 1200px) {}
+/* smaller than Desktop HD */
+@media (max-width: 1200px) {}
   
