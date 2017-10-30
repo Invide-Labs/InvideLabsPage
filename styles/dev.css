@@ -1,15 +1,67 @@
 
 #message{
     display:block;
-   
     color: #999;
     position: absolute;
-    margin-top: 10em;
+    /* margin-top: 10em; */
     /* z-index: 999999; */
 }
+.section1{
+    height:100vh;
+    display: table;
+}
+
+.section2{
+    background: #ccc;
+    width:100%;
+    overflow: auto;
+    padding: 2em 2em;
+    /* display: flex; */
+}
+
+.section1>span{
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 4%;
+}
 .title{
+    padding: 1vh 0;
+    margin:0 4%;
     font-size: 2.5em;
+    border-bottom: 1px solid #ea210c;
+}
+
+.cards{
+    width:40vw;
+    /* box-shadow: 0px 2px 5px 2px #999;  */
+    margin: 0 4vw;
+    background: #ccc;
+    padding: 3vw 1vw;
+    /* display: flex; */
+    color: #333;
+    /* flex-direction: column; */
+}
+.cool_img{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.pad{
+    padding-top:2vh;
+}
+
+@media (max-width: 750px) {
+    .cards{
+        width:90vw;
+    }
 }
 #heading{
     font-size:5em;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
