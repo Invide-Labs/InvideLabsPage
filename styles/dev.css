@@ -60,6 +60,10 @@
     font-size:5em;
 }
 
+#heading button{
+    color:#eee;
+}
+
 .vcenter {
     display: inline-block;
     vertical-align: middle;
