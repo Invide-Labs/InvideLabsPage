@@ -69,3 +69,11 @@
     vertical-align: middle;
     float: none;
 }
+.section3{
+    text-align: center;
+    font-size: 5em;
+}
+
+body{
+    overflow-x: hidden;
+}

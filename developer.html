@@ -57,7 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <nav id="nav_big"> 
     <ul>
         <li>
-            <a class="i_name" href="#intro">
+            <a class="i_name" href="http://www.invidelabs.com/?utm_source='developer-page'">
                 <div>
                     <img src="favicon/favicon-96x96.png" alt=""/>
                     <div>
@@ -78,23 +78,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </a>
         </li>        
         <li>
-            <a>Products</a>
-            <ul>
-                <li>
-                    <a href="https://flow.invidelabs.com/team/intro">For remote teams</a>
-                </li>
-                <li>
-                    <a href="https://flow.invidelabs.com">For developers</a>
-                </li>
-            </ul>
+            <a href="https://flow.invidelabs.com">Product for developers</a>
         </li>
         <li>
-                <a href="http://apply.invidelabs.com">Apply as an expert</a>
+                <a href="http://apply.invidelabs.com">Join the cult</a>
         </li>
-        <li><a href="http://workwith.invidelabs.com">Start a Project</a></li>
+        <!-- <li><a href="http://workwith.invidelabs.com">Start a Project</a></li> -->
         <li><a href="https://app.invidelabs.com">Sign Up</a></li>
         <li>
-                <a href="#contact_us" class="highlight">Download App</a>
+                <a href="http://www.invidelabs.com/?utm_source='developer-page'#contact_us" class="highlight">Download App</a>
         </li>
     </ul>
 </nav>
@@ -138,9 +130,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div id="message">
     <div class="section1">
-        <span id="heading">We are network of 1000+ expert developers <br>
-            <button class="btn uppercase" type="button" onclick="window.location.href = 'http://apply.invidelabs.com';ga('send', 'event', { eventCategory: 'Apply As Expert', eventAction: 'Invider Application', eventLabel: 'Homepage Invider Application', eventValue: 2});"><span>Apply As Tech Expert</span></button>
-        </span> 
+        <span id="heading">Invite-only cult of people driving #FutureOfWork<br>
+            <button class="btn uppercase" type="button" onclick="window.location.href = 'http://apply.invidelabs.com';ga('send', 'event', { eventCategory: 'Apply As Expert', eventAction: 'Invider Application', eventLabel: 'Homepage Invider Application', eventValue: 2});"><span>Get invite</span></button>
+        </span> <br>
     </div>
     <div class="section2 container" ng-app="myApp" ng-controller="myCtrl" >
         <div class="row pad">
@@ -192,12 +184,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <br><br>
         <div class="row pad">
             <div class="col-md-6 cards vcenter">
-                <p class="title">Culture code</p>
-                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Enjoy the work</p>
-                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work from fun places</p>
-                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Stress free</p>
+                <p class="title">Culture code</p><br>
+                <!-- <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Enjoy the work</p> -->
                 <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Great code quality</p>
                 <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Great work/life balance</p>
+                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Great people to work with</p>
+                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work from anywhere</p>
+                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Stress free</p>
                 <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Collaboration with smart people</p>
             </div>
             <div class="col-md-6  vcenter">
@@ -224,26 +217,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>-->
     </div>
+    <div  class="section3 container">
+            <a href="https://www.facebook.com/InvideLabs-1686586228269135/">            <i class='fa fa-facebook-square'    style='color:#333'></i></a>
+            <a href="https://www.linkedin.com/messaging/thread/6322424875868884992/">   <i class='fa fa-linkedin-square'    style='color:#333'></i></a>
+            <a href="https://twitter.com/invide_labs">                                  <i class='fa fa-twitter-square'     style='color:#333'></i></a>
+            <a href="https://angel.co/invide-labs">                                     <i class='fa fa-twitter-angellist'  style='color:#333'></i></a>
+    </div>
 </div>
+
 <script src="js/three.min.js"></script>
 <script src="js/app.js"></script>
-
 <script>
-
     var loader = new THREE.FileLoader();
     loader.load( 'app.json', function ( text ) {
-
         var player = new APP.Player();
         player.load( JSON.parse( text ) );
         player.setSize( window.innerWidth, window.innerHeight );
         player.play();
-
         document.body.appendChild( player.dom );
-
         window.addEventListener( 'resize', function () {
-            player.setSize( window.innerWidth, window.innerHeight );
+            player.setSize( window.innerWidth - 20, window.innerHeight );
         } );
-
         if ( location.search === '?edit' ) {
             var button = document.createElement( 'a' );
             button.id = 'edit';
@@ -252,10 +246,118 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             button.textContent = 'EDIT';
             document.body.appendChild( button );
         }
-
     } );
-
 </script>
 </body>
+<script type="text/javascript" src="javascripts/vendors/jquery.2.1.3.min.js"></script>
 
+<script type="text/javascript" src="javascripts/vendors/jquery.slimscroll.min.js"></script>
+
+<script type="text/javascript" src="javascripts/jquery.fullpage.min.js"></script>
+<script type="text/javascript" src="javascripts/custom.js"></script>
+<script type="text/javascript" src="javascripts/typed.min.js"></script>
+
+
+<script type="text/javascript">
+    var messageBoxAnimationCompleted = false;
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            // sectionsColor: ['#ffffff','#DE564B','#673AB7','#333', '#ffffff','#ffffff', '#EEEEEE'],
+            sectionsColor: ['#ffffff', '#E4F0FC', '#ffffff', '#E4F0FC', '#ffffff', '#E4F0FC', '#ffffff'],
+            //navigation
+            'anchors': ['intro', 'quick_advice', 'invite_experts', 'team_productivity', 'success_story', 'offer_full_time', 'invider_onboarding_process', 'contact_us'],
+            'menu': '#menu',
+            'navigation': true,
+            'navigationPosition': 'right',
+            'navigationColor': '#000',
+            'navigationTooltips': ['Intro', 'Quick Advice', 'Invite Experts', 'Transparency', 'Success Story', 'Offer Full Time', 'Invider Onboarding Process', 'Contact Us'],
+            'slidesNavigation': true,
+            'slidesNavPosition': 'bottom',
+            'scrollBar': false,
+            'fitToSection': true,
+            'fitToSectionDelay': 0,
+
+            //scrolling
+            'css3': true,
+            'scrollingSpeed': 900,
+            'autoScrolling': true,
+            'easingcss3': 'ease',
+            'loopHorizontal': true,
+            'touchSensitivity': 5,
+
+            //Accessibility
+            'keyboardScrolling': true,
+            'recordHistory': true,
+            'scrollOverflow': true,
+            'loopBottom': true,
+            'loopTop': true,
+            'animateAnchor': true,
+            'responsiveWidth': 0,
+
+            //design
+            'controlArrows': false,
+            'resize': true,
+
+            //Custom selectors
+            'sectionSelector': '.section',
+            'slideSelector': '.slide',
+
+
+            //events
+            'afterSlideLoad': null,
+            'onLeave': null,
+            'afterRender': null,
+            'afterResize': null,
+            'afterReBuild': null,
+            'afterSlideLoad': null,
+            'onSlideLeave': null,
+            afterLoad: function(anchorLink, index) {
+                var loadedSlide = $(this);
+                //first slide of the second section
+                if (anchorLink == 'quick_advice') {
+                    // console.log("message page loaded");
+                    // $( ".message ul" ).addClass( "fadeIn" );
+                    // $('.flash').animate({opacity: 0}, {queue: true, duration: 'slow'});
+                    if (!messageBoxAnimationCompleted) {
+                        animateMessageBox();
+                        messageBoxAnimationCompleted = true;
+                    }
+                    $('.messages-box ul').each(function(index, e) {
+                        // console.log("message #" + index);
+                        $(this).addClass("fadeIn");
+                        /*$(this).css("visibility","visible");
+                        $('.flash').css("visibility","hidden");
+                        $(this).delay(2000*(index+1)).animate({opacity: 1}, {queue: true, duration: 'slow'});*/
+                    });
+                } else if (anchorLink == 'remote_management') {
+                    $('#section5 ul').each(function(index, e) {
+                        // console.log("use case #" + index);
+                        $(this).addClass("fadeIn");
+                    });
+                }
+            }
+        });
+
+        var allimages = document.getElementsByTagName('img');
+        for (var i = 0; i < allimages.length; i++) {
+            if (allimages[i].getAttribute('data-src')) {
+                allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+            }
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var typed = new Typed("#typed", {
+            stringsElement: '#typed-strings',
+            typeSpeed: 60,
+            backSpeed: 20,
+            startDelay: 1000,
+            loop: false,
+            loopCount: Infinity,
+            showCursor: false
+        });
+    });
+</script>
 </html>

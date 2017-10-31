@@ -24,6 +24,9 @@ nav ul li{
 nav ul{
     margin:auto;
 }
+canvas{
+    overflow: hidden;
+}
 
 nav>ul>li>a{
     padding: 0 1em;

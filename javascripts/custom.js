@@ -46,6 +46,8 @@ $(document).ready(function(){
   $("nav>ul>li").mouseenter(function(){
     clearTimeout(tou);
     $(this).children("ul").fadeIn();
+    $(this).children("ul").css("z-index","99999");
+    console.log("facefine");
   });
 
   $("nav>ul>li").mouseleave(function(){
