@@ -1081,6 +1081,23 @@ h2 {
 	animation-delay: 15s; 
 	color: #9b6b9d;
 }
+.yesWeHaveClass .item:nth-child(7) {  
+	animation-delay: 18s; 
+	color: #9b6b9d;
+}
+.yesWeHaveClass .item:nth-child(8) {  
+	animation-delay: 21s; 
+	color: #9b6b9d;
+}
+.yesWeHaveClass .item:nth-child(9) {  
+	animation-delay: 24s; 
+	color: #9b6b9d;
+}
+.yesWeHaveClass .item:nth-child(10) {  
+	animation-delay: 27s; 
+	color: #9b6b9d;
+}
+
 
 @keyframes rotateWordsFirst {
     0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
