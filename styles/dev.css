@@ -70,8 +70,12 @@
     float: none;
 }
 .section3{
+    padding: 2vh 0;
+    width: 100%;
+    letter-spacing: 2vw;
     text-align: center;
     font-size: 5em;
+    background-color: #ea210c;
 }
 
 body{
