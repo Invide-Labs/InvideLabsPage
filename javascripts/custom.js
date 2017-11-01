@@ -84,7 +84,18 @@ $(document).ready(function(){
     }
   })
 
-
+  $(".faqs").mouseenter(function(){
+    var n = $(this)[0].id;
+    console.log(n);
+    console.log($("."+n+">li").css("display"));
+    $("."+n+">li").css("display","block");
+  })
+  $(".faqs").mouseleave(function(){
+    var n = $(this)[0].id;
+    console.log(n);
+    console.log($("."+n+">li").css("display"));
+    $("."+n+">li").css("display","none");
+  })
 });
 
 document.onreadystatechange = function () {

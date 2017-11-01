@@ -81,3 +81,36 @@
 body{
     overflow-x: hidden;
 }
+
+.cards>ul li{
+    border-radius: 0.5vw;
+    display: none;
+    position:absolute;
+    color: #333;
+    background-color:#fff;
+    width:80%;
+    padding: 3% 3%;
+    margin-left: 4%;
+    box-shadow: 2px 2px 8px #666;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+}
+
+.speech-bubble:after {
+    box-shadow: 2px 2px 8px #666;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 9px solid transparent;
+	border-bottom-color: #fff;
+	border-top: 0;
+	margin-left: -9px;
+	margin-top: -25px;
+}
