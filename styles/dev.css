@@ -41,6 +41,7 @@
     color: #333;
     /* flex-direction: column; */
 }
+
 .cool_img{
     display: flex;
     justify-content: space-around;
@@ -112,3 +113,19 @@ body{
 	margin-left: -9px;
 	margin-top: -25px;
 }
+
+@media (max-width: 800px){
+    .cards{
+        width:90vw;
+        font-size: 0.875em;
+    }
+    .cards>ul li{
+        position:relative;
+        background-color: #ccc;
+        box-shadow: none;
+        /* border: 1px solid #fff; */
+    }
+    .speech-bubble:after {
+        display: none;
+    }
+} 
