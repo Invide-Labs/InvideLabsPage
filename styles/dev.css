@@ -49,13 +49,11 @@
 
 .pad{
     padding-top:2vh;
+    max-width: 100%;
+    margin: 0 0;
 }
 
-@media (max-width: 750px) {
-    .cards{
-        width:90vw;
-    }
-}
+
 #heading{
     font-size:5em;
 }
