@@ -88,13 +88,13 @@ $(document).ready(function(){
     var n = $(this)[0].id;
     console.log(n);
     console.log($("."+n+">li").css("display"));
-    $("."+n+">li").css("display","block");
+    $("."+n+">li").slideDown("slow");
   })
   $(".faqs").mouseleave(function(){
     var n = $(this)[0].id;
     console.log(n);
     console.log($("."+n+">li").css("display"));
-    $("."+n+">li").css("display","none");
+    $("."+n+">li").slideUp("slow");
   })
 });
 

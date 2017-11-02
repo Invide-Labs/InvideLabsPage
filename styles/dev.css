@@ -54,11 +54,14 @@
 
 
 #heading{
+    color: #333;
     font-size:5em;
+    font-weight: bold;
 }
 
 #heading button{
     color:#eee;
+    margin-left: 0;
 }
 
 .vcenter {
@@ -71,8 +74,8 @@
     width: 100%;
     letter-spacing: 2vw;
     text-align: center;
-    font-size: 5em;
-    background-color: #ea210c;
+    font-size: 2em;
+    background-color: #aaa;
 }
 
 body{
@@ -91,26 +94,30 @@ body{
     box-shadow: 2px 2px 8px #666;
 }
 
-.speech-bubble {
-	position: relative;
-	background: #00aabb;
-	border-radius: .4em;
+.col-md-10.cards{
+    width: 90%;
+}
+.cards>ul li{
+    position:relative;
+    background-color: #ccc;
+    box-shadow: none;
+    height: 0px;
+    -webkit-transition: height 4s; /* For Safari 3.1 to 6.0 */
+    transition: height 4s;
+    /* border: 1px solid #fff; */
 }
 
-.speech-bubble:after {
-    box-shadow: 2px 2px 8px #666;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 9px solid transparent;
-	border-bottom-color: #fff;
-	border-top: 0;
-	margin-left: -9px;
-	margin-top: -25px;
+.des_text.faqs:hover{
+    color: #ea210c;
 }
+.last{
+    text-align: center;
+}
+
+.last #b1{
+    color:#fff;
+}
+
 
 @media (max-width: 800px){
     .cards{
@@ -122,9 +129,6 @@ body{
         background-color: #ccc;
         box-shadow: none;
         /* border: 1px solid #fff; */
-    }
-    .speech-bubble:after {
-        display: none;
     }
     .cool_img{
         width: 90%;
