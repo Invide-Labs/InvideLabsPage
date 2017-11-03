@@ -37,6 +37,8 @@ function mfnc(obj){
 
 var tou;
 
+var faqopen = 0;
+
 
 $(document).ready(function(){
 	$("#demosMenu").change(function(){
@@ -46,6 +48,8 @@ $(document).ready(function(){
   $("nav>ul>li").mouseenter(function(){
     clearTimeout(tou);
     $(this).children("ul").fadeIn();
+    $(this).children("ul").css("z-index","99999");
+    console.log("facefine");
   });
 
   $("nav>ul>li").mouseleave(function(){
@@ -82,7 +86,18 @@ $(document).ready(function(){
     }
   })
 
-
+  $(".faqs").click(function(){
+    var n = $(this)[0].id;
+    console.log(n);
+    console.log($("."+n+">li").css("display"));
+    if(faqopen == 0){
+      $("."+n+">li").slideDown("slow");
+      faqopen = 1;
+    }else{
+      $("."+n+">li").slideUp("slow");
+      faqopen = 0;
+    }
+  })
 });
 
 document.onreadystatechange = function () {

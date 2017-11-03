@@ -1,15 +1,137 @@
 
 #message{
     display:block;
-   
     color: #999;
     position: absolute;
-    margin-top: 10em;
+    /* margin-top: 10em; */
     /* z-index: 999999; */
 }
+.section1{
+    height:100vh;
+    display: table;
+}
+
+.section2{
+    background: #ccc;
+    width:100%;
+    overflow: auto;
+    padding: 2em 2em;
+    /* display: flex; */
+}
+
+.section1>span{
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 4%;
+}
 .title{
+    padding: 1vh 0;
+    margin:0 4%;
     font-size: 2.5em;
+    border-bottom: 1px solid #ea210c;
 }
+
+.cards{
+    width:40vw;
+    /* box-shadow: 0px 2px 5px 2px #999;  */
+    margin: 0 4vw;
+    background: #ccc;
+    padding: 3vw 1vw;
+    /* display: flex; */
+    color: #333;
+    /* flex-direction: column; */
+}
+
+.cool_img{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.pad{
+    padding-top:2vh;
+}
+
+
 #heading{
+    color: #333;
     font-size:5em;
+    font-weight: bold;
 }
+
+#heading button{
+    color:#eee;
+    margin-left: 0;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.section3{
+    padding: 2vh 0;
+    width: 100%;
+    letter-spacing: 2vw;
+    text-align: center;
+    font-size: 2em;
+    background-color: #aaa;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.cards>ul li{
+    border-radius: 0.5vw;
+    display: none;
+    position:absolute;
+    color: #333;
+    background-color:#fff;
+    width:80%;
+    padding: 3% 3%;
+    margin-left: 4%;
+    box-shadow: 2px 2px 8px #666;
+}
+
+.col-md-10.cards{
+    width: 90%;
+}
+.cards>ul li{
+    position:relative;
+    background-color: #ccc;
+    box-shadow: none;
+    height: 0px;
+    -webkit-transition: height 4s; /* For Safari 3.1 to 6.0 */
+    transition: height 4s;
+    /* border: 1px solid #fff; */
+}
+
+.des_text.faqs:hover{
+    color: #ea210c;
+}
+.last{
+    text-align: center;
+}
+
+.last #b1{
+    color:#fff;
+}
+
+
+@media (max-width: 800px){
+    .cards{
+        width:90vw;
+        font-size: 0.875em;
+    }
+    .cards>ul li{
+        position:relative;
+        background-color: #ccc;
+        box-shadow: none;
+        /* border: 1px solid #fff; */
+    }
+    .cool_img{
+        width: 90%;
+        height: auto;
+    }
+} 
