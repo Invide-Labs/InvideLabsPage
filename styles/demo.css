@@ -65,7 +65,7 @@ a:hover, a:focus {
 }
 
 .pricing-section {
-	padding: 2em 0 8em;
+	padding: 2em 0 0em;
 	min-height: 100vh;
 	position: relative;
 }
@@ -297,4 +297,16 @@ a:hover, a:focus {
 	.codrops-header h1 {
 		font-size: 2.8em;
 	}
+}
+
+.pricingIconImg {
+	max-width:64px;
+    max-height:64px;
+    width:auto;
+    height:auto;
+}
+
+.centered {
+	margin: auto;
+	text-align: center;
 }
