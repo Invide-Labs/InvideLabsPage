@@ -55,14 +55,17 @@ nav li>ul li a{
     padding: 0 1em 1em 1em;
     color: #999;
     font-size: 1.3em;
+    text-decoration: none;
 }
 
 nav li>ul li a:hover{
     color:#ea210c;
+    text-decoration: none;
 }
 
 nav li>a:hover{
     color:#ea210c;
+    text-decoration: none;
 }
 
 /* nav li:hover> ul{ */
@@ -144,6 +147,7 @@ nav li>a:hover{
     nav i:hover{
         border:1px solid #ea210c;
         color: #ea210c;
+        text-decoration: none;
     }
 }
 
