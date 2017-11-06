@@ -50,6 +50,9 @@ $(document).ready(function(){
       console.log("cool");
       $(".options").css("display","none");
     }
+    if(cls_list[1] != "faqs"){
+      $(".opt>li").slideUp("slow");
+    }
   });
 
 
@@ -97,13 +100,11 @@ $(document).ready(function(){
   $(".faqs").click(function(){
     var n = $(this)[0].id;
     console.log(n);
-    console.log($("."+n+">li").css("display"));
-    if(faqopen == 0){
+    var dis  = $("."+n+">li").css("display");
+    if(dis == "none"){
       $("."+n+">li").slideDown("slow");
-      faqopen = 1;
     }else{
       $("."+n+">li").slideUp("slow");
-      faqopen = 0;
     }
   })
 });
