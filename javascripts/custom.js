@@ -44,7 +44,15 @@ $(document).ready(function(){
 	$("#demosMenu").change(function(){
 	  window.location.href = $(this).find("option:selected").attr("id") + '.html';
   });
-  
+  $("body").click(function(ent){ 
+    var cls_list = ent.target.classList;
+    if(cls_list[1] != "fa-bars"){
+      console.log("cool");
+      $(".options").css("display","none");
+    }
+  });
+
+
   $("nav>ul>li").mouseenter(function(){
     clearTimeout(tou);
     $(this).children("ul").fadeIn();
