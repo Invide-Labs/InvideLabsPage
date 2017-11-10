@@ -41,6 +41,20 @@ var faqopen = 0;
 
 
 $(document).ready(function(){
+  if (navigator.appVersion.indexOf("Linux")!=-1) {
+    //Show download for Linux
+  };
+  if (navigator.appVersion.indexOf("X11")!=-1) {
+    //Show download for X11
+  };
+  if (navigator.appVersion.indexOf("Win")!=-1) {
+    //Show download for windows
+  };
+  if (navigator.appVersion.indexOf("Mac")!=-1) {
+    //Show download for MacOS
+  }
+
+
 	$("#demosMenu").change(function(){
 	  window.location.href = $(this).find("option:selected").attr("id") + '.html';
   });
