@@ -114,6 +114,15 @@ body{
     color:#fff;
 }
 
+#b3_span{
+    color: #333;
+}
+
+#b3_span:hover{
+    color: #ea210c;
+    cursor: pointer;
+}
+
 
 @media (max-width: 800px){
     .cards{

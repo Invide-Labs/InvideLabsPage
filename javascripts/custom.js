@@ -41,54 +41,6 @@ var faqopen = 0;
 
 
 $(document).ready(function(){
-  if (navigator.appVersion.indexOf("Linux")!=-1) {
-    //Show download for Linux
-    $("#b2")[0].children[0].innerHTML = "Download app for linux";   
-    // window.location.href = 'http://www.invidelabs.com/#contact_us';
-    // ga('send', 'event', {
-      // eventCategory: 'Apply As Expert', 
-      // eventAction: 'Invider Application', 
-      // eventLabel: 'Homepage Invider Application', 
-      // eventValue: 2
-    // });
-  };
-  if (navigator.appVersion.indexOf("X11")!=-1) {
-    //Show download for X11
-    $("#b2")[0].children[0].innerHTML = "Download app for linux";
-  };
-  if (navigator.appVersion.indexOf("Win")!=-1) {
-    //Show download for windows
-    $("#b2")[0].children[0].innerHTML = "Download app for win";
-  };
-  if (navigator.appVersion.indexOf("Mac")!=-1) {
-    //Show download for MacOS
-    $("#b2")[0].children[0].innerHTML = "Download app for mac";
-  }
-
-  $("#b2").click(function(){
-    if (navigator.appVersion.indexOf("Linux")!=-1) {
-      //Show download for Linux
-      window.location.href = 'http://download.invidelabs.com/download/latest/linux_64';
-      // ga('send', 'event', {
-        // eventCategory: 'Apply As Expert', 
-        // eventAction: 'Invider Application', 
-        // eventLabel: 'Homepage Invider Application', 
-        // eventValue: 2
-      // });
-    };
-    if (navigator.appVersion.indexOf("X11")!=-1) {
-      //Show download for X11
-      window.location.href = 'http://download.invidelabs.com/download/latest/linux_64';
-    };
-    if (navigator.appVersion.indexOf("Win")!=-1) {
-      //Show download for windows
-      window.location.href = 'http://download.invidelabs.com/download/latest/windows_64';
-    };
-    if (navigator.appVersion.indexOf("Mac")!=-1) {
-      //Show download for MacOS
-      window.location.href = 'http://download.invidelabs.com/download/latest/osx';
-    }
-  })
  
 	$("#demosMenu").change(function(){
 	  window.location.href = $(this).find("option:selected").attr("id") + '.html';

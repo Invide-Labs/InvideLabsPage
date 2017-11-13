@@ -267,9 +267,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <div class="row pad">
             <div class="col-md-12 last">       
-                <button class="btn uppercase" id="b1" type="button" onclick="window.location.href = 'http://apply.invidelabs.com';ga('send', 'event', { eventCategory: 'Apply As Expert', eventAction: 'Invider Application', eventLabel: 'Homepage Invider Application', eventValue: 2});"><span>Get invite</span></button>
-                <button class="btn light uppercase" id="b2" type="button" ><span>Download App </span></button><br>
-                <span onclick="window.location.href = 'http://www.invidelabs.com/#contact_us';ga('send', 'event', { eventCategory: 'Apply As Expert', eventAction: 'Invider Application', eventLabel: 'Homepage Invider Application', eventValue: 2});">Download app for other OS</span>
+                <button class="btn uppercase" id="b1_span" type="button" onclick="window.location.href = 'http://apply.invidelabs.com';ga('send', 'event', { eventCategory: 'Apply As Expert', eventAction: 'Invider Application', eventLabel: 'Homepage Invider Application', eventValue: 2});"><span>Get invite</span></button>
+                <button class="btn light uppercase" id="b2_span" type="button" ><span>Download App </span></button><br>
+                <span  id="b3_span" onclick="window.location.href = 'http://www.invidelabs.com/#contact_us';ga('send', 'event', { eventCategory: 'Apply As Expert', eventAction: 'Invider Application', eventLabel: 'Homepage Invider Application', eventValue: 2});">Download app for other OS</span>
             </div>
         </div>
     </div>
@@ -404,6 +404,59 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
         }
     });
+
+
+    $(document).ready(function() {
+
+    if (navigator.appVersion.indexOf("Linux")!=-1) {
+    //Show download for Linux
+    $("#b2_span")[0].children[0].innerHTML = "Download app for linux";   
+    // window.location.href = 'http://www.invidelabs.com/#contact_us';
+    // ga('send', 'event', {
+      // eventCategory: 'Apply As Expert', 
+      // eventAction: 'Invider Application', 
+      // eventLabel: 'Homepage Invider Application', 
+      // eventValue: 2
+    // });
+  }
+  if (navigator.appVersion.indexOf("X11")!=-1) {
+    //Show download for X11
+    $("#b2_span")[0].children[0].innerHTML = "Download app for linux";
+  }
+  if (navigator.appVersion.indexOf("Win")!=-1) {
+    //Show download for windows
+    $("#b2_span")[0].children[0].innerHTML = "Download app for win";
+  }
+  if (navigator.appVersion.indexOf("Mac")!=-1) {
+    //Show download for MacOS
+    $("#b2_span")[0].children[0].innerHTML = "Download app for mac";
+  }
+
+  $("#b2_span").click(function(){
+    if (navigator.appVersion.indexOf("Linux")!=-1) {
+      //Show download for Linux
+      window.location.href = 'http://download.invidelabs.com/download/latest/linux_64';
+      // ga('send', 'event', {
+        // eventCategory: 'Apply As Expert', 
+        // eventAction: 'Invider Application', 
+        // eventLabel: 'Homepage Invider Application', 
+        // eventValue: 2
+      // });
+    }
+    if (navigator.appVersion.indexOf("X11")!=-1) {
+      //Show download for X11
+      window.location.href = 'http://download.invidelabs.com/download/latest/linux_64';
+    }
+    if (navigator.appVersion.indexOf("Win")!=-1) {
+      //Show download for windows
+      window.location.href = 'http://download.invidelabs.com/download/latest/windows_64';
+    }
+    if (navigator.appVersion.indexOf("Mac")!=-1) {
+      //Show download for MacOS
+      window.location.href = 'http://download.invidelabs.com/download/latest/osx';
+    }
+  })
+}
 </script>
 
 <script>
