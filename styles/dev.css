@@ -101,10 +101,6 @@ body{
     position:relative;
     background-color: #ccc;
     box-shadow: none;
-    height: 0px;
-    -webkit-transition: height 4s; /* For Safari 3.1 to 6.0 */
-    transition: height 4s;
-    /* border: 1px solid #fff; */
 }
 
 .des_text.faqs:hover{
@@ -116,6 +112,15 @@ body{
 
 .last #b1{
     color:#fff;
+}
+
+#b3_span{
+    color: #333;
+}
+
+#b3_span:hover{
+    color: #ea210c;
+    cursor: pointer;
 }
 
 
