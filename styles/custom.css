@@ -1208,7 +1208,7 @@ h2 {
 
 .nightmode-switch {
     cursor: pointer;
-    color: #000;
+    color: #999;
     position: fixed;
     display: block;
     bottom: 5%;
