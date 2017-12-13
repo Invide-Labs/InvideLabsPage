@@ -1181,4 +1181,39 @@ h2 {
   
 /* smaller than Desktop HD */
 @media (max-width: 1200px) {}
-  
+
+.nightModeOn > #fullpage {
+	filter: invert()
+}
+
+.nightModeOn > #load {
+	filter: invert()
+}
+
+.nightModeOn > nav {
+	filter: invert()
+}
+
+.nightModeOn .nofilter {
+	filter: invert();
+}
+
+.nightModeOn .semifilter {
+	filter: invert(90%);
+}
+
+.nightModeOn img {
+	filter: invert(10%);
+}
+
+.nightmode-switch {
+    cursor: pointer;
+    color: #999;
+    position: fixed;
+    display: block;
+    bottom: 5%;
+    right: 5%;
+    z-index: 900;
+    background-color: transparent;
+    border: 0;
+}
