@@ -41,10 +41,22 @@ var faqopen = 0;
 
 
 $(document).ready(function(){
+ 
 	$("#demosMenu").change(function(){
 	  window.location.href = $(this).find("option:selected").attr("id") + '.html';
   });
-  
+  $("body").click(function(ent){ 
+    var cls_list = ent.target.classList;
+    if(cls_list[1] != "fa-bars"){
+      console.log("cool");
+      $(".options").css("display","none");
+    }
+    if(cls_list[1] != "faqs"){
+      $(".opt>li").slideUp("slow");
+    }
+  });
+
+
   $("nav>ul>li").mouseenter(function(){
     clearTimeout(tou);
     $(this).children("ul").fadeIn();
@@ -89,13 +101,11 @@ $(document).ready(function(){
   $(".faqs").click(function(){
     var n = $(this)[0].id;
     console.log(n);
-    console.log($("."+n+">li").css("display"));
-    if(faqopen == 0){
+    var dis  = $("."+n+">li").css("display");
+    if(dis == "none"){
       $("."+n+">li").slideDown("slow");
-      faqopen = 1;
     }else{
       $("."+n+">li").slideUp("slow");
-      faqopen = 0;
     }
   })
 });
