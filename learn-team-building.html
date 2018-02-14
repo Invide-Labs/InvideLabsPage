@@ -1,0 +1,377 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+
+<head>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Invide Labs : Network of highly skilled developers</title>
+    <meta name="author" content="Pradeep Sharma" />
+    <meta name="description" content="Invide Labs is a group of On-Demand CTOs from top technology institute & organization help you on Android, IOS mobile app development & Web app development." />
+    <meta name="keywords" content="app development, android app development, software development" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="canonical" href="http://invidelabs.com">
+    <link rel="canonical" href="https://invidelabs.com">
+    <link rel="canonical" href="http://www.invidelabs.com">
+    <link rel="canonical" href="https://www.invidelabs.com">
+    <meta name="msapplication-TileColor" content="#DE564B">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#DE564B">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css" />
+    <link rel="stylesheet" type="text/css" href="styles/menu.css" />
+    <link rel="stylesheet" type="text/css" href="styles/dev.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@Invide_Labs">
+    <meta name="twitter:creator" content="@pradeep_io">
+    <meta name="twitter:url" content="https://www.invidelabs.com/developer.html">
+    <meta name="twitter:title" content="Invide Labs : Network of highly skilled developers">
+    <meta name="twitter:description" content="Invide Labs is a group of On-Demand CTOs from top technology institute & organization help you on Android, IOS mobile app development & Web app development.">
+    <meta name="twitter:image" content="https://www.invidelabs.com/favicon/favicon-96x96.png">
+    <style>
+        .background-image {
+            background-image: url('imgs/coolpic12.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: #fff;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            -webkit-filter: brightness(0.2);
+            filter: brightness(0.2);
+        }
+        
+        .cards {
+            background: none;
+            color: #fff;
+        }
+        
+        .title {
+            font-weight: bold;
+        }
+        
+        .quote {
+            text-align: center;
+            color: #333;
+        }
+        
+        .uppercased {
+            text-transform: uppercase;
+        }
+        
+        .profilePic {
+            width: 48px;
+            height: 48px;
+            opacity: 1;
+        }
+        
+        .smallPic {
+            width: 24px;
+            height: 24px;
+            opacity: 0.6;
+        }
+        
+        .highlight-style-1 {
+            font-weight: bold;
+        }
+        
+        .btn.secondary {
+            background-color: #333;
+        }
+        
+        .label {
+            font-size: 80%;
+            background-color: darkgoldenrod;
+            margin-top: 0.5em;
+            opacity: 0.85;
+        }
+        
+        #SIGNUP_HEADING {
+            font-size: 100%;
+            color: #b5afaf;
+        }
+        
+        #errorMsgDiv {
+            display: none;
+            color: red;
+            font-size: 70%;
+            padding-bottom: 1em;
+        }
+        
+        .helperText {
+            opacity: 0.7;
+            color: #333;
+            font-size: 70%;
+        }
+        
+        .i_name {
+            cursor: default;
+        }
+    </style>
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+    <![endif]-->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MBNSX9');
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBNSX9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav id="nav_big">
+        <ul>
+            <li>
+                <a class="i_name" href="#">
+                    <div>
+                        <img src="favicon/favicon-96x96.png" alt="" />
+                        <div>
+                            <p>
+                                Invide <span style="color: #333;">Insights</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav id="nav_small">
+        <ul class="logo_bar">
+            <li>
+                <a class="i_name" href="#">
+                    <div>
+                        <img src="favicon/favicon-96x96.png" alt="" />
+                        <div>
+                            <p>
+                                Invide <span style="color: #333;">Insights</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li><i class="fa fa-bars"></i></li>
+        </ul>
+    </nav>
+
+    <div class="container" style="padding-top: 5em;">
+        <div class="row centered">
+            <div class="col-md-12">
+                <br/><br/>
+                <h1 style="color: #333; text-align: center;">
+                    How to build winning tech teams
+                </h1>
+                <div class="centered-child-container">
+                    <span class="label label-primary centered uppercased">2018 Edition</span>
+                </div>
+                <br/><br/>
+                <p style="text-align: center;color: #333;">
+                    Actionable tips for <span class="highlight-style-1">startups entering in high-growth mode</span>
+                    <br/>Build high-performing small tech teams right way
+                </p>
+                <br/><br/><br/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 centered-child-container">
+                <div class="background-image">
+                </div>
+                <div class="cards">
+                    <p class="title">You will learn</p><br>
+                    <p class="des_text"><i class='fa fa-check' style='color:#fff'></i> 4 stages of group development</p>
+                    <p class="des_text"><i class='fa fa-check' style='color:#fff'></i> Points of failures in your way</p>
+                    <p class="des_text"><i class='fa fa-check' style='color:#fff'></i> Breaking barriers in hiring best people</p>
+                    <p class="des_text"><i class='fa fa-check' style='color:#fff'></i> Integrating new team member</p>
+                    <p class="des_text"><i class='fa fa-check' style='color:#fff'></i> Making team productive</p>
+                    <p class="des_text"><i class='fa fa-check' style='color:#fff'></i> Nurturing leaders</p>
+                </div>
+            </div>
+            <div class="col-md-6 centered-child-container">
+                <div class="cards">
+                    <!--Zoho Campaigns Web-Optin Form Starts Here-->
+                    <script type="text/javascript" src="https://zcs1.maillist-manage.com/js/jquery-1.11.0.min.js"></script>
+                    <script type='text/javascript' src='https://zcs1.maillist-manage.com/js/jquery-migrate-1.2.1.min.js'></script>
+                    <script type="text/javascript" src='https://zcs1.maillist-manage.com/js/ui.datepicker.js' charset="utf-8"></script>
+                    <script type="text/javascript" src="https://zcs1.maillist-manage.com/js/jquery.form.js"></script>
+                    <script type="text/javascript" src="https://zcs1.maillist-manage.com/js/optin_min.js"></script>
+                    <script type="text/javascript">
+                        var $ZC = jQuery.noConflict();
+                        var trackingText = 'ZCFORMVIEW';
+                        var new_optin_response_in = 0;
+                        var duplicate_optin_response_in = 0;
+                        $ZC(document).ready(function($) {
+                            $ZC("#zc_trackCode").val(trackingText);
+                            $ZC("#fieldBorder").val($ZC("[changeItem='SIGNUP_FORM_FIELD']").css("border-color"));
+                            _setOptin(false, function(th) {
+                                /*Before submit, if you want to trigger your event, "include your code here"*/
+                            });
+
+                            /*Load Captcha For this*/
+                            loadCaptcha('https://campaigns.zoho.com/campaigns/CaptchaVerify.zc?mode=generate');
+
+                            /*Tracking Enabled*/
+                            trackSignupEvent(trackingText);
+                        });
+                    </script>
+
+                    <meta content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+                    <div id="customForm">
+                        <input type="hidden" id="signupFormType" value="QuickForm_Vertical">
+                        <div>
+                            <table width="250" class="quick_form_1_css" border="0" cellspacing="0" cellpadding="0" align="center" name="SIGNUP_BODY" id="SIGNUP_BODY">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <div id="SIGNUP_HEADING" name="SIGNUP_HEADING" changeid="SIGNUP_MSG" changetype="SIGNUP_HEADER">Learn through email bites</div>
+                                            <br/>
+                                            <div>
+                                                <div style="position:relative;top: 30px;">
+                                                    <div id="Zc_SignupSuccess" style="display:none;position:absolute;margin-left:4%;width:90%;background-color: white; padding: 3px; border: 3px solid rgb(194, 225, 154);  margin-top: 10px;margin-bottom:10px;word-break:break-all ">
+                                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="10%">
+                                                                        <img class="successicon" src="https://zcs1.maillist-manage.com/images/challangeiconenable.jpg" align="absmiddle">
+                                                                    </td>
+                                                                    <td>
+                                                                        <span id="signupSuccessMsg" style="color: rgb(73, 140, 132); font-family: sans-serif; font-size: 14px;word-break:break-word">&nbsp;&nbsp;Thank you for Signing Up</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <form method="POST" id="zcampaignOptinForm" action="https://zcs1.maillist-manage.com/campaigns/weboptin.zc" target="_zcSignup">
+                                                    <div id="errorMsgDiv">&nbsp;&nbsp;Please correct the marked field(s) below.</div>
+                                                    <!-- check to mark emailid field as type email, and other mandatory fields as type required -->
+                                                    <div class="form-group">
+                                                        <input class="form-control" name="CONTACT_EMAIL" changetype="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="email" required="true" id="CONTACT_EMAIL" placeholder="Email">
+                                                        <span style="display:none" id="dt_CONTACT_EMAIL">1,true,6,Subscriber Email,2</span>
+                                                    </div>
+                                                    <!-- check to mark emailid field as type email, and other mandatory fields as type required -->
+                                                    <div class="form-group">
+                                                        <input class="form-control" name="FIRSTNAME" changetype="FIRSTNAME" changeitem="SIGNUP_FORM_FIELD" type="text" id="FIRSTNAME" placeholder="Name">
+                                                        <span style="display:none" id="dt_FIRSTNAME">1,false,1,First Name,2</span>
+                                                    </div>
+                                                    <!-- check to mark emailid field as type email, and other mandatory fields as type required -->
+                                                    <div>
+                                                        <!--  different elements for view and edit causing errors<input name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="button" style="text-align:center;-webkit-appearance:none;background-color:#a7a7a7; color:#fff; border:solid 1px #999; font-size:12px; padding:6px 10px; width:50%; cursor:pointer;font-family:Arial;" value="Join Now">-->
+                                                        <button class="btn primary uppercased" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin"><span>Join Now</span></button>
+                                                    </div>
+                                                    <span class="helperText">7 topics, 7 days</span>
+                                                    <!-- Do not edit the below Zoho Campaigns hidden tags -->
+                                                    <input type="hidden" id="fieldBorder" value="rgb(235, 235, 235)">
+                                                    <input type="hidden" id="submitType" name="submitType" value="optinCustomView">
+                                                    <input type="hidden" id="lD" name="lD" value="139e6261a7c85409">
+                                                    <input type="hidden" name="emailReportId" id="emailReportId" value="">
+                                                    <input type="hidden" id="formType" name="formType" value="QuickForm">
+                                                    <input type="hidden" name="zx" id="cmpZuid" value="123bfa3b5">
+                                                    <input type="hidden" name="zcvers" value="2.0">
+                                                    <input type="hidden" name="oldListIds" id="allCheckedListIds" value="">
+                                                    <input type="hidden" id="mode" name="mode" value="OptinCreateView">
+                                                    <input type="hidden" id="zcld" name="zcld" value="139e6261a7c85409">
+                                                    <input type="hidden" id="document_domain" value="zoho.com">
+                                                    <input type="hidden" id="zc_Url" value="zcs1.maillist-manage.com">
+                                                    <input type="hidden" id="new_optin_response_in" value="0">
+                                                    <input type="hidden" id="duplicate_optin_response_in" value="0">
+                                                    <input type="hidden" name="zc_trackCode" id="zc_trackCode" value="" onload="">
+                                                    <input type="hidden" id="zc_formIx" name="zc_formIx" value="eda160ea23c299e25429177139d5e495ab16e7ccaa8dd327">
+                                                    <!-- End of the campaigns hidden tags -->
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <img src="https://zcs1.maillist-manage.com/images/spacer.gif" id="refImage" onload="referenceSetter(this)" style="display:none;">
+                    </div>
+                    <div id="zcOptinOverLay" oncontextmenu="return false" style="display:none;text-align: center; background-color: rgb(0, 0, 0); opacity: 0.5; z-index: 100; position: fixed; width: 100%; top: 0px; left: 0px; height: 988px;"></div>
+                    <div id="zcOptinSuccessPopup" style="display:none;z-index: 9999;width: 800px; height: 40%;top: 84px;position: fixed; left: 26%;background-color: #FFFFFF;border-color: #E6E6E6; border-style: solid; border-width: 1px;  box-shadow: 0 1px 10px #424242;padding: 35px;">
+                        <span style="position: absolute;top: -16px;right:-14px;z-index:99999;cursor: pointer;" id="closeSuccess">
+		<img src="https://zcs1.maillist-manage.com/images/videoclose.png">
+	</span>
+                        <div id="zcOptinSuccessPanel"></div>
+                    </div>
+
+                    <!--Zoho Campaigns Web-Optin Form Ends Here-->
+
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+        <!-- <h3 style="color: #333;text-align: center;font-weight: bold;">OR</h3> -->
+        <br/><br/>
+        <div class="schedule-webinar centered-child-container">
+            <div class="profilePic semifilter smallPic" style="background-image: url('imgs/chatUser1.jpg');"></div>
+            <div id="invider-pradeep-message-box-profile" class="profilePic semifilter" style="background-image: url('imgs/pradeep.jpg');"></div>
+            <div class="profilePic semifilter smallPic" style="background-image: url('imgs/debdatta.jpg');"></div>
+        </div>
+        <div class="schedule-webinar centered-child-container">
+            <button class="btn secondary uppercased" type="button" onclick="window.location.href = 'https://calendly.com/pradeep-sharma/team-building';"><span>Join Webinar</span></button>
+        </div>
+        <p style="color: #333; text-align: center;font-size: 80%;">By Pradeep, Founder of Invide</p>
+        <br/>
+
+        <br/><br/><br/>
+        <h2 class="quote">
+            Passionately protest mediocrity
+        </h2>
+        <br/><br/>
+        <div class="row" style="text-align: center;">
+            <p style="font-size: 100%;color: #333;">coach@invidelabs.com<br/>
+                <!-- <a href="https://twitter.com/invide_labs"> <i class='fa fa-twitter-square icons'></i></a>
+                <a href="https://www.linkedin.com/company/7799786/"> <i class='fa fa-linkedin-square icons' aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/InvideLabs-1686586228269135/"> <i class='fa fa-facebook-square icons' aria-hidden="true"></i></a>
+                <a href="https://angel.co/invide-labs"> <i class='fa fa-angellist icons'></i></a> -->
+                <br/>
+                <div class="icons" style="font-size:50%;text-align: center;"><i class='fa fa-copyright'></i> Invide Labs</div>
+        </div>
+        <br/><br/>
+    </div>
+</body>
+
+</html>
