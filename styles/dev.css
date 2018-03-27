@@ -187,3 +187,16 @@ body {
 .des_text {
     padding-bottom: 0.3em;
 }
+
+.matric-label {
+    font-size: 110%;
+    color: #333;
+    text-align: center;
+}
+
+.matric-value {
+    font-weight: bold;
+    font-size: 250%;
+    color: #000;
+    text-align: center;
+}
