@@ -300,7 +300,7 @@
   margin: 0 auto;
 }
 
-.new-home .section-5 .content-wrapper-mb{
+.new-home .section-5 .content-wrapper-mb {
   width: 50%;
 }
 
@@ -442,8 +442,113 @@
 
 .new-home .slider-region {
   height: 680px;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.new-home .slider-region .item-inner {
+  transform: translateY(50%);
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .new-home .slider-region {
+    height: 560px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .new-home .slider-region {
+    height: 480px;
+  }
+  .new-home .slider-region .item-inner {
+    transform: translateY(15%);
+  }
+}
+
+@media (max-width: 768px) {
+  .new-home .slider-region {
+    height: auto;
+  }
+  .new-home .slider-region .item-inner {
+    transform: none;
+  }
+}
+
+.new-home .slider-region .owl-carousel .owl-item img {
+  margin: 0 auto;
+  height: 80%;
+  object-fit: contain;
+}
+
+.new-home .slider-region .owl-carousel {
+  height: calc(100% - 20px);
+}
+
+.new-home .slider-region .owl-stage-outer {
+  height: calc(100% - 20px);
 }
 
 .new-home .btn {
   font-size: 1.4em;
+}
+
+.new-home .slider-content-header,
+.new-home .slider-content-body {
+  margin-bottom: 50px;
+}
+
+.new-home .slider-content-header__type {
+  font-size: 1.4em;
+}
+
+.new-home .slider-content-header__title {
+  font-size: 3.8em;
+  font-weight: bold;
+}
+
+.new-home .slider-content-body__review {
+  font-size: 2.4em;
+}
+
+.new-home .slider-content-body__review-by {
+  font-size: 1.4em;
+}
+
+.new-home .slider-content-footer li {
+  font-weight: 500;
+  display: inline-block;
+  font-size: 1.4em;
+}
+
+.new-home .slider-content-footer li:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 0 15px;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.new-home .slider-region a {
+  color: #fff;
+  font-style: italic;
+  padding: 0 4px;
+}
+.new-home .slider-region a:hover, .new-home .slider-region a:focus {
+  text-decoration: none;
+}
+
+.owl-dot {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.6) !important;
+  border-radius: 20px;
+  margin: 3px;
+}
+
+.owl-dot.active {
+  background: #fff !important;
 }
