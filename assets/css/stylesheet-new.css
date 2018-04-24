@@ -27,6 +27,10 @@
   color: #fff;
 }
 
+.new-home a {
+  font-size: 1.4em;
+}
+
 .new-home a.default-link {
   color: #ff2d55;
   transition: all 200ms ease;
@@ -170,6 +174,12 @@
   letter-spacing: 4px;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.03);
+}
+
+@media (max-width:1200px) {
+  .new-home .text-bg::after {
+    display: none;
+  }
 }
 
 .new-home .text-bg-dark.text-bg::after {
@@ -337,12 +347,15 @@
   color: #fff;
 }
 
+.new-home .footer svg {
+  font-size: 1.2em;
+}
+
 .new-home .footer p {
   font-size: 1.4em !important;
 }
 
 .new-home .footer a {
-  font-size: 1.4em;
   color: inherit;
   margin: 0 5px;
   transition: all 200ms ease;
@@ -386,4 +399,20 @@
   font-size: 1.4em;
 }
 
-.navbar-nav .dropdown-menu {}
+.navbar-nav .dropdown-menu {
+  border: none;
+  box-shadow: 3px 3px 6px -1px rgba(170, 170, 170, 0.5);
+  border-radius: 0;
+}
+
+.navbar-nav .dropdown-menu a.dropdown-item {
+  padding: 10px 20px;
+  font-size: 1.3em;
+}
+
+.navbar-nav .dropdown-menu a.dropdown-item:hover,
+.navbar-nav .dropdown-menu a.dropdown-item:active,
+.navbar-nav .dropdown-menu a.dropdown-item:focus {
+  color: #fff;
+  background: #dc3545;
+}
