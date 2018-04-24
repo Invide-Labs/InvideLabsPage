@@ -297,8 +297,11 @@
 }
 
 .new-home .section-5 {
-  width: 50%;
   margin: 0 auto;
+}
+
+.new-home .section-5 .content-wrapper-mb{
+  width: 50%;
 }
 
 .new-home .section-5 img {
