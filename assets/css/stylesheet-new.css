@@ -95,6 +95,7 @@ html {
   height: 100px;
   padding: 0.5em 5em;
   background: #fdf9f9;
+  z-index: 999;
 }
 
 @media (max-width: 992px) {
