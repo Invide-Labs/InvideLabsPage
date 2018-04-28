@@ -1,0 +1,36 @@
+{
+  "name": "invidelabspage",
+  "version": "1.0.0",
+  "description": "Web front",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Invide-Labs/InvideLabsPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Invide-Labs/InvideLabsPage/issues"
+  },
+  "homepage": "https://github.com/Invide-Labs/InvideLabsPage#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-svgo": "^6.0.0",
+    "jshint": "^2.9.5"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^4.0.0"
+  }
+}
