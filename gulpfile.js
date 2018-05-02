@@ -8,43 +8,40 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
-const imagemin = require('gulp-imagemin');
+var imagemin = require('gulp-imagemin');
+var cleanCSS = require('gulp-clean-css');
+var htmlmin = require('gulp-htmlmin');
 
-// // Lint Task
-// gulp.task('lint', function () {
-//     return gulp.src('js/*.js')
-//         .pipe(jshint())
-//         .pipe(jshint.reporter('default'));
-// });
+gulp.task('minify-css', () => {
+  return gulp.src(['styles/**/*.css', 'assets/css/**/*.css'], {base: './'})
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('build'));
+});
 
+gulp.task('copy-font', () => {
+    return gulp.src('styles/fonts/**/*.*', {base: './styles/'})
+    .pipe(gulp.dest('build/styles'))
+})
 
+// Lint Task
+gulp.task('lint', function () {
+    return gulp.src(['js/*.js', 'javascripts/**/*.js'])
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
 
-// gulp.task('sass', function () {
+// Concatenate & Minify JS
+gulp.task('scripts', function () {
+    return gulp.src(['js/*.js', 'javascripts/**/*.js'], {base: './'})
+        .pipe(uglify())
+        .pipe(gulp.dest('build'));
+});
 
-//     return sass('app/scss', {
-//             sourcemap: true
-//         })
-//         .on('error', function (err) {
-//             console.error('Error!', err.message);
-//         })
-//         .pipe(sourcemaps.write('./', {
-//             includeContent: false,
-//             sourceRoot: '/app/scss'
-//         }))
-//         .pipe(browserSync.stream({
-//             match: '**/*.css'
-//         }));
-// });
-
-// // Concatenate & Minify JS
-// gulp.task('scripts', function () {
-//     return gulp.src('js/*.js')
-//         .pipe(concat('all.js'))
-//         .pipe(gulp.dest('dist'))
-//         .pipe(rename('all.min.js'))
-//         .pipe(uglify())
-//         .pipe(gulp.dest('dist/js'));
-// });
+gulp.task('minify-html', function() {
+  return gulp.src('*.html')
+    .pipe(htmlmin({collapseWhitespace: true, minifyCSS: true, minifyJS: true}))
+    .pipe(gulp.dest('build'));
+});
 
 // // Watch Files For Changes
 // gulp.task('watch', function () {
@@ -70,17 +67,13 @@ gulp.task('imagemin', function(){
 })
 
 
-// // Static server
-// gulp.task('serve', ['sass'], function () {
+gulp.task('serve', function () {
 
-//     browserSync.init({
-//         server: "./app"
-//     });
+    browserSync.init({
+        server: "./"
+    });
 
-//     gulp.watch("app/scss/*.scss", ['sass']);
-//     gulp.watch("app/*.html").on('change', browserSync.reload);
-// });
+    gulp.watch(["*.html", "**/*.js", '**/*.css']).on('change', browserSync.reload);
+});
 
 
-// // Default Task
-// gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
