@@ -11,6 +11,11 @@ var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
 var cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
+var del = require('del');
+
+gulp.task('clean', function () {
+  return del('build');
+});
 
 gulp.task('minify-css', () => {
   return gulp.src(['styles/**/*.css', 'assets/css/**/*.css'], {base: './'})
@@ -23,15 +28,20 @@ gulp.task('copy-font', () => {
     .pipe(gulp.dest('build/styles'))
 })
 
-// Lint Task
-gulp.task('lint', function () {
-    return gulp.src(['js/*.js', 'javascripts/**/*.js'])
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-});
+gulp.task('copy-files', () => {
+    return gulp.src(['favicon/**/*.*', 'robots.txt', 'sitemap.txt', 'app.json', 'CNAME'], {base: './'})
+    .pipe(gulp.dest('build'))
+})
+
+// // Lint Task
+// gulp.task('lint', function () {
+//     return gulp.src(['js/*.js', 'javascripts/**/*.js'])
+//         .pipe(jshint())
+//         .pipe(jshint.reporter('default'));
+// });
 
 // Concatenate & Minify JS
-gulp.task('scripts', function () {
+gulp.task('minify-js',  () => {
     return gulp.src(['js/*.js', 'javascripts/**/*.js'], {base: './'})
         .pipe(uglify())
         .pipe(gulp.dest('build'));
@@ -43,15 +53,9 @@ gulp.task('minify-html', function() {
     .pipe(gulp.dest('build'));
 });
 
-// // Watch Files For Changes
-// gulp.task('watch', function () {
-//     gulp.watch('js/*.js', ['lint', 'scripts']);
-//     gulp.watch('scss/*.scss', ['sass']);
-// });
-
  
-gulp.task('imagemin', function(){
-    return gulp.src('imgs/*')
+gulp.task('imagemin', () => {
+    return gulp.src(['imgs/*', 'assets/img/**/*.*'], {base: './'})
     .pipe(imagemin([
         imagemin.gifsicle({interlaced: true}),
         imagemin.jpegtran({progressive: true}),
@@ -63,11 +67,11 @@ gulp.task('imagemin', function(){
             ]
         })
     ]))
-    .pipe(gulp.dest('build/images'));
+    .pipe(gulp.dest('build'));
 })
 
 
-gulp.task('serve', function () {
+gulp.task('serve', () => {
 
     browserSync.init({
         server: "./"
@@ -77,3 +81,8 @@ gulp.task('serve', function () {
 });
 
 
+gulp.task('build', gulp.series('clean', gulp.parallel('minify-css', 'copy-font', 'minify-js', 'minify-html', 'imagemin', 'copy-files'), () => {
+ browserSync.init({
+        server: "./"
+    });
+}));

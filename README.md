@@ -3,5 +3,5 @@
 To run locally:
 - Clone the repo
 - `npm install`
-- `npm run start` to start local server
+- `gulp serve` to start local server - localhost:3000  
 - To build for production `gulp build`
