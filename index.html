@@ -23,7 +23,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta name="msapplication-TileColor" content="#DE564B">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#DE564B">
@@ -48,10 +48,11 @@
         <![endif]-->
 
     <!-- Google Tag Manager -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
     <link href="../assets/img/favicon.ico" rel="shortcut icon">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/stylesheet-new.css">
     <link rel="stylesheet" href="assets/library/owl-carousal/css/owl.carousel.min.css">
     <!-- Google Tag Manager -->
@@ -150,7 +151,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-6 order-md-2 text-center mb-5">
-                    <img src="assets/img/home/s1/artboard-md.png" alt="Ask Expert" class="img-fluid">
+                    <picture>
+                        <source srcset="assets/img/home/s1/artboard-sm.png" media="(max-width: 992px)">
+                        <img src="assets/img/home/s1/artboard-md.png" alt="Ask Expert" class="img-fluid">
+                    </picture>
                 </div>
                 <div class="col-xs-12 col-md-6 order-md-1 d-flex justify-content-center flex-column align-items-start content-wrap text-center text-md-left px-3">
                     <p class="main-heading font-weight-bold">
@@ -182,17 +186,26 @@
             </p>
             <div class="row">
                 <div class="col-xs-12 col-md-4 mb-5">
-                    <img src="assets/img/home/s2/extend-team-md.png" alt="Extend Team" class="img-fluid mb-5">
+                    <picture>
+                        <source srcset="assets/img/home/s2/extend-team-sm.png" media="(max-width: 1200px)">
+                        <img src="assets/img/home/s2/extend-team-md.png" alt="Extend Team" class="img-fluid mb-5">
+                    </picture>
                     <p class="section-heading-sm font-weight-bold mb-1">Extend Team</p>
                     <p class="content-light">With a subject expert</p>
                 </div>
                 <div class="col-xs-12 col-md-4 mb-5">
-                    <img src="assets/img/home/s2/try-talent-md.png" alt="Try talent" class="img-fluid  mb-5">
+                    <picture>
+                        <source srcset="assets/img/home/s2/try-talent-sm.png" media="(max-width: 1200px)">
+                        <img src="assets/img/home/s2/try-talent-md.png" alt="Extend Team" class="img-fluid mb-5">
+                    </picture>
                     <p class="section-heading-sm font-weight-bold mb-1">Try Talent</p>
                     <p class="content-light">Before hiring full time</p>
                 </div>
                 <div class="col-xs-12 col-md-4 mb-5">
-                    <img src="assets/img/home/s2/outsource-md.png" alt="Outsource" class="img-fluid  mb-5">
+                    <picture>
+                        <source srcset="assets/img/home/s2/outsource-sm.png" media="(max-width: 1200px)">
+                        <img src="assets/img/home/s2/outsource-md.png" alt="Extend Team" class="img-fluid mb-5">
+                    </picture>
                     <p class="section-heading-sm font-weight-bold mb-1">Outsource</p>
                     <p class="content-light">Full software development</p>
                 </div>
@@ -418,7 +431,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-6 text-center text-md-right order-md-2">
-                    <img src="assets/img/home/s6/work-md.png" alt="" class="img-fluid">
+                    <picture>
+                        <source srcset="assets/img/home/s6/work-sm.png" media="(max-width: 1200px)">
+                        <img src="assets/img/home/s6/work-md.png" alt="" class="img-fluid">
+                    </picture>
                 </div>
                 <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
                     <p>Loved working with an expert?</p>
@@ -520,7 +536,7 @@
             bodyElem.classList.remove('bg-fade');
         }
 
-        for(let i = 0; i < menuItem.length; i++) {
+        for (let i = 0; i < menuItem.length; i++) {
             menuItem[i].addEventListener('click', () => {
                 menu.classList.remove('show');
                 bodyElem.classList.remove('bg-fade');

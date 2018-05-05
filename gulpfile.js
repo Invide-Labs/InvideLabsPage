@@ -83,6 +83,6 @@ gulp.task('serve', () => {
 
 gulp.task('build', gulp.series('clean', gulp.parallel('minify-css', 'copy-font', 'minify-js', 'minify-html', 'imagemin', 'copy-files'), () => {
  browserSync.init({
-        server: "./"
+        server: "./build/"
     });
 }));
