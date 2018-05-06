@@ -18,7 +18,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('minify-css', () => {
-  return gulp.src(['styles/**/*.css', 'assets/css/**/*.css'], {base: './'})
+  return gulp.src(['styles/**/*.css', 'assets/css/**/*.css','assets/library/**/*.css'], {base: './'})
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('build'));
 });
@@ -42,7 +42,7 @@ gulp.task('copy-files', () => {
 
 // Concatenate & Minify JS
 gulp.task('minify-js',  () => {
-    return gulp.src(['js/*.js', 'javascripts/**/*.js'], {base: './'})
+    return gulp.src(['js/*.js', 'javascripts/**/*.js', 'assets/library/**/*.js'], {base: './'})
         .pipe(uglify())
         .pipe(gulp.dest('build'));
 });
@@ -81,7 +81,7 @@ gulp.task('serve', () => {
 });
 
 
-gulp.task('build', gulp.series('clean', gulp.parallel('minify-css', 'copy-font', 'minify-js', 'minify-html', 'imagemin', 'copy-files'), () => {
+gulp.task('build', gulp.series('clean', gulp.parallel('minify-css', 'copy-font', 'minify-js', 'minify-html', 'imagemin'), 'copy-files', () => {
  browserSync.init({
         server: "./build/"
     });
