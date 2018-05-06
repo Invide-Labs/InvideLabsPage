@@ -403,7 +403,7 @@ html {
 
 @media (max-width: 768px) {
   .new-home .section-5 {
-    width: 80%;
+    width: auto;
   }
   .new-home .section-5 .process-count {
     font-size: 5em;
@@ -630,6 +630,18 @@ html {
   background-color: #fff;
   border-radius: 10px;
 }
+
+
+@media (max-width: 576px) {
+  .new-home .slider-content-footer li{
+    display: block;
+  }
+  .new-home .slider-content-footer li:not(:last-child)::after{
+    display: block;
+    margin: 5px auto;
+  }
+}
+
 
 .new-home .slider-region a {
   color: #fff;
