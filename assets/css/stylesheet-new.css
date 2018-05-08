@@ -96,6 +96,15 @@ html {
   padding: 0.5em 5em;
   background: #fdf9f9;
   z-index: 999;
+  transition: padding 200ms ease, height 200ms ease;
+}
+
+.new-home .navbar.od.fixed-nav {
+  background: rgba(253, 249, 249, 0.8);
+  color: #0d0f21;
+  padding: .5em 3em;
+  height: 80px;
+  transition: padding 200ms ease, height 200ms ease;
 }
 
 @media (max-width: 992px) {
@@ -328,7 +337,7 @@ html {
 @media (min-width: 1400px) {
   .new-home .section-1 .container {
     max-width: 75%;
-  } 
+  }
 }
 
 .new-home .section-1 .il-input {
@@ -564,6 +573,47 @@ html {
   object-fit: contain;
 }
 
+.owl-carousel button.owl-dot {
+  width: 20px;
+  height: 5px;
+}
+
+.owl-nav {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+}
+
+.owl-nav>button>span {
+  width: 3em;
+  height: 3em;
+  display: inline-block;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.owl-nav .owl-prev {
+  float: left;
+}
+
+.owl-nav .owl-next {
+  float: right;
+}
+
+.owl-nav .owl-left-chev{
+  border-width: 2px 0 0 2px;
+  transform: rotate(-45deg);
+}
+
+.owl-nav .owl-right-chev{
+  border-width: 2px 2px 0 0;
+  transform: rotate(45deg);
+}
+
 @media (max-width: 768px) {
   .new-home .slider-region .owl-carousel .owl-item img {
     height: 100%;
@@ -631,17 +681,15 @@ html {
   border-radius: 10px;
 }
 
-
 @media (max-width: 576px) {
-  .new-home .slider-content-footer li{
+  .new-home .slider-content-footer li {
     display: block;
   }
-  .new-home .slider-content-footer li:not(:last-child)::after{
+  .new-home .slider-content-footer li:not(:last-child)::after {
     display: block;
     margin: 5px auto;
   }
 }
-
 
 .new-home .slider-region a {
   color: #fff;

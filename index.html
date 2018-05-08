@@ -83,7 +83,7 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <nav class="navbar navbar-expand-lg navbar-light od">
+    <nav class="navbar navbar-expand-lg navbar-light od  fixed-top">
         <a class="navbar-brand" href="https://app.invidelabs.com">
             <img src="favicon/favicon-96x96.png" alt="logo" class="brand--icon">
             <span class="brand--text align-middle">
@@ -507,12 +507,12 @@
             autoplay: true,
             nav: true,
             items: 1,
-            nav: false,
+            nav: true,
             lazyLoad: false,
             dots: true,
             dotsEach: true,
-            autoplayHoverPause: true
-
+            autoplayHoverPause: true,
+            navText: ["<span class='owl-left-chev'></span>","<span class='owl-right-chev'></span>"]
         })
 
         var showBtn = document.getElementById('toggle-menu');
@@ -543,10 +543,20 @@
             });
         }
 
-        $('img').bind('contextmenu', function(e) {
+        $('img').bind('contextmenu', function (e) {
             return false;
-        }); 
+        });
 
+        $(window).scroll(() => {
+            var scrollHeight = $(window).scrollTop();
+            var navbar = $('.navbar.od');
+
+            if(scrollHeight > 10) {
+                navbar.addClass('fixed-nav');
+            } else {
+                navbar.removeClass('fixed-nav');
+            }
+        });
     </script>
 </body>
 
