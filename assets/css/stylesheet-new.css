@@ -693,8 +693,8 @@ html {
 
 .new-home .slider-region a {
   color: #fff;
-  font-weight: 400;
   padding: 0 4px;
+  font-size: inherit;
 }
 
 .new-home .slider-region a:hover,
