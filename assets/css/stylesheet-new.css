@@ -576,6 +576,7 @@ html {
 .owl-carousel button.owl-dot {
   width: 20px;
   height: 5px;
+  margin: 0 5px;
 }
 
 .owl-nav {
@@ -643,7 +644,7 @@ html {
 
 .new-home .slider-content-header__title {
   font-size: 3.8em;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .new-home .slider-content-body__review {
