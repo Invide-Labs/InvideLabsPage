@@ -33,8 +33,8 @@
     <link rel="stylesheet" type="text/css" href="styles/icons.css" />
     <link rel="stylesheet" type="text/css" href="styles/component.css" />
     <!--[if IE]>
-  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
     <style>
         .pricing__item a {
@@ -57,10 +57,10 @@
                     
                     <div class="pricing__price">
                         <span class="pricing__anim pricing__anim--1">
-								<span class="pricing__currency">&#8377;</span>30k
+                                <span class="pricing__currency">&#8377;</span>30k
                         </span>
                         <span class="pricing__anim pricing__anim--2">
-								<span class="pricing__period">/month</span>
+                                <span class="pricing__period">/month</span>
                         </span>
                     </div>
                     <p class="pricing__sentence">20 Coding Hours</p>
@@ -72,8 +72,8 @@
              
                     </ul>
                     
-                    <button class="pricing__action" onclick="window.location.href = 'https://app.invidelabs.com/direct/coach'">Recharge</button>
-                    <p><a href="https://play.google.com/store/apps/details?id=in.choice.personality" target="_blank">Sample Work</a></p>	
+                    <button class="pricing__action" onclick="window.location.href = 'https://app.invidelabs.com/direct/coach'">Buy Credits</button>
+                    <p><a href="https://play.google.com/store/apps/details?id=in.choice.personality" target="_blank">Sample Work</a></p>    
                 </div-->
                 <div class="pricing__item">
 
@@ -82,10 +82,10 @@
 
                     <div class="pricing__price">
                         <span class="pricing__anim pricing__anim--1">
-								<span class="pricing__currency">&#8377;</span>99k
+                                <span class="pricing__currency">&#8377;</span>99k
                         </span>
                         <span class="pricing__anim pricing__anim--2">
-								<span class="pricing__period">/month</span>
+                                <span class="pricing__period">/month</span>
                         </span>
                     </div>
                     <p class="pricing__sentence">50 Productive Coding Hours</p>
@@ -97,7 +97,7 @@
                         <li class="pricing__feature">Free Productivity Tracking And Tools</li>
                     </ul>
 
-                    <button class="pricing__action" onclick="window.location.href = 'https://app.invidelabs.com/direct/coach'">Recharge</button>
+                    <button id="rzp-button1" class="pricing__action">Buy Credits</button>
                     <p><a href="https://play.google.com/store/apps/details?id=in.choice.personality" target="_blank">Sample Work</a></p>
                 </div>
                 <div class="pricing__item">
@@ -107,10 +107,10 @@
 
                     <div class="pricing__price">
                         <span class="pricing__anim pricing__anim--1">
-								<span class="pricing__currency">&#8377;</span>199k
+                                <span class="pricing__currency">&#8377;</span>199k
                         </span>
                         <span class="pricing__anim pricing__anim--2">
-								<span class="pricing__period">/month</span>
+                                <span class="pricing__period">/month</span>
                         </span>
                     </div>
                     <p class="pricing__sentence">100 Productive Coding Hours</p>
@@ -121,7 +121,7 @@
                         <br/>
                         <li class="pricing__feature">Free Productivity Tracking And Tools</li>
                     </ul>
-                    <button class="pricing__action" onclick="window.location.href = 'https://app.invidelabs.com/direct/coach'">Recharge</button>
+                    <button class="pricing__action" id="rzp-button2">Buy Credits</button>
                     <p><a href="https://play.google.com/store/apps/details?id=com.orderchhotu.www" target="_blank">Sample Work</a></p>
                 </div>
                 <div class="pricing__item">
@@ -192,5 +192,37 @@
         </div>
         <!-- /container -->
 </body>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+    var accountId = "";
+    var options = {
+        "key": "rzp_live_ubmf48DImB5W2E",
+        "amount": "2000", // 2000 paise = INR 20
+        "name": "Invide Innovation Labs Pvt. Ltd.",
+        "description": "Buy credits",
+        "image": "https://www.invidelabs.com/imgs/logo.png",
+        "handler": function(response) {
+            window.location = "https://flow.invidelabs.com/signup";
+        },
+        "theme": {
+            "color": "#000000"
+        }
+    };
+
+    document.getElementById('rzp-button1').onclick = function(e) {
+        options.amount = 9900000;
+        var rzp = new Razorpay(options);
+        rzp.open();
+        e.preventDefault();
+    }
+
+    document.getElementById('rzp-button2').onclick = function(e) {
+        options.amount = 19900000;
+        var rzp = new Razorpay(options);
+        rzp.open();
+        e.preventDefault();
+    }
+</script>
 
 </html>
