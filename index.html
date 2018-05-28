@@ -24,9 +24,9 @@
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
-    <meta name="msapplication-TileColor" content="#DE564B">
+    <meta name="msapplication-TileColor" content="#FD011D">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#DE564B">
+    <meta name="theme-color" content="#FD011D">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@Invide_Labs">
@@ -267,9 +267,12 @@
             <p class="section-heading highlight font-weight-bold text-bg text-bg-dark" data-content="Success Stories">Success Stories</p>
             <div class="slider-region">
                 <div class="owl-carousel owl-theme">
-                    <div class="item container">
+                    <div class="item container" data-attr="qikstay">
                         <div class="row">
-                            <div class="col-xs-12 col-md-7 d-flex justify-content-around flex-column align-self-start text-center text-md-left item-inner">
+                            <div class="col-xs-12 col-md-5 order-md-2 img-col">
+                                <img src="assets/img/home/s4/0 Qikstay.png" alt="Qikstay app">
+                            </div>
+                            <div class="col-xs-12 col-md-7 d-flex justify-content-around flex-column align-self-start text-center text-md-left item-inner order-md-1">
                                 <div class="slider-content-header">
                                     <!-- <p class="slider-content-header__type">Hotel Booking App</p> -->
                                     <p class="slider-content-header__title">Qikstay App</p>
@@ -287,14 +290,15 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-5">
-                                <img src="assets/img/home/s4/0 Qikstay.png" alt="Qikstay app">
-                            </div>
+
                         </div>
                     </div>
-                    <div class="item container">
+                    <div class="item container" data-attr="designbids">
                         <div class="row">
-                            <div class="col-xs-12 col-md-7 d-flex justify-content-around flex-column align-self-start text-center text-md-left item-inner">
+                            <div class="col-xs-12 col-md-5 order-md-2 img-col">
+                                <img src="assets/img/home/s4/1 designbids.png" alt="Desingbids app">
+                            </div>
+                            <div class="col-xs-12 col-md-7 d-flex justify-content-around flex-column align-self-start text-center text-md-left item-inner order-md-1">
                                 <div class="slider-content-header">
                                     <p class="slider-content-header__title">Designbids</p>
                                 </div>
@@ -312,14 +316,15 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-5">
-                                <img src="assets/img/home/s4/1 designbids.png" alt="Desingbids app">
-                            </div>
+
                         </div>
                     </div>
-                    <div class="item container">
+                    <div class="item container" data-attr="pepup">
                         <div class="row">
-                            <div class="col-xs-12 col-md-7 d-flex justify-content-around flex-column align-self-start text-center text-md-left item-inner">
+                            <div class="col-xs-12 col-md-5 order-md-2 img-col">
+                                <img src="assets/img/home/s4/5 pepup.png" alt="Pepup app">
+                            </div>
+                            <div class="col-xs-12 col-md-7 d-flex justify-content-around flex-column align-self-start text-center text-md-left item-inner order-md-1">
                                 <div class="slider-content-header">
                                     <p class="slider-content-header__title">Party Messenger</p>
                                 </div>
@@ -333,9 +338,6 @@
                                         <li>Launched within a month</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-xs-12 col-md-5">
-                                <img src="assets/img/home/s4/5 pepup.png" alt="Pepup app">
                             </div>
                         </div>
                     </div>
@@ -402,7 +404,7 @@
                     </div>
                 </div>
                 <div class="row mb-5 mt-5 pt-5">
-                    <div class="col-xs-12 col-sm-6 text-center text-md-right mb-5 px-3">
+                    <div class="col-xs-12 col-sm-6 text-center text-md-right mb-3 px-3">
                         <a class="btn btn-danger rounded-0 btn-lg btn-pa btn-w-xs-fixed" href="http://workwith.invidelabs.com" target="_blank">
                             Hire Invider for a month
                         </a>
@@ -542,6 +544,19 @@
         closeBtn.addEventListener('click', () => {
             closeMenu();
         });
+
+        var owl = $('.owl-carousel');
+        owl.owlCarousel();
+        // Listen to owl events:
+        owl.on('change.owl.carousel', function (event) {
+            let sliderRegion = $('.slider-region');
+            let previousActive = $('.owl-item.active > div').attr('data-attr') + '-bg';
+            sliderRegion.removeClass(previousActive)
+            setTimeout(() => {
+                let attrClass = $('.owl-item.active > div').attr('data-attr') + '-bg';
+                sliderRegion.addClass(attrClass);
+            }, 0);
+        })
 
         function closeMenu() {
             menu.classList.remove('show');
