@@ -403,7 +403,7 @@
                 </div>
                 <div class="row mb-5 mt-5 pt-5">
                     <div class="col-xs-12 col-sm-6 text-center text-md-right mb-5 px-3">
-                        <a class="btn btn-outline-danger rounded-0 btn-lg btn-pa btn-w-xs-fixed" href="http://workwith.invidelabs.com" target="_blank">
+                        <a class="btn btn-danger rounded-0 btn-lg btn-pa btn-w-xs-fixed" href="http://workwith.invidelabs.com" target="_blank">
                             Hire Invider for a month
                         </a>
                     </div>
@@ -450,21 +450,33 @@
     <section class="section-7 sec-py download">
         <div class="container text-center">
             <p class="download-heading">Stay connected with Inviders</h3>
-                <p class="download-subheading">Download Desktop App</p>
-                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
-                    <a class="btn btn-danger rounded-0 btn-lg btn-pa btn-download" href="http://download.invidelabs.com/download/latest/windows_64"
-                        target="_blank">
-                        <i class="fab fa-windows mr-2 fa-lg"></i>
-                        Windows
-                    </a>
-                    <a class="btn btn-danger rounded-0 btn-lg btn-pa btn-download mx-4" target="_blank" href="http://download.invidelabs.com/download/latest/osx">
-                        <i class="fab fa-apple mr-2 fa-lg"></i>
-                        macOS
-                    </a>
-                    <a class="btn btn-danger rounded-0 btn-lg btn-pa btn-download" target="_blank" href="http://download.invidelabs.com/download/latest/linux_64">
-                        <i class="fab fa-linux mr-2 fa-lg"></i>
-                        Ubuntu
-                    </a>
+                <div id="il-desktop-only">
+                    <p class="download-subheading">Download Desktop App</p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                        <a class="btn btn-danger rounded-0 btn-lg btn-pa btn-download" href="http://download.invidelabs.com/download/latest/windows_64"
+                            target="_blank">
+                            <i class="fab fa-windows mr-2 fa-lg"></i>
+                            Windows
+                        </a>
+                        <a class="btn btn-danger rounded-0 btn-lg btn-pa btn-download mx-4" target="_blank" href="http://download.invidelabs.com/download/latest/osx">
+                            <i class="fab fa-apple mr-2 fa-lg"></i>
+                            macOS
+                        </a>
+                        <a class="btn btn-danger rounded-0 btn-lg btn-pa btn-download" target="_blank" href="http://download.invidelabs.com/download/latest/linux_64">
+                            <i class="fab fa-linux mr-2 fa-lg"></i>
+                            Ubuntu
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="px-3" id="il-mobile-only">
+                    <div class="col-xs-12 col-md-12 col-lg-10 col-xl-8 pr-3">
+                        <div class="share-email-wrapper">
+                            <input type="email" class="form-control il-input" placeholder="Share your email">
+                            <a class="btn btn-danger rounded-0 btn-lg btn-hire-expert" href="http://workwith.invidelabs.com">Subscribe</a>
+                        </div>
+                    </div>
                 </div>
         </div>
     </section>
@@ -512,7 +524,7 @@
             dots: true,
             dotsEach: true,
             autoplayHoverPause: true,
-            navText: ["<span class='owl-left-chev'></span>","<span class='owl-right-chev'></span>"]
+            navText: ["<span class='owl-left-chev'></span>", "<span class='owl-right-chev'></span>"]
         })
 
         var showBtn = document.getElementById('toggle-menu');
@@ -551,12 +563,34 @@
             var scrollHeight = $(window).scrollTop();
             var navbar = $('.navbar.od');
 
-            if(scrollHeight > 10) {
+            if (scrollHeight > 10) {
                 navbar.addClass('fixed-nav');
             } else {
                 navbar.removeClass('fixed-nav');
             }
         });
+
+        let detectmob = () => {
+            if (navigator.userAgent.match(/Android/i) ||
+                navigator.userAgent.match(/webOS/i) ||
+                navigator.userAgent.match(/iPhone/i) ||
+                navigator.userAgent.match(/iPad/i) ||
+                navigator.userAgent.match(/iPod/i) ||
+                navigator.userAgent.match(/BlackBerry/i) ||
+                navigator.userAgent.match(/Windows Phone/i)
+            ) {
+                console.log('mobile');
+                return true;
+            } else {
+                console.log('not mobile');
+                return false;
+            }
+        }
+        if (detectmob()) {
+            $('#il-desktop-only').css('display', 'none').empty();
+        } else {
+            $('#il-mobile-only').css('display', 'none').empty();
+        }
     </script>
 </body>
 
