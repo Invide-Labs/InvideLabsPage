@@ -96,6 +96,28 @@ html {
   padding: 0.5em 5em;
   background: #fdf9f9;
   z-index: 999;
+  transition: padding 200ms ease, height 200ms ease;
+}
+
+.new-home .navbar.od.fixed-nav {
+  background: rgba(253, 249, 249, 0.8);
+  color: #0d0f21;
+  padding: .5em 3em;
+  height: 50px;
+  transition: padding 200ms ease, height 200ms ease;
+}
+
+.new-home .navbar.od.fixed-nav .btn-pa {
+  padding: 5px 10px;
+  font-size: 1.1em;
+}
+
+.new-home .navbar.od.fixed-nav .brand--text {
+  display: none;
+}
+
+.new-home .navbar.od.fixed-nav a.nav-link {
+  font-size: 1em !important;
 }
 
 @media (max-width: 992px) {
@@ -213,7 +235,7 @@ html {
 }
 
 .new-home .btn.btn-pa,
-.new-home .section-1 .btn.btn-hire-expert,
+.new-home .btn.btn-hire-expert,
 .new-home .section-1 .btn.btn-apply-as-expert {
   padding: 12px 30px;
 }
@@ -302,7 +324,7 @@ html {
 
 .new-home .section-1 {
   background: #fdf9f9;
-  height: calc(100vh - 100px);
+  height: 100vh;
 }
 
 @media (max-width: 992px) {
@@ -328,10 +350,10 @@ html {
 @media (min-width: 1400px) {
   .new-home .section-1 .container {
     max-width: 75%;
-  } 
+  }
 }
 
-.new-home .section-1 .il-input {
+.new-home .il-input {
   border: 0;
   height: 64px;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.07);
@@ -340,17 +362,17 @@ html {
 }
 
 @media (max-width: 576px) {
-  .new-home .section-1 .il-input {
+  .new-home .il-input {
     width: 100%;
   }
 }
 
-.new-home .section-1 .share-email-wrapper {
+.new-home .share-email-wrapper {
   position: relative;
   margin-top: 70px;
 }
 
-.new-home .section-1 .btn-hire-expert {
+.new-home .btn-hire-expert {
   position: absolute;
   right: -5%;
   top: 50%;
@@ -556,12 +578,61 @@ html {
   .new-home .slider-region .item-inner {
     transform: none;
   }
+  .item .img-col {
+    height: 80vh;
+  }
 }
 
 .new-home .slider-region .owl-carousel .owl-item img {
   margin: 0 auto;
   height: 80%;
   object-fit: contain;
+}
+
+.owl-carousel button.owl-dot {
+  width: 20px;
+  height: 5px;
+  margin: 0 5px;
+}
+
+.owl-nav {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+}
+
+.owl-nav>button {
+  outline: none;
+}
+
+.owl-nav>button>span {
+  width: 3em;
+  height: 3em;
+  display: inline-block;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.owl-nav .owl-prev {
+  float: left;
+}
+
+.owl-nav .owl-next {
+  float: right;
+}
+
+.owl-nav .owl-left-chev {
+  border-width: 2px 0 0 2px;
+  transform: rotate(-45deg);
+}
+
+.owl-nav .owl-right-chev {
+  border-width: 2px 2px 0 0;
+  transform: rotate(45deg);
 }
 
 @media (max-width: 768px) {
@@ -587,13 +658,23 @@ html {
   margin-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+  .new-home .slider-content-header {
+    margin-bottom: 20px;
+  }
+  .new-home .slider-content-body {
+    margin-bottom: 30px;
+    font-size: .9em;
+  }
+}
+
 .new-home .slider-content-header__type {
   font-size: 1.4em;
 }
 
 .new-home .slider-content-header__title {
   font-size: 3.8em;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .new-home .slider-content-body__review {
@@ -620,6 +701,12 @@ html {
   font-size: 1.4em;
 }
 
+@media (max-width: 768px) {
+  .new-home .slider-content-footer {
+    margin-bottom: 20px;
+  }
+}
+
 .new-home .slider-content-footer li:not(:last-child)::after {
   content: '';
   display: inline-block;
@@ -631,22 +718,20 @@ html {
   border-radius: 10px;
 }
 
-
 @media (max-width: 576px) {
-  .new-home .slider-content-footer li{
+  .new-home .slider-content-footer li {
     display: block;
   }
-  .new-home .slider-content-footer li:not(:last-child)::after{
+  .new-home .slider-content-footer li:not(:last-child)::after {
     display: block;
     margin: 5px auto;
   }
 }
 
-
 .new-home .slider-region a {
   color: #fff;
-  font-weight: 400;
   padding: 0 4px;
+  font-size: inherit;
 }
 
 .new-home .slider-region a:hover,
@@ -748,4 +833,24 @@ html {
 
 #on-menu-show.bg-fade {
   display: block;
+}
+
+#il-mobile-only>div {
+  margin: 0 auto;
+}
+
+#il-mobile-only .share-email-wrapper {
+  margin-top: 0;
+}
+
+.new-home .pepup-bg {
+  background-color: #FFC107;
+}
+
+.new-home .designbids-bg {
+  background-color: #53D37D;
+}
+
+.new-home .qikstay-bg {
+  background-color: #5988fe;
 }
