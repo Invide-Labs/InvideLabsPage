@@ -6,8 +6,9 @@
   var showModal = true;
   var validNavigation = false;
   var showOnClose = false;
-  var showOnScroll = true;
+  var showOnScroll = false;
   var showOnTimeout = false;
+  var timeoutDuration = 60000;
   var totalScrollHeight = document.getElementsByTagName('body')[0].scrollHeight;
 
   if (showOnScroll && showModal) {
@@ -22,7 +23,7 @@
   if (showOnTimeout && showModal) {
       var timeout = window.setTimeout(function () {
           modal.open();
-      }, 30000);
+      }, timeoutDuration);
   }
 
   if (showOnClose) {
