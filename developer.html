@@ -156,23 +156,31 @@
         <div class="row centered-child-container">
             <div class="col-md-10 col-offset-1">
                 <div class="row centered-child-container">
-                    <div class="col-md-3 centered-child-container">
-                        <span>
-                        <span class="matric-value">10000</span><br>
-                        <span class="matric-label">Applications Processed</span>
-                        </span>
+                    <div class="col-md-4 centered-child-container">
+                        <div>
+                            <div class="matric-value">
+                                <span class="counter int">10000</span>
+                            </div>
+                            <span class="matric-label">Applications Processed</span>
+                        </div>
                     </div>
-                    <div class="col-md-3 centered-child-container">
-                        <span>
-                                <span class="matric-value">1.2%</span><br>
-                        <span class="matric-label">Acceptance Rate</span>
-                        </span>
+                    <div class="col-md-4 centered-child-container">
+                        <div>
+                            <div class="matric-value">
+                                <span class="counter decimal">1.2</span>
+                                <span>%</span>
+                            </div>
+                            <span class="matric-label">Acceptance Rate</span>
+                        </div>
                     </div>
-                    <div class="col-md-3 centered-child-container">
-                        <span>
-                                <span class="matric-value">300 yrs</span><br>
-                        <span class="matric-label">Combined Exp. Of Community</span>
-                        </span>
+                    <div class="col-md-4 centered-child-container">
+                        <div>
+                            <div class="matric-value">
+                                <span class="counter int">300</span>
+                                <span>yrs</span>
+                            </div>
+                            <span class="matric-label">Combined Exp. Of Community</span>
+                        </div>
                     </div>
                 </div><br/><br/>
                 <div style="text-align: center; color: grey; font-size: 60%;">Last stats calculated on: Mar 27, 2018</div>
@@ -402,6 +410,30 @@
                 window.location.href = 'http://download.invidelabs.com/download/latest/osx';
             }
         })
+
+        $('.counter.int').each(function () {
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+
+        $('.counter.decimal').each(function () {
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now*100)/100);
+                }
+            });
+        });
     });
 </script>
 
