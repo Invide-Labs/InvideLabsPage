@@ -411,29 +411,39 @@
             }
         })
 
-        $('.counter.int').each(function () {
-            $(this).prop('Counter',0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: 2000,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
-            });
-        });
+        var animateCount = true;
 
-        $('.counter.decimal').each(function () {
-            $(this).prop('Counter',0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: 2000,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now*100)/100);
+        if(animateCount) {
+            window.addEventListener('scroll', function() {
+                var scrollY = window.scrollY;
+                if(scrollY > 50 && animateCount){
+                    animateCount = false;
+                    $('.counter.int').each(function () {
+                        $(this).prop('Counter',0).animate({
+                            Counter: $(this).text()
+                        }, {
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now));
+                            }
+                        });
+                    });
+
+                    $('.counter.decimal').each(function () {
+                        $(this).prop('Counter',0).animate({
+                            Counter: $(this).text()
+                        }, {
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now*100)/100);
+                            }
+                        });
+                    });
                 }
             });
-        });
+        }
     });
 </script>
 
