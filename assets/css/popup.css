@@ -1,0 +1,35 @@
+.tingle-modal__close {
+    font-size: 0;
+}
+
+.tingle-modal__closeIcon {
+    font-size: 50px;
+}
+
+.tingle-modal-box {
+    width: auto;
+    padding: 1.5em;
+    background-color: #efefef;
+}
+
+.tingle-modal-box__content {
+    padding: 2rem;
+    margin-right: 1.5em;
+    text-align: center;
+}
+
+.tingle-modal-box__content .share-email-wrapper {
+    width: 550px;
+    margin: 50px auto 0;
+}
+
+@media (max-width: 768px) {
+    .tingle-modal-box__content .share-email-wrapper {
+        width: 100%;
+    }
+}
+
+.tingle-modal-box__content .popup-heading {
+    font-size: 3em;
+    font-weight: 500;
+}
