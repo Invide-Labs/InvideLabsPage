@@ -379,6 +379,17 @@ html {
   transform: translateY(-50%);
 }
 
+@media (max-width: 576px) {
+  .new-home .btn-hire-expert {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transform: translate(0, 0);
+    margin-top: 10px;
+  }
+}
+
 .new-home .section-1 .btn-apply-as-expert {
   margin-top: 50px;
 }
