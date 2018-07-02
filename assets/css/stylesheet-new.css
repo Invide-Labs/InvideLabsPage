@@ -388,6 +388,9 @@ html {
     transform: translate(0, 0);
     margin-top: 10px;
   }
+  .new-home .il-input {
+    height: 50px;
+  }
 }
 
 .new-home .section-1 .btn-apply-as-expert {
