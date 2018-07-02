@@ -173,12 +173,12 @@
                     <div class="row w-100">
                         <div class="col-xs-12 col-md-12 col-lg-10 col-xl-8 pr-3">
                             <div class="share-email-wrapper">
-                                <form method="POST" id="zcampaignOptinForm" action="https://zcs1.maillist-manage.com/campaigns/weboptin.zc" target="_zcSignup">
+                                <form method="POST" id="zcampaignOptinForm-1" action="https://zcs1.maillist-manage.com/campaigns/weboptin.zc" target="_zcSignup">
 
                                     <input name="CONTACT_EMAIL" changetype="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="email" required="true" id="CONTACT_EMAIL"
                                         class="form-control il-input" placeholder="Share your email">
 
-                                    <button class="btn btn-danger rounded-0 btn-lg btn-hire-expert" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="submit">Hire Expert</button>
+                                    <button class="btn btn-danger rounded-0 btn-lg btn-hire-expert" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin-1" type="submit">Hire Expert</button>
 
                                     <!-- Do not edit the below Zoho Campaigns hidden tags -->
                                     <input type="hidden" id="fieldBorder" value="rgb(235, 235, 235)">
@@ -212,7 +212,6 @@
             </div>
         </div>
     </section>
-    <div class="insert-here"></div>
     <!-- end of section-1 -->
 
     <!-- start of section 2 -->
@@ -492,12 +491,12 @@
                 <div class="px-3">
                     <div class="col-xs-12 col-md-12 col-lg-10 col-xl-8 pr-3" style="margin: 0 auto;">
                         <div class="share-email-wrapper" style="margin-top:30px">
-                            <form method="POST" id="zcampaignOptinForm" action="https://zcs1.maillist-manage.com/campaigns/weboptin.zc" target="_zcSignup">
+                            <form method="POST" id="zcampaignOptinForm-2" action="https://zcs1.maillist-manage.com/campaigns/weboptin.zc" target="_zcSignup">
 
                                 <input name="CONTACT_EMAIL" changetype="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="email" required="true" id="CONTACT_EMAIL"
                                     class="form-control il-input" placeholder="Share your email">
 
-                                <button class="btn btn-danger rounded-0 btn-lg btn-hire-expert" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="submit">Subscribe</button>
+                                <button class="btn btn-danger rounded-0 btn-lg btn-hire-expert" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin-2" type="submit">Subscribe</button>
 
                                 <!-- Do not edit the below Zoho Campaigns hidden tags -->
                                 <input type="hidden" id="fieldBorder" value="rgb(235, 235, 235)">
@@ -556,6 +555,9 @@
                 </a>
                 <a href="https://twitter.com/invide_labs" class="social-icon twitter" target="_blank">
                     <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://wa.me/918826701901?text=Hi%20there%2c%20I%20have%20a%20query%20about%20Invide">
+                    <img src="imgs/whatsapp.png" alt="" style="height: 17px; vertical-align: sub">
                 </a>
             </div>
             <div class="col-xs-12 col-md-6 text-center text-md-right">
@@ -668,14 +670,6 @@
         } else {
             $('#il-mobile-only').css('display', 'none').empty();
         }
-
-        var subscribeHtml = '<div class="share-email-wrapper"><form method="POST" id="zcampaignOptinForm" action="https://zcs1.maillist-manage.com/campaigns/weboptin.zc" target="_zcSignup"><input name="CONTACT_EMAIL" changetype="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="email" required="true" id="CONTACT_EMAIL" class="form-control il-input" placeholder="Share your email"><button class="btn btn-danger rounded-0 btn-lg btn-hire-expert" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="submit">Subscribe</button><input type="hidden" id="fieldBorder" value="rgb(235, 235, 235)"><input type="hidden" id="submitType" name="submitType" value="optinCustomView"><input type="hidden" id="lD" name="lD" value="139e6261a7c7df39"><input type="hidden" name="emailReportId" id="emailReportId" value=""><input type="hidden" id="formType" name="formType" value="QuickForm"><input type="hidden" name="zx" id="cmpZuid" value="123bfa3b5"><input type="hidden" name="zcvers" value="2.0"><input type="hidden" name="oldListIds" id="allCheckedListIds" value=""><input type="hidden" id="mode" name="mode" value="OptinCreateView"><input type="hidden" id="zcld" name="zcld" value="139e6261a7c7df39"><input type="hidden" id="document_domain" value="zoho.com"><input type="hidden" id="zc_Url" value="zcs1.maillist-manage.com"><input type="hidden" id="new_optin_response_in" value="1"><input type="hidden" id="duplicate_optin_response_in" value="1"><input type="hidden" name="zc_trackCode" id="zc_trackCode" value="" onload=""><input type="hidden" id="zc_formIx" name="zc_formIx" value="eda160ea23c299e200698eb654dc9a26bed815d63f8e906a"><input type="hidden" id="scriptless" name="scriptless" value="yes"></form></div>'
-
-        $('.insert-here').append(subscribeHtml);
-        $('.insert-here > div').css({
-            'width': '500px',
-            'margin': '30px auto'
-        });
     </script>
 </body>
 

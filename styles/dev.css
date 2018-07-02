@@ -204,3 +204,11 @@ body {
 @media (max-width: 540px) {
     font-size: 250%;
 }
+
+@media (min-width: 992px) {
+    .dev-head {
+        background: url(../imgs/developer-3x.png) no-repeat;
+        background-position: 100%;
+        background-size: 30%;
+    }
+}

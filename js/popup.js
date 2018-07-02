@@ -5,9 +5,16 @@
    */
   var showModal = true;
   var validNavigation = false;
+  var elemId = 'show-popup-view';
+  if($('#' + elemId).length) {
+      var elemOffsetTop = $('#' + elemId).offset().top;
+  }
+
+
   var showOnClose = false;
   var showOnScroll = false;
-  var showOnTimeout = true;
+  var showOnTimeout = false;
+  var showOnElemVisibility = true;
   var timeoutDuration = 60000;
   var totalScrollHeight = document.getElementsByTagName('body')[0].scrollHeight;
 
@@ -19,6 +26,16 @@
           }
       })
   }
+
+
+  if (showOnElemVisibility && showModal) {
+    window.addEventListener('scroll', function (e) {
+        if (this.scrollY > elemOffsetTop && showModal) {
+            showModal = false;
+            modal.open();
+        }
+    })
+}
 
   if (showOnTimeout && showModal) {
       var timeout = setTimeout(function () {
