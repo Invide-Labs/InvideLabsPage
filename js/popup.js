@@ -3,7 +3,8 @@
    * It is based on the file menstioned by Daniel Melo.
    * Reference: http://stackoverflow.com/questions/1921941/close-kill-the-session-when-the-browser-or-tab-is-closed
    */
-  var showModal = true;
+  console.log(sessionStorage.getItem('sessionModal'));
+  var showModal = sessionStorage.getItem('sessionModal') == null ? true : false;
   var validNavigation = false;
   var elemId = 'show-popup-view';
   if($('#' + elemId).length) {
@@ -120,6 +121,7 @@
       },
       onClose: function () {
           console.log('modal closed');
+          sessionStorage.setItem('sessionModal', false);
           showModal = false;
       },
       beforeClose: function () {

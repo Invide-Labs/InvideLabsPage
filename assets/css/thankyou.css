@@ -1,2 +1,5 @@
 @import url('./variables.css');
 
+body{
+    background-color: var(--il-primary);
+}
