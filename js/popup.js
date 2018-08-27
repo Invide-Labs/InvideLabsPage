@@ -4,10 +4,11 @@
    * Reference: http://stackoverflow.com/questions/1921941/close-kill-the-session-when-the-browser-or-tab-is-closed
    */
   console.log(sessionStorage.getItem('sessionModal'));
-  var showModal = sessionStorage.getItem('sessionModal') == null ? true : false;
+  var ifSubscribed = document.cookie == 'subscribed=true' ? true : false;
+  var showModal = (sessionStorage.getItem('sessionModal') == null && !ifSubscribed) ? true : false;
   var validNavigation = false;
   var elemId = 'show-popup-view';
-  if($('#' + elemId).length) {
+  if ($('#' + elemId).length) {
       var elemOffsetTop = $('#' + elemId).offset().top;
   }
 
@@ -21,7 +22,7 @@
 
   if (showOnScroll && showModal) {
       window.addEventListener('scroll', function (e) {
-          if (this.scrollY > (totalScrollHeight/2) && showModal) {
+          if (this.scrollY > (totalScrollHeight / 2) && showModal) {
               showModal = false;
               modal.open();
           }
@@ -30,13 +31,13 @@
 
 
   if (showOnElemVisibility && showModal) {
-    window.addEventListener('scroll', function (e) {
-        if (this.scrollY > elemOffsetTop && showModal) {
-            showModal = false;
-            modal.open();
-        }
-    })
-}
+      window.addEventListener('scroll', function (e) {
+          if (this.scrollY > elemOffsetTop && showModal) {
+              showModal = false;
+              modal.open();
+          }
+      })
+  }
 
   if (showOnTimeout && showModal) {
       var timeout = setTimeout(function () {
@@ -132,4 +133,12 @@
   });
 
   // set content
-  modal.setContent('<div class="popup-heading">Be the first one to hear about the latest updates</div><div class="share-email-wrapper" style="margin-bottom: 20px;"><form method="POST" id="zcampaignOptinForm" action="https://zcs1.maillist-manage.com/campaigns/weboptin.zc" target="_zcSignup"><input name="CONTACT_EMAIL" changetype="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="email" required="true" id="CONTACT_EMAIL" class="form-control il-input" placeholder="Share your email"><button class="btn btn-danger rounded-0 btn-lg btn-hire-expert" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="submit">Subscribe</button><input type="hidden" id="fieldBorder" value="rgb(235, 235, 235)"><input type="hidden" id="submitType" name="submitType" value="optinCustomView"><input type="hidden" id="lD" name="lD" value="139e6261a7c7df39"><input type="hidden" name="emailReportId" id="emailReportId" value=""><input type="hidden" id="formType" name="formType" value="QuickForm"><input type="hidden" name="zx" id="cmpZuid" value="123bfa3b5"><input type="hidden" name="zcvers" value="2.0"><input type="hidden" name="oldListIds" id="allCheckedListIds" value=""><input type="hidden" id="mode" name="mode" value="OptinCreateView"><input type="hidden" id="zcld" name="zcld" value="139e6261a7c7df39"><input type="hidden" id="document_domain" value="zoho.com"><input type="hidden" id="zc_Url" value="zcs1.maillist-manage.com"><input type="hidden" id="new_optin_response_in" value="1"><input type="hidden" id="duplicate_optin_response_in" value="1"><input type="hidden" name="zc_trackCode" id="zc_trackCode" value="" onload=""><input type="hidden" id="zc_formIx" name="zc_formIx" value="eda160ea23c299e200698eb654dc9a26bed815d63f8e906a"><input type="hidden" id="scriptless" name="scriptless" value="yes"></form></div><span style="font-size: 12px; cursor: pointer; position: absolute; right: 10px; bottom: 10px; color: #616161;" onClick="modal.close()">No thanks</span>');
+  modal.setContent('<div class="popup-heading">Be the first one to hear about the latest updates</div><div class="share-email-wrapper" style="margin-bottom: 20px;"><form method="POST" id="zcampaignOptinForm" action="https://zcs1.maillist-manage.com/campaigns/weboptin.zc" target="_zcSignup" onsubmit="saveSubscriptionCookie()"><input name="CONTACT_EMAIL" changetype="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="email" required="true" id="CONTACT_EMAIL" class="form-control il-input" placeholder="Share your email"><button class="btn btn-danger rounded-0 btn-lg btn-hire-expert" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="submit">Subscribe</button><input type="hidden" id="fieldBorder" value="rgb(235, 235, 235)"><input type="hidden" id="submitType" name="submitType" value="optinCustomView"><input type="hidden" id="lD" name="lD" value="139e6261a7c7df39"><input type="hidden" name="emailReportId" id="emailReportId" value=""><input type="hidden" id="formType" name="formType" value="QuickForm"><input type="hidden" name="zx" id="cmpZuid" value="123bfa3b5"><input type="hidden" name="zcvers" value="2.0"><input type="hidden" name="oldListIds" id="allCheckedListIds" value=""><input type="hidden" id="mode" name="mode" value="OptinCreateView"><input type="hidden" id="zcld" name="zcld" value="139e6261a7c7df39"><input type="hidden" id="document_domain" value="zoho.com"><input type="hidden" id="zc_Url" value="zcs1.maillist-manage.com"><input type="hidden" id="new_optin_response_in" value="1"><input type="hidden" id="duplicate_optin_response_in" value="1"><input type="hidden" name="zc_trackCode" id="zc_trackCode" value="" onload=""><input type="hidden" id="zc_formIx" name="zc_formIx" value="eda160ea23c299e200698eb654dc9a26bed815d63f8e906a"><input type="hidden" id="scriptless" name="scriptless" value="yes"></form></div><span style="font-size: 12px; cursor: pointer; position: absolute; right: 10px; bottom: 10px; color: #616161;" onClick="modal.close()">No thanks</span>');
+
+  function saveSubscriptionCookie() {
+      var today = new Date();
+      var expiry = new Date(today.getTime() + 365 * 24 * 3600 * 1000);
+      document.cookie = "subscribed=" + escape('true') + "; path=/; expires=" + expiry.toGMTString();
+      modal.close();
+      return true;
+  }
