@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Invide-Labs/InvideLabsPage#readme",
   "devDependencies": {
-    "browser-sync": "^2.23.7",
+    "browser-sync": "^2.24.6",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^3.9.3",
@@ -30,7 +30,7 @@
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^6.0.0",
-    "jshint": "^2.9.5"
+    "jshint": "^2.9.6"
   },
   "dependencies": {
     "gulp-htmlmin": "^4.0.0"

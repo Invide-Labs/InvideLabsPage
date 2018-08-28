@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+
+html {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+::-moz-selection {
+  background: #ff2d55;
+}
+
+::selection {
+  background: #ff2d55;
+  color: #fff;
+}
+
+a {
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+a.il-logo:hover,
+a.il-logo:focus {
+  text-decoration: none;
+}
+
+a.default-link {
+  color: #ff2d55;
+  transition: all 200ms ease;
+  font-size: 1em;
+}
+
+a.default-link:hover,
+a.default-link:focus {
+  text-decoration: none;
+  color: #fff;
+  text-decoration: #ff2d55;
+  background: #ff2d55;
+  transition: all 200ms ease;
+}
+
+.brand--icon {
+  width: 34px;
+  margin-right: 10px;
+}
+
+.brand--text {
+  font-size: 1.6em;
+  font-weight: 500;
+  color: #ff2d55;
+}
+
+.il-accordion .card {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.il-accordion .card-header button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 1.4em;
+}
+
+.il-accordion .card-body {
+  font-size: 1.6em;
+}
+
+.il-accordion .card-body a {
+  font-size: 1em;
+}
