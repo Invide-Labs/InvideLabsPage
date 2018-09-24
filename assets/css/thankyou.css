@@ -1,4 +1,5 @@
 @import url('./variables.css');
+
 .section-main {
     position: absolute;
     height: 100%;
@@ -14,33 +15,33 @@
     background-color: #efefef;
 }
 
-.section-faq > div {
+.section-faq>div {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .main-content {
-    width: 80%;
-    height: 80%;
+    width: 65%;
+    height: 65%;
     background: #ffffff;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 10px;
+    border-radius: 10px 0;
     padding: 20px;
-    box-shadow: 3px 3px 6px -2px rgba(102, 102, 102, .8);
     display: grid;
     align-items: center;
 }
 
-.logo--region,
-.thank-you--content {
-    align-self: start;
+.logo--region{
+    background: #ffffff;
+    box-shadow: 2px 0px 2px 3px #d32446;
+    padding: 20px;
 }
 
-.thank-you-text{
+.thank-you-text {
     font-size: 4.2em;
     vertical-align: super;
     padding-left: 10px;
@@ -58,7 +59,7 @@
     list-style: none;
 }
 
-.more-content--list a{
+.more-content--list a {
     font-size: 1.6em;
     color: var(--il-primary);
     font-weight: 500;

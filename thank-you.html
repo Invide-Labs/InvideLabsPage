@@ -19,15 +19,15 @@
 
 <body>
     <section class="section-main">
+        <div class="logo--region">
+            <a class="il-logo" href="/">
+                <img src="favicon/favicon-32x32.png" alt="logo" class="brand--icon">
+                <span class="brand--text align-middle">
+                    Invide Labs
+                </span>
+            </a>
+        </div>
         <div class="main-content">
-            <div class="logo--region">
-                <a class="il-logo" href="/">
-                    <img src="favicon/favicon-32x32.png" alt="logo" class="brand--icon">
-                    <span class="brand--text align-middle">
-                        Invide Labs
-                    </span>
-                </a>
-            </div>
             <div class="thank-you--content text-center">
                 <div>
                     <img src="./assets/img/giphy.gif" alt="" class="img-fluid">
@@ -155,29 +155,34 @@
             return false;
         });
 
-        let searchParams = window.location.search.split('&');
-        let mailingParam = searchParams.filter(item => item.indexOf('mailing_list') !== -1);
-        let mailingType = mailingParam[0].split('=')[1];
 
-        let homeLink = document.getElementById('home-link');
-        let blogLink = document.getElementById('blog-link');
 
-        switch (mailingType) {
-            case 'bpml':
-                blogLink.setAttribute('href', 'https://blog.invidelabs.com/tag/team-building/');
-                break;
-            case 'teml':
-                homeLink.setAttribute('href', 'http://www.invidelabs.com/developer.html');
-                blogLink.setAttribute('href', 'https://blog.invidelabs.com/tag/inviders/');
-                break;
-            case 'course_build_team':
-                homeLink.setAttribute('href', 'https://www.invidelabs.com/learn-team-building.html');
-                blogLink.setAttribute('href', 'https://blog.invidelabs.com/tag/team-building/');
-                break;
-            default:
-                homeLink.setAttribute('href', 'https://www.invidelabs.com');
-                blogLink.setAttribute('href', 'https://blog.invidelabs.com');
-                break;
+        if (window.location.search) {
+            let searchParams = window.location.search.split('&');
+            let mailingParam = searchParams.filter(item => item.indexOf('mailing_list') !== -1);
+            let mailingType = mailingParam[0].split('=')[1];
+
+            let homeLink = document.getElementById('home-link');
+            let blogLink = document.getElementById('blog-link');
+            switch (mailingType) {
+                case 'bpml':
+                    blogLink.setAttribute('href', 'https://blog.invidelabs.com/tag/team-building/');
+                    break;
+                case 'teml':
+                    homeLink.setAttribute('href', 'http://www.invidelabs.com/developer.html');
+                    blogLink.setAttribute('href', 'https://blog.invidelabs.com/tag/inviders/');
+                    break;
+                case 'course_build_team':
+                    homeLink.setAttribute('href', 'https://www.invidelabs.com/learn-team-building.html');
+                    blogLink.setAttribute('href', 'https://blog.invidelabs.com/tag/team-building/');
+                    break;
+                default:
+                    homeLink.setAttribute('href', 'https://www.invidelabs.com');
+                    blogLink.setAttribute('href', 'https://blog.invidelabs.com');
+                    break;
+            }
+
+
         }
     </script>
 </body>
