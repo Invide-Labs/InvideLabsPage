@@ -14,10 +14,10 @@
 
 
   var showOnClose = false;
-  var showOnScroll = true;
-  var showOnTimeout = false;
+  var showOnScroll = false;
+  var showOnTimeout = true;
   var showOnElemVisibility = false;
-  var timeoutDuration = 60000;
+  var timeoutDuration = 150000;
   var totalScrollHeight = document.getElementsByTagName('body')[0].scrollHeight;
 
   if (showOnScroll && showModal) {
