@@ -65,6 +65,9 @@
                 <p>
                     You have successfully subscribed to our mailing list.
                 </p>
+                <a class="btn btn-next-step btn-lg" id="next-link">
+                    Next
+                </a>
             </div>
             <div class="more-content--region">
                 <ul class="more-content--list">
@@ -401,6 +404,7 @@
 
         let homeLink = document.getElementById('home-link');
         let blogLink = document.getElementById('blog-link');
+        let nextLink = document.getElementById('next-link');
 
 
         if (window.location.search) {
@@ -414,24 +418,31 @@
                     $('.goto-on-click').attr('href', '#faq-bpml');
                     $('#faq-bpml').removeClass('d-none');
                     blogLink.setAttribute('href', 'https://blog.invidelabs.com/tag/team-building/');
+                    nextLink.setAttribute('href', 'https://flow.invidelabs.com/team');nextLink.innerHTML = "Create team now";
                     break;
                 case 'teml':
                     $('#faq-gml').removeClass('d-none');
                     $('.goto-on-click').attr('href', '#faq-gml');
                     homeLink.setAttribute('href', 'http://www.invidelabs.com/developer.html');
                     blogLink.setAttribute('href', 'https://blog.invidelabs.com/tag/inviders/');
+                    nextLink.setAttribute('href', 'https://flow.invidelabs.com/');
+                    nextLink.innerHTML = "Download desktop app now";
                     break;
                 case 'course_build_team':
                     $('.goto-on-click').attr('href', '#faq-cbt');
                     $('#faq-cbt').removeClass('d-none');
                     homeLink.setAttribute('href', 'https://www.invidelabs.com/learn-team-building.html');
                     blogLink.setAttribute('href', 'https://blog.invidelabs.com/tag/team-building/');
+                    nextLink.setAttribute('href', 'https://blog.invidelabs.com/tag/team-building/');
+                    nextLink.innerHTML = "Read about Team Building now";
                     break;
                 default:
                     $('#faq-gml').removeClass('d-none');
                     $('.goto-on-click').attr('href', '#faq-gml');
                     homeLink.setAttribute('href', 'https://www.invidelabs.com');
                     blogLink.setAttribute('href', 'https://blog.invidelabs.com');
+                    nextLink.setAttribute('href', 'https://flow.invidelabs.com/user/profile');
+                    nextLink.innerHTML = "Update profile now";
                     break;
             }
 
@@ -440,6 +451,7 @@
             $('.goto-on-click').attr('href', '#faq-gml');
             homeLink.setAttribute('href', 'https://www.invidelabs.com');
             blogLink.setAttribute('href', 'https://blog.invidelabs.com');
+            nextLink.setAttribute('href', 'https://flow.invidelabs.com/user/profile');nextLink.innerHTML = "Update profile now";
         }
     </script>
 </body>
