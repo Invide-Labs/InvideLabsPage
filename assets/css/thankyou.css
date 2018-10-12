@@ -2,6 +2,7 @@
 
 .section-main {
     position: absolute;
+    top: 0;
     height: 100%;
     width: 100%;
     background-color: var(--il-primary);
@@ -60,7 +61,14 @@
 }
 
 .more-content--list a {
-    font-size: 1.6em;
+    font-size: 1.4em;
     color: var(--il-primary);
+    font-weight: 500;
+}
+
+.btn.btn-next-step{
+    color: #fff;
+    background-color: var(--il-primary);
+    font-size: 1.6em;
     font-weight: 500;
 }
