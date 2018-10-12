@@ -67,12 +67,6 @@
   font-size: 1em !important;
 }
 
-@media (max-width: 992px) {
-  .navbar.od {
-    padding: 0.5em 2em;
-  }
-}
-
 .nav-item {
   font-size: 1.2em;
   font-weight: 600;
@@ -882,5 +876,21 @@ a:focus {
 @media (max-width: 992px) {
   footer .advanced {
     justify-items: start;
+  }
+}
+
+.section-1, .section-2 {
+  top: 100px;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .navbar.od {
+    padding: 0.5em 2em;
+    height: 60px;
+  }
+
+  .section-1, .section-2 {
+    top: 50px;
   }
 }
