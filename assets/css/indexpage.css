@@ -903,3 +903,12 @@ a:focus {
   display: inline-block;
   vertical-align: middle;
 }
+
+.dot-new {
+  height: 6px;
+  width: 6px;
+  background-color: #ffa6b2;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
