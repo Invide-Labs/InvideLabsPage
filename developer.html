@@ -5,8 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Invide : Elite community of top developers</title>
     <meta name="author" content="Pradeep Sharma" />
-    <meta name="description" content="Invide Labs is an elite community of top developers" />
-    <meta name="keywords" content="developer community, programmer community, engineer community, software engineer community, senior developer job, freelance jobs, remote jobs, remote work, network of developers, accelerator for developers. accelerator for engineers, accelerator for programmers, coder community" />
+    <meta name="description" content="Invide is an elite community of top developers" />
+    <meta name="keywords" content="developer community, programmer community, engineer community, software engineer community, senior developer job, freelance jobs, remote jobs, remote work, network of developers, accelerator for developers. accelerator for engineers, accelerator for programmers, coder community"
+    />
     <meta name="Resource-type" content="Document" />
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -196,10 +197,10 @@
                     <div class="col-md-6 centered-child-container">
                         <div class="cards">
                             <p class="title">We Are Different</p><br>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> 100% remote work environment</p>
+                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> No location barrier</p>
                             <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Focus on individual growth with freedom</p>
                             <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Training for remote collaboration</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Better alternative to a full-time-job-from-office</p>
+                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Built for millenials and generations ahead</p>
                         </div>
                     </div>
                 </div>
@@ -217,8 +218,8 @@
                             <p class="title">How It Works</p><br>
                             <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Request invitation to join network</p>
                             <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Mentor and get mentored by Inviders</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Clear screening process to earn badge of Invider</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Join missions(vetted projects)</p>
+                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Attend online program to earn badge of Invider</p>
+                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Join missions(vetted work opportunities)</p>
                             <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work remotely, earn money & reputation</p>
                             <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Get <b>support/funds</b> from Invide to grow</p>
                         </div>
@@ -233,10 +234,10 @@
                     <div class="col-md-6 centered-child-container">
                         <div class="cards">
                             <p class="title">Benefits</p><br>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work from anywhere </p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work on high paying jobs</p>
+                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> High paying jobs</p>
+                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work from anywhere opportunities</p>
                             <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work with highly intellectual and skilled people</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Save time wasted on clients or project which don't add value</p>
+                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Save time wasted on projects which don't add value</p>
                             <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Get paid for every minute you work</p>
                         </div>
                     </div>
@@ -252,7 +253,7 @@
                 <div class="row content-classic centered-child-container">
                     <div class="col-md-6 centered-child-container">
                         <div class="cards">
-                            <p class="title">Futuristic Culture</p><br>
+                            <p class="title">Encouraging Futuristic Culture</p><br>
                             <!-- <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Enjoy the work</p> -->
                             <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Unleash potential without barriers of boundaries</p>
                             <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Great code quality, no mediocrity</p>
@@ -413,31 +414,31 @@
 
         var animateCount = true;
 
-        if(animateCount) {
+        if (animateCount) {
             window.addEventListener('scroll', function() {
                 var scrollY = window.scrollY;
-                if(scrollY > 50 && animateCount){
+                if (scrollY > 50 && animateCount) {
                     animateCount = false;
-                    $('.counter.int').each(function () {
-                        $(this).prop('Counter',0).animate({
+                    $('.counter.int').each(function() {
+                        $(this).prop('Counter', 0).animate({
                             Counter: $(this).text()
                         }, {
                             duration: 3000,
                             easing: 'swing',
-                            step: function (now) {
+                            step: function(now) {
                                 $(this).text(Math.ceil(now));
                             }
                         });
                     });
 
-                    $('.counter.decimal').each(function () {
-                        $(this).prop('Counter',100).animate({
+                    $('.counter.decimal').each(function() {
+                        $(this).prop('Counter', 100).animate({
                             Counter: $(this).text()
                         }, {
                             duration: 3000,
                             easing: 'swing',
-                            step: function (now) {
-                                $(this).text(Math.floor(now*100)/100);
+                            step: function(now) {
+                                $(this).text(Math.floor(now * 100) / 100);
                             }
                         });
                     });
