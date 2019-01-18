@@ -149,10 +149,20 @@
         <div class="section1 dev-head">
             <span id="heading">Invi<span class="highlight" style="font-style: italic">t</span>e-only cult of top <span class="highlight2"><span class="highlight" style="font-style: italic">d</span>evelopers</span><br>
             <br>
-            <button class="btn uppercase" type="button" onclick="window.location.href = 'http://apply.invidelabs.com';"><span>Request Invitation</span></button>
-            <br/>
-            <small style="color: #333; font-size: 20%;font-weight: bold; padding-left: 24px;">1.2% acceptance rate</small>
-            </span> <br>
+            <div class="col-md-4 centered-child-container">
+            <form method="POST" action="http://localhost:3000/verify" class="form-inline">
+                <div class="form-group">                
+                    <label style="font-size: 20%; color: red;" id="invitationCodeInputLabel" for="invitationCode"></label><br/>
+                    <input type="text" name="code" class="form-control" id="invitationCode" placeholder="Invitation Code" minlength="3" required>
+                </div>
+                <input type="hidden" name="scope" value="community"/>
+                <button class="btn uppercase" type="submit"><span>Join Now</span></button>
+                <a style="font-size: 25%;word-wrap: break-word; vertical-align: middle;" onclick="window.location.href='http://apply.invidelabs.com'" style="cursor: crosshair;">Request Invitation</a>
+                <br/>
+                <small style="color: #333; font-size: 20%;font-weight: bold;">1.2% acceptance rate</small>
+                </span> <br>
+            </form>
+            </div>
         </div>
         <div class="row centered-child-container">
             <div class="col-md-10 col-offset-1">
@@ -361,8 +371,24 @@
 <script type="text/javascript" src="javascripts/vendors/jquery.2.1.3.min.js"></script>
 <script type="text/javascript" src="javascripts/custom.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
 
+    $(document).ready(function() {
+        //Appropriate messages
+        var next = getUrlParam('next');
+        var error = getUrlParam('error');
+        var invitationCode = getUrlParam('invitationCode');
+        if(next){
+            if(error && error=='codeinvalid'){
+                $('#invitationCodeInputLabel').text("Invalid Code. Recheck the code or simply request invitation right now.")
+            } else {
+                $('#invitationCodeInputLabel').text("Request invitation now. It will take us 48 hrs to process your request.")
+            }
+        }
+        if(invitationCode){
+            $('#invitationCode').val(invitationCode);
+        }
+
+        //Download links
         if (navigator.appVersion.indexOf("Linux") != -1) {
             //Show download for Linux
             $("#b2_span")[0].children[0].innerHTML = "Download App For linux";
@@ -446,6 +472,17 @@
             });
         }
     });
+
+    function getUrlParam(variable){
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+    }
+
 </script>
 <script src="js/analyticsUtilities.js"></script>
 
