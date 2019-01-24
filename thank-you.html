@@ -7,18 +7,21 @@
     <title>Thank you</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet" media="none"
-        onload="if(media!='all')media='all'">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
     <link href="favicon/favicon.ico" rel="shortcut icon">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/defaults.css">
-    <link rel="stylesheet" href="assets/css/thankyou.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="assets/css/defaults.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/thankyou.css"> -->
+    <style>
+        .collapsed {
+            cursor: pointer;
+        }
+    </style>
 
     <!-- Google Tag Manager -->
     <script>
-        (function (w, d, s, l, i) {
+        (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -43,359 +46,407 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-
-    <section class="section-main">
-        <div class="logo--region">
-            <a class="il-logo" href="/">
-                <img src="favicon/favicon-32x32.png" alt="logo" class="brand--icon">
-                <span class="brand--text align-middle">
-                    Invide Labs
-                </span>
-            </a>
-        </div>
-        <div class="main-content">
-            <div class="thank-you--content text-center">
-                <div>
-                    <img src="./assets/img/giphy.gif" alt="" class="img-fluid">
-                    <br>
-                    <span class="thank-you-text">
-                        Thank you!
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <section class="section-main">
+                    <div class="main-content">
+                        <div style="text-align: center;
+                        padding-bottom: 20px;
+                        padding-top: 30px;">
+                            <a class="il-logo" href="/">
+                                <img oncontextmenu="return false;" widht="30px" height="32px;" src="imgs/logo.png" alt="logo" class="brand--icon">
+                            </a>
+                            <!-- <div class="brand--text align-middle">
+                                Invide
+                            </div> -->
+                        </div>
+                        <div class="thank-you--content text-center">
+                            <div>
+                                <img style="max-height: 35vh" src="./assets/img/clap.gif" alt="" class="img-fluid">
+                                <br><br>
+                                <span class="thank-you-text">
+                        <h1>Thank you!</h1>
                     </span>
-                </div>
-                <p>
+                            </div>
+                            <br/>
+                            <!-- <p>
                     You have successfully subscribed to our mailing list.
-                </p>
-                <a class="btn btn-next-step btn-lg" id="next-link">
+                </p> -->
+                            <a class="btn btn-secondary btn-md" id="next-link">
                     Next
                 </a>
-            </div>
-            <div class="more-content--region">
-                <ul class="more-content--list">
-                    <li>
-                        <a href="#faq" class="goto-on-click">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="/" id="home-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="https://bloginvidelabs.com" target="_blank" id="blog-link">Blog</a>
-                    </li>
-                </ul>
+                        </div>
+                        <br/>
+                        <div style="text-align: center;">
+                            <!-- <a href="#faq" class="goto-on-click" style="padding-right: 10px;">FAQ</a> -->
+                            <a href="/" id="home-link" style="padding-right: 10px;">Home</a>
+                            <a href="https://bloginvidelabs.com" target="_blank" id="blog-link">Blog</a>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-    </section>
-
-    <section class="section-faq d-none" id="faq-gml">
-        <div class="container">
-            <h1 class="text-center pb-5">FAQ</h1>
-            <div class="accordion il-accordion" id="collapse-faq-gml">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-gml-1"
-                                aria-expanded="true" aria-controls="collapse-gml-1">
+        <br/>
+        <br/><br/>
+        <div class="row">
+            <div class="col-md-12">
+                <section class="section-faq d-none" id="faq-gml">
+                    <div class="container">
+                        <h1 class="text-center pb-5">FAQ</h1>
+                        <div class="accordion il-accordion" id="collapse-faq-gml">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-gml-1" aria-expanded="true" aria-controls="collapse-gml-1">
                                 Why Invide matters?
-                            </button>
-                        </h5>
-                    </div>
+                            </span>
+                                    </h5>
+                                </div>
 
-                    <div id="collapse-gml-1" class="collapse" aria-labelledby="headingOne" data-parent="#collapse-faq-gml">
-                        <div class="card-body">
-                            Remote work is the future of work and we're bringing it to present with utmost reliability
-                            and scalability. We create competitive advantage for startups and developers who work with
-                            us by breaking barriers of location. Read about our <a href="https://blog.invidelabs.com/connecting-the-dots/"
-                                target="_blank">story</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-gml-2"
-                                aria-expanded="false" aria-controls="collapse-gml-2">
+                                <div id="collapse-gml-1" class="collapse" aria-labelledby="headingOne" data-parent="#collapse-faq-gml">
+                                    <div class="card-body">
+                                        Remote work is the future of work and we're bringing it to present with utmost reliability and scalability. We create competitive advantage for startups and developers who work with us by breaking barriers of location. Read about our
+                                        <a href="https://blog.invidelabs.com/connecting-the-dots/" target="_blank">story</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-gml-2" aria-expanded="false" aria-controls="collapse-gml-2">
                                 I am a startup founder, how can I benefit from Invide?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-gml-2" class="collapse" aria-labelledby="headingTwo" data-parent="#collapse-faq-gml">
-                        <div class="card-body">
-                            One mediocre engineer as first hire can kill the startup. We help you hire the perfect
-                            first engineers and work with them successfully. Period.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-gml-3"
-                                aria-expanded="false" aria-controls="collapse-gml-3">
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-gml-2" class="collapse" aria-labelledby="headingTwo" data-parent="#collapse-faq-gml">
+                                    <div class="card-body">
+                                        One mediocre engineer as first hire can kill the startup. We help you hire the perfect first engineers and work with them successfully. Period.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-gml-3" aria-expanded="false" aria-controls="collapse-gml-3">
                                 I am a developer, how can I benefit from Invide?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-gml-3" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-gml">
-                        <div class="card-body">
-                            If you believe remote work is the future of work, Invide is your portal gun to take you to
-                            the future. In short, we accelerate your growth with the futuristic culture. More about <a
-                                href="https://www.invidelabs.com/developer.html" target="_blank">benefits</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-gml-4"
-                                aria-expanded="false" aria-controls="collapse-gml-4">
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-gml-3" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-gml">
+                                    <div class="card-body">
+                                        If you believe remote work is the future of work, Invide is your portal gun to take you to the future. In short, we accelerate your growth with the futuristic culture. More about <a href="https://www.invidelabs.com/developer.html"
+                                            target="_blank">benefits</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-gml-4" aria-expanded="false" aria-controls="collapse-gml-4">
                                 I am an organization and want to partner with Invide, what now?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-gml-4" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-gml">
-                        <div class="card-body">
-                            Shoot us an email at <a href="mailto:friends@invidelabs.com">friends@invidelabs.com</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-gml-5"
-                                aria-expanded="false" aria-controls="collapse-gml-5">
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-gml-4" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-gml">
+                                    <div class="card-body">
+                                        Shoot us an email at <a href="mailto:friends@invidelabs.com">friends@invidelabs.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-gml-5" aria-expanded="false" aria-controls="collapse-gml-5">
                                 I have a question, what is the fastest way to reach for support?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-gml-5" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-gml">
-                        <div class="card-body">
-                            Through <a href="https://api.whatsapp.com/send?phone=918826701901&text=Hi%20there%2c%20I%20have%20a%20query%20about%20Invide&source=&data=">WhatsApp</a>
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-gml-5" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-gml">
+                                    <div class="card-body">
+                                        Through <a href="https://api.whatsapp.com/send?phone=918826701901&text=Hi%20there%2c%20I%20have%20a%20query%20about%20Invide&source=&data=">WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </div>
+                </section>
+                <section class="section-faq d-none" id="faq-teml">
+                    <div class="container">
+                        <h1 class="text-center pb-5">FAQ</h1>
+                        <div class="accordion il-accordion" id="collapse-faq-teml">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-teml-1" aria-expanded="true" aria-controls="collapse-teml-1">
+                                What benefits do I get on joining Invide?
+                            </span>
+                                    </h5>
+                                </div>
 
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section-faq d-none" id="faq-bpml">
-        <div class="container">
-            <h1 class="text-center pb-5">FAQ</h1>
-            <div class="accordion il-accordion" id="collapse-faq-bpml">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-bpml-1"
-                                aria-expanded="true" aria-controls="collapse-bpml-1">
+                                <div id="collapse-teml-1" class="collapse" aria-labelledby="headingOne" data-parent="#collapse-faq-teml">
+                                    <div class="card-body">
+                                        Connection with the top developers and companies, a starter kit, amazing work opportunities, opportunity to showcase your awesomeness and a continuous support, no matter your wherever you are in your career. With the feedback of community, we are adding
+                                        more and more benefits on daily basis. We believe in equal opportunities for everyone without the barrier of location.
+                                        <br/> As one of the Invide member describes, Invide is built upon futuristic work culture and Invide is your portal gun to the future.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-teml-2" aria-expanded="false" aria-controls="collapse-teml-2">
+                                Is there any screening to join Invide?
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-teml-2" class="collapse" aria-labelledby="headingTwo" data-parent="#collapse-faq-teml">
+                                    <div class="card-body">
+                                        Yes. We are highly curated network, only people with growth mindset, technical capabilies and leadership qualities get to join the community.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-teml-4" aria-expanded="false" aria-controls="collapse-teml-4">
+                                How soon moderators respond on the application?
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-teml-4" class="collapse" aria-labelledby="headingFour" data-parent="#collapse-faq-teml">
+                                    <div class="card-body">
+                                        You'll receive response within 48 hrs on email. We keep pushing to bring that time to only matter of hours and in some cases to mins to give you an awesome experience. We also expect the same from you in any of our communication.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-teml-3" aria-expanded="false" aria-controls="collapse-teml-3">
+                                What if I don't receive response within 48 hrs?
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-teml-3" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-teml">
+                                    <div class="card-body">
+                                        Reach out to Moderator: moderator at invidelabs dot com
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-teml-5" aria-expanded="false" aria-controls="collapse-teml-5">
+                                Why desktop app?
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-teml-5" class="collapse" aria-labelledby="headingFive" data-parent="#collapse-faq-teml">
+                                    <div class="card-body">
+                                        This will help you save time and speed up the screening process.</br>
+                                        Also you're going to need this to engage with top developers, Invide team and top companies.</br>
+                                        This is a powerful desktop application to help you boost your productivity in normal day to day development work.</br>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-faq d-none" id="faq-bpml">
+                    <div class="container">
+                        <h1 class="text-center pb-5">FAQ</h1>
+                        <div class="accordion il-accordion" id="collapse-faq-bpml">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-bpml-1" aria-expanded="true" aria-controls="collapse-bpml-1">
                                 Why should I consider Invide to hire engineers from the starting phase of my business?
-                            </button>
-                        </h5>
-                    </div>
+                            </span>
+                                    </h5>
+                                </div>
 
-                    <div id="collapse-bpml-1" class="collapse" aria-labelledby="headingOne" data-parent="#collapse-faq-bpml">
-                        <div class="card-body">
-                            One mediocre engineer as first hire can kill the startup. For bigger companies it may not
-                            matter much but for startups it makes the difference between success or shut down. We help
-                            you hire the perfect first engineers and work with them successfully. Period.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-bpml-2"
-                                aria-expanded="false" aria-controls="collapse-bpml-2">
+                                <div id="collapse-bpml-1" class="collapse" aria-labelledby="headingOne" data-parent="#collapse-faq-bpml">
+                                    <div class="card-body">
+                                        One mediocre engineer as first hire can kill the startup. For bigger companies it may not matter much but for startups it makes the difference between success or shut down. We help you hire the perfect first engineers and work with them successfully.
+                                        Period.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-bpml-2" aria-expanded="false" aria-controls="collapse-bpml-2">
                                 How much qualified Inviders are?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-bpml-2" class="collapse" aria-labelledby="headingTwo" data-parent="#collapse-faq-bpml">
-                        <div class="card-body">
-                            Our screening process is tougher than harvard. We have laser focus on one type of
-                            engineers, who fit as first engineers for startups. We perform thorough practical tests in
-                            a simulated environment. We judge technical skills, collaboration & communication skills,
-                            attitude, leadership qualities. You might picture them as "getting things done" people who
-                            have 3-5 yrs experience.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-bpml-3"
-                                aria-expanded="false" aria-controls="collapse-bpml-3">
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-bpml-2" class="collapse" aria-labelledby="headingTwo" data-parent="#collapse-faq-bpml">
+                                    <div class="card-body">
+                                        Our screening process is tougher than harvard. We have laser focus on one type of engineers, who fit as first engineers for startups. We perform thorough practical tests in a simulated environment. We judge technical skills, collaboration & communication
+                                        skills, attitude, leadership qualities. You might picture them as "getting things done" people who have 3-5 yrs experience.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-bpml-3" aria-expanded="false" aria-controls="collapse-bpml-3">
                                 Do I have any say in selection of Invider for my team?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-bpml-3" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-bpml">
-                        <div class="card-body">
-                            Yes. First, we hand-pick the right person for you based on your requirement. Then we
-                            arrange an intro call for you with the selected team member. Only after your approval the
-                            team member is assigned.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-bpml-4"
-                                aria-expanded="false" aria-controls="collapse-bpml-4">
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-bpml-3" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-bpml">
+                                    <div class="card-body">
+                                        Yes. First, we hand-pick the right person for you based on your requirement. Then we arrange an intro call for you with the selected team member. Only after your approval the team member is assigned.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-bpml-4" aria-expanded="false" aria-controls="collapse-bpml-4">
                                 Can I communicate with the Inviders directly?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-bpml-4" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-bpml">
-                        <div class="card-body">
-                            Absolutely. It is your team, you decide the rules and we are there to support you not block
-                            you in any way.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-bpml-5"
-                                aria-expanded="false" aria-controls="collapse-bpml-5">
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-bpml-4" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-bpml">
+                                    <div class="card-body">
+                                        Absolutely. It is your team, you decide the rules and we are there to support you not block you in any way.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-bpml-5" aria-expanded="false" aria-controls="collapse-bpml-5">
                                 Can I hire them on my payroll?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-bpml-5" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-bpml">
-                        <div class="card-body">
-                            Absolutely. But only after paying us a small Finder's fee. You understand that we do need
-                            to get paid to run our continuos operations of hunting rising stars, training them to
-                            become good to great team members, support their growth and most importantly to make sure
-                            that you onboard them smoothly, in a positive and motivated way.
-                        </div>
-                    </div>
-                </div>
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-bpml-5" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-bpml">
+                                    <div class="card-body">
+                                        Absolutely. But only after paying us a small Finder's fee. You understand that we do need to get paid to run our continuos operations of hunting rising stars, training them to become good to great team members, support their growth and most importantly
+                                        to make sure that you onboard them smoothly, in a positive and motivated way.
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-bpml-6"
-                                aria-expanded="false" aria-controls="collapse-bpml-6">
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-bpml-6" aria-expanded="false" aria-controls="collapse-bpml-6">
                                 How much time does it take to hire an Invider?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-bpml-6" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-bpml">
-                        <div class="card-body">
-                            Generally it takes a week. It includes time spent in understanding requirement,
-                            hand-picking talent, confirming availability and scheduling call. If it seems to take more
-                            than that for specific profile, we let you know proactively.
-                        </div>
-                    </div>
-                </div>
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-bpml-6" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-bpml">
+                                    <div class="card-body">
+                                        Generally it takes a week. It includes time spent in understanding requirement, hand-picking talent, confirming availability and scheduling call. If it seems to take more than that for specific profile, we let you know proactively.
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-bpml-6"
-                                aria-expanded="false" aria-controls="collapse-bpml-6">
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-bpml-6" aria-expanded="false" aria-controls="collapse-bpml-6">
                                 I have more questions, what is the fastest way to reach Invide support?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-bpml-6" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-bpml">
-                        <div class="card-body">
-                            Through <a href="https://api.whatsapp.com/send?phone=918826701901&text=Hi%20there%2c%20I%20have%20a%20query%20about%20Invide&source=&data=">WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-bpml-6" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-bpml">
+                                    <div class="card-body">
+                                        Through <a href="https://api.whatsapp.com/send?phone=918826701901&text=Hi%20there%2c%20I%20have%20a%20query%20about%20Invide&source=&data=">WhatsApp</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-6"
-                                aria-expanded="false" aria-controls="collapse-6">
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
                                 Do I have to work with Inviders before hiring on our payroll?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-6" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-bpml">
-                        <div class="card-body">
-                            Yes. This is highly recommended and mandatory for now to make sure that you succeed. You
-                            can rely upon our skill testing done through practical tests/projects but we cannot
-                            guarantee culture fit, even when you and the talent are the best among crowd, success as a
-                            team can be tested only when you work together. This is the only sureshot way to avoid
-                            mistakes(startups can't afford bad hire, even when it is about culture misfit). And we have
-                            a great way to do so through subscription hiring model and then providing a smooth
-                            transition to full time on your payroll.
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-6" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-bpml">
+                                    <div class="card-body">
+                                        Yes. This is highly recommended and mandatory for now to make sure that you succeed. You can rely upon our skill testing done through practical tests/projects but we cannot guarantee culture fit, even when you and the talent are the best among crowd,
+                                        success as a team can be tested only when you work together. This is the only sureshot way to avoid mistakes(startups can't afford bad hire, even when it is about culture misfit). And we have a great way to do so
+                                        through subscription hiring model and then providing a smooth transition to full time on your payroll.
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </div>
+                </section>
 
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section-faq d-none" id="faq-cbt">
-        <div class="container">
-            <h1 class="text-center pb-5">FAQ</h1>
-            <div class="accordion il-accordion" id="collapse-faq-cbt">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-cbt-1"
-                                aria-expanded="true" aria-controls="collapse-cbt-1">
+                <section class="section-faq d-none" id="faq-cbt">
+                    <div class="container">
+                        <h1 class="text-center pb-5">FAQ</h1>
+                        <div class="accordion il-accordion" id="collapse-faq-cbt">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-cbt-1" aria-expanded="true" aria-controls="collapse-cbt-1">
                                 Who is this course for?
-                            </button>
-                        </h5>
-                    </div>
+                            </span>
+                                    </h5>
+                                </div>
 
-                    <div id="collapse-cbt-1" class="collapse" aria-labelledby="headingOne" data-parent="#collapse-faq-cbt">
-                        <div class="card-body">
-                            Anyone who is working in a startup as a founder or as an employee
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-cbt-2"
-                                aria-expanded="false" aria-controls="collapse-cbt-2">
+                                <div id="collapse-cbt-1" class="collapse" aria-labelledby="headingOne" data-parent="#collapse-faq-cbt">
+                                    <div class="card-body">
+                                        Anyone who is working in a startup as a founder or as an employee
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-cbt-2" aria-expanded="false" aria-controls="collapse-cbt-2">
                                 What is the course duration?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-cbt-2" class="collapse" aria-labelledby="headingTwo" data-parent="#collapse-faq-cbt">
-                        <div class="card-body">
-                            It's just 7 concise emails sent to you one at a time. That's it.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-cbt-3"
-                                aria-expanded="false" aria-controls="collapse-cbt-3">
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-cbt-2" class="collapse" aria-labelledby="headingTwo" data-parent="#collapse-faq-cbt">
+                                    <div class="card-body">
+                                        It's just 7 concise emails sent to you one at a time. That's it.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <span class="collapsed" data-toggle="collapse" data-target="#collapse-cbt-3" aria-expanded="false" aria-controls="collapse-cbt-3">
                                 What are the common problems that people have solved using this course?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse-cbt-3" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-cbt">
-                        <div class="card-body">
-                            Quickly planning a good strategy for hiring, finding out why their team is not productive,
-                            making their team thrive using simple to do actions, raising morale of team etc.
+                            </span>
+                                    </h5>
+                                </div>
+                                <div id="collapse-cbt-3" class="collapse" aria-labelledby="headingThree" data-parent="#collapse-faq-cbt">
+                                    <div class="card-body">
+                                        Quickly planning a good strategy for hiring, finding out why their team is not productive, making their team thrive using simple to do actions, raising morale of team etc.
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </div>
-
+                </section>
+                <br/><br/>
             </div>
         </div>
-    </section>
+    </div>
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script>
-        $('.goto-on-click').on('click', function () {
+        $('.goto-on-click').on('click', function() {
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top
             }, 500);
@@ -418,15 +469,16 @@
                     $('.goto-on-click').attr('href', '#faq-bpml');
                     $('#faq-bpml').removeClass('d-none');
                     blogLink.setAttribute('href', 'https://blog.invidelabs.com/tag/team-building/');
-                    nextLink.setAttribute('href', 'https://flow.invidelabs.com/team');nextLink.innerHTML = "Create team now";
+                    nextLink.setAttribute('href', 'https://flow.invidelabs.com/team');
+                    nextLink.innerHTML = "Create team now";
                     break;
                 case 'teml':
-                    $('#faq-gml').removeClass('d-none');
+                    $('#faq-teml').removeClass('d-none');
                     $('.goto-on-click').attr('href', '#faq-gml');
                     homeLink.setAttribute('href', 'http://www.invidelabs.com/developer.html');
                     blogLink.setAttribute('href', 'https://blog.invidelabs.com/tag/inviders/');
                     nextLink.setAttribute('href', 'https://flow.invidelabs.com/');
-                    nextLink.innerHTML = "Download desktop app now";
+                    nextLink.innerHTML = "Download desktop app to stay connected";
                     break;
                 case 'course_build_team':
                     $('.goto-on-click').attr('href', '#faq-cbt');
@@ -451,7 +503,8 @@
             $('.goto-on-click').attr('href', '#faq-gml');
             homeLink.setAttribute('href', 'https://www.invidelabs.com');
             blogLink.setAttribute('href', 'https://blog.invidelabs.com');
-            nextLink.setAttribute('href', 'https://flow.invidelabs.com/user/profile');nextLink.innerHTML = "Update profile now";
+            nextLink.setAttribute('href', 'https://flow.invidelabs.com/user/profile');
+            nextLink.innerHTML = "Update profile now";
         }
     </script>
 </body>
