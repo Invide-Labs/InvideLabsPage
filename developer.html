@@ -150,18 +150,21 @@
             <span id="heading">Invi<span class="highlight" style="font-style: italic">t</span>e-only cult of top <span class="highlight2"><span class="highlight" style="font-style: italic">d</span>evelopers</span><br>
             <br>
             <div class="col-md-4 centered-child-container">
-            <form method="POST" action="https://flow.invidelabs.com/verify" class="form-inline">
-                <div class="form-group">                
-                    <label style="font-size: 20%; color: red;" id="invitationCodeInputLabel" for="invitationCode"></label><br/>
-                    <input type="text" name="code" class="form-control" id="invitationCode" placeholder="Invitation Code" minlength="3" required>
-                </div>
-                <input type="hidden" name="scope" value="community"/>
-                <button class="btn uppercase" type="submit"><span>Join Now</span></button>
-                <a style="font-size: 25%;word-wrap: break-word; vertical-align: middle;" onclick="window.location.href='http://apply.invidelabs.com'" style="cursor: crosshair;">Request Invitation</a>
-                <br/>
-                <small style="color: #333; font-size: 20%;font-weight: bold;">1.2% acceptance rate</small>
-                </span> <br>
-            </form>
+                <form method="POST" action="https://flow.invidelabs.com/verify" class="form-inline">
+                    <!-- <form method="POST" action="http://localhost:3000/verify" class="form-inline"> -->
+                    <div class="form-group">
+                        <label style="font-size: 20%; color: red;" id="invitationCodeInputLabel" for="invitationCode"></label><br/>
+                        <input type="text" name="code" class="form-control" id="invitationCode" placeholder="Invitation Code" minlength="3" required>
+                    </div>
+                    <input type="hidden" name="scope" value="community" />
+                    <button class="btn uppercase" type="submit"><span>Join Now</span></button>
+                    <a style="font-size: 25%;word-wrap: break-word; vertical-align: middle;" onclick="window.location.href='http://apply.invidelabs.com'" style="cursor: crosshair;">Request Invitation</a>
+                    <br/>
+                    <small style="color: #333; font-size: 20%;">
+                        <span style="padding-right: 20px;"><i class="glyphicon glyphicon-filter"></i> 1.2% acceptance rate </span>
+                        <span style="font-size: 90%;opacity: 0.7;color: #333;font-weight: normal; white-space: nowrap;"><i class="glyphicon glyphicon-flash"></i> 48 hr response</span></small>
+                    </span> <br>
+                </form>
             </div>
         </div>
         <div class="row centered-child-container">
@@ -194,7 +197,7 @@
                         </div>
                     </div>
                 </div><br/><br/>
-                <div style="text-align: center; color: grey; font-size: 60%;">Last stats calculated on: Mar 27, 2018</div>
+                <div style="text-align: center; color: grey; font-size: 60%; opacity: 0.4;">Last stats calculated on: Mar 27, 2018</div>
                 <br/><br/>
             </div>
         </div>
@@ -326,14 +329,29 @@
         <br/><br/><br/><br/>
         <div class="row">
             <div class="col-md-12 last">
-                <button class="btn uppercase" id="b1_span" type="button" onclick="window.location.href = 'http://apply.invidelabs.com'"><span>Request Invitation</span></button>
-                <button class="btn light uppercase" id="b2_span" type="button"><span>Download App </span></button><br><br>
-                <span id="b3_span" onclick="window.location.href = 'https://flow.invidelabs.com'">Download app for other OS</span>
+                <form method="POST" action="https://flow.invidelabs.com/verify" class="form-inline">
+                    <!-- <form method="POST" action="http://localhost:3000/verify" class="form-inline"> -->
+                    <div class="form-group">
+                        <label style="font-size: 20%; color: red;" for="invitationCode"></label><br/>
+                        <input type="text" name="code" class="form-control" placeholder="Invitation Code" minlength="3" required>
+                    </div>
+                    <input type="hidden" name="scope" value="community" />
+                    <button class="btn uppercase" type="submit"><span>Join Now</span></button>
+                </form>
+                <br/>
+                <div style="color: #000; opacity: 0.8;;">Don't have invitation code?</div><br/>
+                <a style="font-size: 125%; font-weight: bold; word-wrap: break-word; vertical-align: middle;" onclick="window.location.href='http://apply.invidelabs.com'" style="cursor: crosshair;">Request Invitation</a>
+                <br/><br/>
+                <span style="opacity: 0.7;color: #333;"><i class="glyphicon glyphicon-time"></i> Response within 48 hrs</span>
+
+                <br/><br/><br/>
             </div>
         </div>
-        <br/><br/><br/><br/>''
+        <br/><br/>
+        <br/><br/>
         <div class="row" style="text-align: center;">
             <p style="font-size: 100%;color: #333;">coach@invidelabs.com<br/>
+                <button class="btn light uppercase" id="b2_span" type="button"><span>Download App </span></button><br/>
                 <a href="https://twitter.com/invide_labs"> <i class='fa fa-twitter-square icons'></i></a>
                 <a href="https://www.linkedin.com/company/7799786/"> <i class='fa fa-linkedin-square icons' aria-hidden="true"></i></a>
                 <a href="https://www.facebook.com/InvideLabs-1686586228269135/"> <i class='fa fa-facebook-square icons' aria-hidden="true"></i></a>
@@ -371,20 +389,19 @@
 <script type="text/javascript" src="javascripts/vendors/jquery.2.1.3.min.js"></script>
 <script type="text/javascript" src="javascripts/custom.js"></script>
 <script type="text/javascript">
-
     $(document).ready(function() {
         //Appropriate messages
         var next = getUrlParam('next');
         var error = getUrlParam('error');
         var invitationCode = getUrlParam('invitationCode');
-        if(next){
-            if(error && error=='codeinvalid'){
+        if (next) {
+            if (error && error == 'codeinvalid') {
                 $('#invitationCodeInputLabel').text("Invalid Code. Recheck the code or simply request invitation right now.")
             } else {
                 $('#invitationCodeInputLabel').text("Request invitation now. It will take us 48 hrs to process your request.")
             }
         }
-        if(invitationCode){
+        if (invitationCode) {
             $('#invitationCode').val(invitationCode);
         }
 
@@ -473,16 +490,17 @@
         }
     });
 
-    function getUrlParam(variable){
-       var query = window.location.search.substring(1);
-       var vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
-               var pair = vars[i].split("=");
-               if(pair[0] == variable){return pair[1];}
-       }
-       return(false);
+    function getUrlParam(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] == variable) {
+                return pair[1];
+            }
+        }
+        return (false);
     }
-
 </script>
 <script src="js/analyticsUtilities.js"></script>
 
