@@ -52,6 +52,29 @@
 		</script>
     <![endif]-->
 
+    <!-- Anti-flicker snippet (recommended)  -->
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
+    <script>
+        (function(a, s, y, n, c, h, i, d, e) {
+            s.className += ' ' + y;
+            h.start = 1 * new Date;
+            h.end = i = function() {
+                s.className = s.className.replace(RegExp(' ?' + y), '')
+            };
+            (a[n] = a[n] || []).hide = h;
+            setTimeout(function() {
+                i();
+                h.end = null
+            }, c);
+            h.timeout = c;
+        })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {
+            'GTM-MBNSX9': true
+        });
+    </script>
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
@@ -395,8 +418,12 @@
         var error = getUrlParam('error');
         var invitationCode = getUrlParam('invitationCode');
         if (next) {
-            if (error && error == 'codeinvalid') {
-                $('#invitationCodeInputLabel').text("Invalid Code. Recheck the code or simply request invitation right now.")
+            if (error) {
+                if (error == 'codeinvalid') {
+                    $('#invitationCodeInputLabel').text("Invalid Code. Recheck the code or simply request invitation right now.")
+                } else if (error == 'codeexpired') {
+                    $('#invitationCodeInputLabel').text("Expired invitation code! Please recheck with the referrer or request invitation now.")
+                }
             } else {
                 $('#invitationCodeInputLabel').text("Request invitation now. It will take us 48 hrs to process your request.")
             }
