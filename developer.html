@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <link rel="canonical" href="http://invidelabs.com/developer.html">
     <link rel="canonical" href="https://invidelabs.com/developer.html">
     <link rel="canonical" href="http://www.invidelabs.com/developer.html">
@@ -31,13 +31,15 @@
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#DE564B">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/custom.css" />
-    <link rel="stylesheet" type="text/css" href="styles/menu.css" />
-    <link rel="stylesheet" type="text/css" href="styles/dev.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <link href="favicon/favicon.ico" rel="shortcut icon">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css" />
+    <!-- <link rel="stylesheet" href="assets/css/indexpage.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="styles/menu.css" /> -->
+    <link rel="stylesheet" type="text/css" href="styles/dev.css" />
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@Invide_Labs">
@@ -51,6 +53,7 @@
 			 var console = { log: function() {} };
 		</script>
     <![endif]-->
+
 
     <!-- Anti-flicker snippet (recommended)  -->
     <style>
@@ -101,292 +104,293 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBNSX9"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <nav id="nav_big">
-        <ul>
-            <li>
-                <a class="i_name" href="https://www.invidelabs.com/?utm_source='developer-page'">
-                    <div>
-                        <img src="favicon/favicon-96x96.png" alt="" />
-                        <div>
-                            <p>
-                                Invide Labs
-                            </p>
-                            <!-- <svg height="10" width="100"> 
-                            <g fill="none" stroke="black">
-                                <path stroke=#fdd9d5 stroke-width="10" d="M0  0 l20 0" />
-                                <path stroke=#fbbdb6 stroke-width="10" d="M20 0 l20 0" />
-                                <path stroke=#f99186 stroke-width="10" d="M40 0 l20 0" />
-                                <path stroke=#f5503d stroke-width="10" d="M60 0 l20 0" />
-                                <path stroke=#ea210c stroke-width="10" d="M80 0 l20 0" />
-                            </g>
-                        </svg> -->
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="http://apply.invidelabs.com/?utm_source='developer-page'">Join The Cult</a>
-            </li>
-            <li>
-                <a href="https://flow.invidelabs.com/?utm_source='developer-page'">About Product</a>
-            </li>
-            <li>
-                <a href="https://blog.invidelabs.com/?utm_source='developer-page'">Blog</a>
-            </li>
-            <li>
-                <a href="https://flow.invidelabs.com/?utm_source='developer-page'" class="highlight">Download App</a>
-            </li>
 
-        </ul>
+
+    <!--Menu Navbar-->
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="/"><img src="imgs/logo.png" alt="" width="30" height="30"> <span class="brand--text">Invide Labs</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://apply.invidelabs.com/?utm_source='developer-page'">Join Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://flow.invidelabs.com/?utm_source='developer-page'">3x Productivity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://blog.invidelabs.com/?utm_source='developer-page'">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://flow.invidelabs.com/?utm_source='developer-page'" class="highlight">Download Desktop App</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <nav id="nav_small">
-        <ul class="logo_bar">
-            <li>
-                <a class="i_name" href="https://www.invidelabs.com/?utm_source='developer-page'">
-                    <div>
-                        <img src="favicon/favicon-96x96.png" alt="" />
-                        <div>
-                            <p>
-                                Invide Labs
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li><i class="fa fa-bars"></i></li>
-        </ul>
-        <ul class="options">
-            <li>
-                <a href="http://apply.invidelabs.com/?utm_source='developer-page'">Join The Cult</a>
-            </li>
-            <li>
-                <a href="https://flow.invidelabs.com/?utm_source='developer-page'">About Product</a>
-            </li>
-            <li>
-                <a href="https://blog.invidelabs.com/?utm_source='developer-page'">Blog</a>
-            </li>
-        </ul>
-    </nav>
+    <!--Menu Navbar Ends-->
 
-    <div class="container">
-        <div class="section1 dev-head">
-            <span id="heading">Invi<span class="highlight" style="font-style: italic">t</span>e-only cult of top <span class="highlight2"><span class="highlight" style="font-style: italic">d</span>evelopers</span><br>
-            <br>
-            <div class="col-md-4 centered-child-container">
-                <form method="POST" action="https://flow.invidelabs.com/verify" class="form-inline">
-                    <!-- <form method="POST" action="http://localhost:3000/verify" class="form-inline"> -->
-                    <div class="form-group">
-                        <label style="font-size: 20%; color: red;" id="invitationCodeInputLabel" for="invitationCode"></label><br/>
-                        <input type="text" name="code" class="form-control" id="invitationCode" placeholder="Invitation Code" minlength="3" required>
-                    </div>
-                    <input type="hidden" name="scope" value="community" />
-                    <button class="btn uppercase" type="submit"><span>Join Now</span></button>
-                    <a style="cursor: crosshair; white-space: nowrap; font-size: 25%;word-wrap: break-word; vertical-align: middle;" onclick="window.location.href='http://apply.invidelabs.com'">Request Invitation</a>
-                    <br/>
-                    <small style="color: #333; font-size: 20%;">
-                        <span style="white-space: nowrap; padding-right: 20px;"><i class="glyphicon glyphicon-filter"></i> 1.2% acceptance rate </span>
-                        <span style="font-size: 90%;opacity: 0.7;color: #333;font-weight: normal; white-space: nowrap;"><i class="glyphicon glyphicon-flash"></i> 48 hr response</span></small>
-                    </span> <br>
-                </form>
-            </div>
-        </div>
-        <div class="row centered-child-container">
-            <div class="col-md-10 col-offset-1">
-                <div class="row centered-child-container">
-                    <div class="col-md-4 centered-child-container">
-                        <div>
-                            <div class="matric-value">
-                                <span class="counter int">10000</span>
+    <main role="main">
+        <section class="section-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 order-md-1 my-auto justify-content-md-center">
+                        <br/><br/>
+                        <h1 style="padding-left: 0;">
+                            Invite-only cult of top developers
+                        </h1>
+                        <br/>
+                        <div style="color: #634063;">
+                            <span style="font-size: 100%;opacity: 0.7;font-weight: normal; white-space: nowrap;"><i class="fa fa-filter"></i> 1.2% acceptance rate</span>
+                        </div>
+                        <br/><br/>
+                        <form method="POST" action="https://flow.invidelabs.com/verify" class="form-inline">
+                            <!-- <form method="POST" action="http://localhost:3000/verify" class="form-inline"> -->
+                            <div class="form-group">
+                                <!-- <label style="font-size: 20%; color: red;" id="invitationCodeInputLabel" for="invitationCode"></label><br/> -->
+                                <input type="text" name="code" class="form-control form-control-sm" id="invitationCode" placeholder="Invitation Code" minlength="3" required>
+                                <div class="invalid-feedback" id="invitationCodeInputLabel">
+                                    Please provide a valid invitation code
+                                </div>
                             </div>
-                            <span class="matric-label">Applications Processed</span>
-                        </div>
+                            <input type="hidden" name="scope" value="community" />
+                            <button class="btn btn-primary btn-sm" type="submit"><span>Join Now</span></button>
+                        </form>
+                        <br><br/>
+                        <small style="color: #333; opacity: 0.5">
+                            Don't have invitation?
+                        <a style="opacity: 1; font-weight: bold; color: #5106c1; text-decoration: none;white-space: nowrap; word-wrap: break-word; vertical-align: middle;" onclick="window.location.href='http://apply.invidelabs.com'">Request Invitation Here <i class="fa fa-paper-plane"></i></a>
+                        </small>
+                        <br/><br/>
+                        <small style="color: #634063;">
+                            <span style="font-size: 100%;opacity: 0.7;font-weight: normal; white-space: nowrap;padding-right: 20px;"><i class="fa fa-bolt"></i> 48 hr response</span>
+                        </small>
                     </div>
-                    <div class="col-md-4 centered-child-container">
-                        <div>
-                            <div class="matric-value">
-                                <span class="counter decimal">1.2</span>
-                                <span>%</span>
+                    <div class="col-xs-12 col-md-6 order-md-2 justify-content-md-center">
+                        <img data-src="imgs/developer-3x.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br/>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10 col-offset-1">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-4 justify-content-md-center">
+                            <div class="text-center">
+                                <div class="matric-value">
+                                    <span class="counter int">15000</span>
+                                </div>
+                                <span class="matric-label">Applications Processed</span>
                             </div>
-                            <span class="matric-label">Acceptance Rate</span>
                         </div>
-                    </div>
-                    <div class="col-md-4 centered-child-container">
-                        <div>
-                            <div class="matric-value">
-                                <span class="counter int">300</span>
-                                <span>yrs</span>
+                        <div class="col-md-4 justify-content-md-center">
+                            <div class="text-center">
+                                <div class="matric-value">
+                                    <span class="counter decimal">1.2</span>
+                                    <span>%</span>
+                                </div>
+                                <span class="matric-label">Acceptance Rate</span>
                             </div>
-                            <span class="matric-label">Combined Exp. Of Community</span>
                         </div>
-                    </div>
-                </div><br/><br/>
-                <div style="text-align: center; color: grey; font-size: 60%; opacity: 0.4;">Last stats calculated on: Mar 27, 2018</div>
-                <br/><br/>
-            </div>
-        </div>
-        <div class="row content-classic centered-child-container">
-            <div class="col-md-10 col-offset-1">
-                <div class="row content-classic centered-child-container">
-                    <div class="col-md-6 hidden-xs centered-child-container">
-                        <img src="imgs/coolpic12.jpg" class="img-responsive img-style-1" alt="Responsive image">
-                    </div>
-                    <div class="col-md-6 centered-child-container">
-                        <div class="cards">
-                            <p class="title">We Are Different</p><br>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> No location barrier</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Focus on individual growth with freedom</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Training for remote collaboration</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Built for millenials and generations ahead</p>
+                        <div class="col-md-4 justify-content-md-center">
+                            <div class="text-center">
+                                <div class="matric-value">
+                                    <span class="counter int">500</span>
+                                    <span>yrs</span>
+                                </div>
+                                <span class="matric-label">Combined Exp. Of Community</span>
+                            </div>
                         </div>
-                    </div>
+                    </div><br/><br/>
+                    <div style="text-align: center; color: grey; font-size: 60%; opacity: 0.4;">Last stats calculated on: Nov 2018</div>
+                    <br/><br/>
                 </div>
             </div>
-        </div>
-        <br><br><br><br><br><br>
-        <div class="row content-classic centered-child-container">
-            <div class="col-md-10 col-offset-1">
-                <div class="row content-classic centered-child-container">
-                    <div class="col-md-6 hidden-xs centered-child-container">
-                        <img src="imgs/coolpic13.jpg" class="img-responsive img-style-1" style="max-height: 70%;" alt="Responsive image">
-                    </div>
-                    <div class="col-md-6 centered-child-container">
-                        <div class="cards">
-                            <p class="title">How It Works</p><br>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Request invitation to join network</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Mentor and get mentored by Inviders</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Attend online program to earn badge of Invider</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Join missions(vetted work opportunities)</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work remotely, earn money & reputation</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Get <b>support/funds</b> from Invide to grow</p>
+            <div class="row content-classic justify-content-md-center">
+                <div class="col-md-10 col-offset-1">
+                    <div class="row content-classic justify-content-md-center">
+                        <div class="col-md-6 hidden-xs justify-content-md-center centered-child-container">
+                            <img src="imgs/coolpic12.jpg" class="full-width img-responsive img-style-1" alt="">
+                        </div>
+                        <div class="col-md-6 justify-content-md-center">
+                            <div class="cards full-width">
+                                <p class="title">How It Works</p><br>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Request invitation to join network</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Mentor and get mentored by Inviders</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Get access to free growth programs and kits</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Get access to vetted work opportunities</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work remotely, earn money & reputation</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Get <b>support/funds</b> from Invide to grow</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <br><br><br><br><br><br>
-        <div class="row content-classic centered-child-container">
-            <div class="col-md-10 col-offset-1">
-                <div class="row content-classic centered-child-container">
-                    <div class="col-md-6 centered-child-container">
-                        <div class="cards">
-                            <p class="title">Benefits</p><br>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> High paying jobs</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work from anywhere opportunities</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work with highly intellectual and skilled people</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Save time wasted on projects which don't add value</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Get paid for every minute you work</p>
+            <br><br><br><br><br><br>
+            <div class="row content-classic justify-content-md-center">
+                <div class="col-md-10 col-offset-1">
+                    <div class="row content-classic justify-content-md-center">
+                        <div class="col-md-6 hidden-xs justify-content-md-center centered-child-container">
+                            <img src="imgs/coolpic13.jpg" class="full-width img-responsive img-style-1" alt="">
+                        </div>
+                        <div class="col-md-6 justify-content-md-center centered-child-container">
+                            <div class="cards full-width">
+                                <p class="title">We Are Different</p><br>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> We enable teams to remove location barrier</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Focus on individual growth with freedom</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Training for remote collaboration</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Built for millenials and generations ahead</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 hidden-xs centered-child-container">
-                        <img src="imgs/coolpic2.jpg" class="img-responsive img-style-1" alt="Great Team">
-                    </div>
                 </div>
             </div>
-        </div>
-        <br><br><br><br><br><br>
-        <div class="row content-classic centered-child-container">
-            <div class="col-md-10 col-offset-1">
-                <div class="row content-classic centered-child-container">
-                    <div class="col-md-6 centered-child-container">
-                        <div class="cards">
-                            <p class="title">Encouraging Futuristic Culture</p><br>
-                            <!-- <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Enjoy the work</p> -->
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Unleash potential without barriers of boundaries</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Great code quality, no mediocrity</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Modern development tools & processes</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Freedom and leadership for everyone</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work-life balance is a reality</p>
-                            <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Collaboration with smart people with business/work ethics</p>
+            <br><br><br><br><br><br>
+            <div class="row content-classic justify-content-md-center">
+                <div class="col-md-10 col-offset-1">
+                    <div class="row content-classic justify-content-md-center">
+                        <div class="col-md-6 justify-content-md-center centered-child-container">
+                            <div class="cards full-width">
+                                <p class="title">Benefits</p><br>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> High paying jobs</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work from anywhere opportunities</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Speedy interview process and decisions</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Be part of a supportive dev community</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Exclusive offers e.g. Free event entry</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-xs justify-content-md-center centered-child-container">
+                            <img src="imgs/coolpic2.jpg" class="full-width img-responsive img-style-1" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6 hidden-xs centered-child-container">
-                        <img src="imgs/coolpic14.jpg" class="img-responsive img-style-1" alt="Responsive image">
+                </div>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="row content-classic justify-content-md-center">
+                <div class="col-md-10 col-offset-1">
+                    <div class="row content-classic justify-content-md-center">
+                        <div class="col-md-6 justify-content-md-center centered-child-container">
+                            <div class="cards full-width">
+                                <p class="title">Encouraging Futuristic Culture</p><br>
+                                <!-- <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Enjoy the work</p> -->
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Unleash potential without barriers of boundaries</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Great code quality, no mediocrity</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Modern development tools & processes</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Freedom and leadership for everyone</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Work-life balance is a reality</p>
+                                <p class="des_text"><i class='fa fa-check' style='color:#333'></i> Collaboration with smart people with business/work ethics</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-xs justify-content-md-center centered-child-container">
+                            <img src="imgs/coolpic14.jpg" class="full-width img-responsive img-style-1" alt="Responsive image">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <br><br><br><br><br><br>
-        <div class="row centered-child-container">
-            <div class="col-md-10 col-md-offset-1 centered-child-container">
-                <div class="cards light">
-                    <p class="title">FAQ</p><br>
-                    <p class="des_text faqs" id="q2"><i class='fa fa-check' style='color:#333'></i> Am I eligible?
-                    </p>
-                    <ul class="q2  opt">
-                        <li>
-                            To be eligible you must have contributed significantly to at least one tech product(personal or professional). All Inviders are smart, have strong fundamentals, problem solving skills and experience of building software/apps. Each Invider is at least
-                            3x productive than an average developer. Reading this <a href="https://blog.invidelabs.com/what-to-do-when-you-get-rejected/" target="_blank">article about rejection at Invide Labs</a> will help
-                            get right perspective about it.
-                            <br>
-                        </li>
-                    </ul>
-                    <p class="des_text faqs" id="q1"><i class='fa fa-check' style='color:#333'></i> How much time does screening takes?
-                    </p>
-                    <ul class="q1 opt">
-                        <li>
-                            Generally it takes 2-7 weeks to start the screening process. From there it takes around 3 weeks to complete the process till we let you know our final result. It takes time, hence do read whether you're eligible for application.
-                            <br>
-                        </li>
-                    </ul>
-                    <p class="des_text faqs" id="q3"><i class='fa fa-check' style='color:#333'></i> How do I increase my chances of selection?
-                    </p>
-                    <ul class="q3  opt">
-                        <li>
-                            Get reference from existing Inviders, contribute to our instant help group and open source projects. Don't tell, show!
-                            <br>
-                        </li>
-                    </ul>
-                    <p class="des_text faqs" id="q6"><i class='fa fa-check' style='color:#333'></i> I'm a fresher, can I join?
-                    </p>
-                    <ul class="q6  opt">
-                        <li>
-                            <b>No.</b> It is going to take time to be prepared to be an Invider. Here's what you can do. Choose an area of interest, study about it in depth, practice, build stuff, solve real business problems. When you feel confident
-                            enough to teach someone else about the same, that is the right time to apply to us. You'll find tons of course material out there to study. We also have recently complied a course to learn front-end web development. All the
-                            best!
-                            <br>
-                        </li>
-                    </ul>
+            <br><br><br><br><br><br>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10 col-md-offset-1 justify-content-md-center">
+                    <div class="cards light full-width">
+                        <p class="title">FAQ</p><br>
+                        <p class="des_text faqs" id="q2"><i class='fa fa-check' style='color:#333'></i> Am I eligible?
+                        </p>
+                        <ul class="q2  opt">
+                            <li>
+                                To be eligible you must have contributed significantly to at least one tech product(personal or professional). All Inviders are smart, have strong fundamentals, problem solving skills and experience of building software/apps. Each Invider is at least
+                                3x productive than an average developer. Reading this <a href="https://blog.invidelabs.com/what-to-do-when-you-get-rejected/" target="_blank">article about rejection at Invide Labs</a> will
+                                help get right perspective about it.
+                                <br>
+                            </li>
+                        </ul>
+                        <p class="des_text faqs" id="q1"><i class='fa fa-check' style='color:#333'></i> How much time does screening takes?
+                        </p>
+                        <ul class="q1 opt">
+                            <li>
+                                Generally it takes 2-7 weeks to start the screening process. From there it takes around 3 weeks to complete the process till we let you know our final result. It takes time, hence do read whether you're eligible for application.
+                                <br>
+                            </li>
+                        </ul>
+                        <p class="des_text faqs" id="q3"><i class='fa fa-check' style='color:#333'></i> How do I increase my chances of selection?
+                        </p>
+                        <ul class="q3  opt">
+                            <li>
+                                Get reference from existing Inviders, contribute to our instant help group and open source projects. Don't tell, show!
+                                <br>
+                            </li>
+                        </ul>
+                        <p class="des_text faqs" id="q6"><i class='fa fa-check' style='color:#333'></i> I'm a fresher, can I join?
+                        </p>
+                        <ul class="q6  opt">
+                            <li>
+                                <b>No.</b> It is going to take time to be prepared to be an Invider. Here's what you can do. Choose an area of interest, study about it in depth, practice, build stuff, solve real business problems. When you feel confident
+                                enough to teach someone else about the same, that is the right time to apply to us. You'll find tons of course material out there to study. We also have recently complied a course to learn front-end web development. All
+                                the best!
+                                <br>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br/><br/><br/><br/>
-        <div class="row">
-            <div class="col-md-12 last">
-                <form method="POST" action="https://flow.invidelabs.com/verify" class="form-inline">
-                    <!-- <form method="POST" action="http://localhost:3000/verify" class="form-inline"> -->
-                    <div class="form-group">
-                        <label style="font-size: 20%; color: red;" for="invitationCode"></label><br/>
-                        <input type="text" name="code" class="form-control" placeholder="Invitation Code" minlength="3" required>
-                    </div>
-                    <input type="hidden" name="scope" value="community" />
-                    <button class="btn uppercase" type="submit"><span>Join Now</span></button>
-                </form>
-                <br/>
-                <div style="color: #000; opacity: 0.8;;">Don't have invitation code?</div><br/>
-                <a style="font-size: 125%; font-weight: bold; word-wrap: break-word; vertical-align: middle;" onclick="window.location.href='http://apply.invidelabs.com'" style="cursor: crosshair;">Request Invitation</a>
-                <br/><br/>
-                <span style="opacity: 0.7;color: #333;"><i class="glyphicon glyphicon-time"></i> Response within 48 hrs</span>
+            <br/><br/><br/><br/>
+            <div class="row justify-content-md-center">
+                <div class="col-md-12 centered-child-container">
+                    <form method="POST" action="https://flow.invidelabs.com/verify" class="form">
+                        <!-- <form method="POST" action="http://localhost:3000/verify" class="form"> -->
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <label style="font-size: 20%; color: red;" for="invitationCode"></label><br/>
+                                <input type="text" name="code" class="form-control form-control-sm" placeholder="Invitation Code" minlength="3" required>
+                            </div>
+                        </div>
+                        <input type="hidden" name="scope" value="community" />
+                        <div class="col-auto text-center">
+                            <button class="btn btn-primary btn-sm " type="submit"><span>Join Now</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
-                <br/><br/><br/>
+            <div class="row text-center justify-content-md-center">
+                <div class="col-md-12">
+                    <p class="text-center" style="color: #333; opacity: 0.5">
+                        <br/><span class="text-center" style="font-size: 80%;">Don't have invitation?</span>
+                        <br/>
+                        <a class="text-center" style="opacity: 1; font-weight: bold; color: #5106c1; text-decoration: none;white-space: nowrap; word-wrap: break-word; vertical-align: middle;" onclick="window.location.href='http://apply.invidelabs.com'">Request Invitation Here <i class="fa fa-paper-plane"></i></a>
+                        <br/>
+                        <span class="text-center" style="color: #634063;font-size: 80%;opacity: 0.7;font-weight: normal; white-space: nowrap;"><i class="fa fa-bolt"></i> 48 hr response</span>
+                    </p>
+                </div>
             </div>
-        </div>
-        <br/><br/>
-        <br/><br/>
-        <div class="row" style="text-align: center;">
-            <p style="font-size: 100%;color: #333;">coach@invidelabs.com<br/>
-                <button class="btn light uppercase" id="b2_span" type="button"><span>Download App </span></button><br/>
-                <a href="https://twitter.com/invide_labs"> <i class='fa fa-twitter-square icons'></i></a>
-                <a href="https://www.linkedin.com/company/7799786/"> <i class='fa fa-linkedin-square icons' aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/InvideLabs-1686586228269135/"> <i class='fa fa-facebook-square icons' aria-hidden="true"></i></a>
-                <a href="https://angel.co/invide-labs"> <i class='fa fa-angellist icons'></i></a>
-                <br/>
-                <div class="icons" style="font-size:50%;text-align: center;"><i class='fa fa-copyright'></i> Invide Labs</div>
-        </div>
-        <br/><br/>
-    </div>
 
+            <br/><br/>
+            <br/><br/>
+            <div class="row text-center justify-content-md-center">
+                <div class="col-md-12">
+                    <p class="text-center" style="font-size: 100%;color: #333;">
+
+                        <button class="btn light btn-sm" id="b2_span" style="font-size: 95%;" type="button"><span>Download App </span></button><br/> To stay in touch with community members right where you work
+                        <br/><br/><br/><br/> coach@invidelabs.com
+                        <br/><br/>
+                        <a href="https://twitter.com/invide_labs"> <i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/7799786/"> <i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/InvideLabs-1686586228269135/"> <i class="fab fa-facebook"></i></a>
+                        <!-- <a href="https://angel.co/invide-labs"> <i class="fab fa-angellist"></i></a> -->
+                        <br/><br/>
+                        <div class="icons" style="font-size:50%;text-align: center;"><i class='fa fa-copyright'></i> Invide Labs</div>
+                    </p>
+                </div>
+            </div>
+            <br/><br/>
+        </div>
+
+    </main>
     <!-- <script src="js/three.min.js"></script> -->
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
     <!-- <script>
         var loader = new THREE.FileLoader();
         loader.load('app.json', function(text) {
@@ -409,6 +413,11 @@
         });
     </script> -->
 </body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script type="text/javascript" src="javascripts/vendors/jquery.2.1.3.min.js"></script>
 <script type="text/javascript" src="javascripts/custom.js"></script>
 <script type="text/javascript">
@@ -424,12 +433,13 @@
                 } else if (error == 'codeexpired') {
                     $('#invitationCodeInputLabel').text("Expired invitation code! Please recheck with the referrer or request invitation now.")
                 }
+                $('#invitationCode').addClass('is-invalid');
             } else {
                 $('#invitationCodeInputLabel').text("Request invitation now. It will take us 48 hrs to process your request.")
             }
         }
         if (invitationCode) {
-            $('#invitationCode').val(invitationCode);
+            $('#invitationCode').val(decodeURI(invitationCode));
         }
 
         //Download links
@@ -528,6 +538,29 @@
         }
         return (false);
     }
+</script>
+<script>
+    $('img').bind('contextmenu', function(e) {
+        return false;
+    });
+
+    $(window).scroll(() => {
+        var scrollHeight = $(window).scrollTop();
+        var navbar = $('.navbar.od');
+
+        if (scrollHeight > 10) {
+            navbar.addClass('fixed-nav');
+        } else {
+            navbar.removeClass('fixed-nav');
+        }
+    });
+
+    [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.onload = function() {
+            img.removeAttribute('data-src');
+        };
+    });
 </script>
 <script src="js/analyticsUtilities.js"></script>
 
