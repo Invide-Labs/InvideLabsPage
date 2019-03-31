@@ -142,6 +142,9 @@ body {
         width: 90%;
         height: auto;
     }
+    .img-style-1 {
+        display: none;
+    }
 }
 
 .faqs {
@@ -211,4 +214,44 @@ body {
         background-position: 100%;
         background-size: 30%;
     }
+}
+
+.section-1 {
+    background: #fdf9f9;
+    height: 100vh;
+}
+
+@media (max-width: 992px) {
+    .section-1 {
+        background: #fdf9f9;
+        height: auto;
+        padding: 50px 0
+    }
+    .section-1 img {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-1 .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 1400px) {
+    .section-1 .container {
+        max-width: 75%;
+    }
+}
+
+.brand--text {
+    font-weight: 500;
+    color: #ff2d55;
+}
+
+.full-width {
+    width: 100%;
 }

@@ -106,7 +106,6 @@ acronym {
 
 body {
     font-family: 'Quicksand', sans-serif;
-    color: #F2F2F2;
 }
 
 @media all and (orientation:landscape) {
@@ -1358,4 +1357,12 @@ h2 {
 
 .advanced>div>ul>li {
     font-weight: normal;
+}
+
+.advanced a {
+    font-weight: normal !important;
+}
+
+.bg-light {
+    background: #fdf9f9;
 }
