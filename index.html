@@ -49,7 +49,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
     <link href="favicon/favicon.ico" rel="shortcut icon">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/library/owl-carousal/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/library/tingle-popup/tingle.min.css">
     <link rel="stylesheet" href="assets/css/popup.css">
@@ -100,60 +101,29 @@
 </head>
 
 <body>
-    <div id="on-menu-show"></div>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBNSX9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <nav class="navbar navbar-expand-xl navbar-light od  fixed-top">
-        <a class="navbar-brand" href="/">
-            <img src="imgs/logo.png" alt="logo" class="brand--icon">
-            <span class="brand--text align-middle">
-                Invide Labs
-            </span>
-        </a>
-        <span class="navbar-toggler border-0" data-toggle="collapse" id="toggle-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
-                x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"
-                width="32px" height="32px">
-                <g>
-                    <g>
-                        <path d="M501.333,96H10.667C4.779,96,0,100.779,0,106.667s4.779,10.667,10.667,10.667h490.667c5.888,0,10.667-4.779,10.667-10.667    S507.221,96,501.333,96z"
-                            fill="#D80027" />
-                    </g>
-                </g>
-                <g>
-                    <g>
-                        <path d="M501.333,245.333H10.667C4.779,245.333,0,250.112,0,256s4.779,10.667,10.667,10.667h490.667    c5.888,0,10.667-4.779,10.667-10.667S507.221,245.333,501.333,245.333z"
-                            fill="#D80027" />
-                    </g>
-                </g>
-                <g>
-                    <g>
-                        <path d="M501.333,394.667H10.667C4.779,394.667,0,399.445,0,405.333C0,411.221,4.779,416,10.667,416h490.667    c5.888,0,10.667-4.779,10.667-10.667C512,399.445,507.221,394.667,501.333,394.667z"
-                            fill="#D80027" />
-                    </g>
-                </g>
-            </svg>
-        </span>
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="/"><img src="imgs/logo.png" alt="" width="30" height="30"> <span class="brand--text">Invide Labs</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="collapse navbar-collapse d-none d-xl-block" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto navbar-nav align-items-md-center pr-3">
-
-                <li class="nav-item big">
-                    <a class="nav-link" href="developer.html"><span class="dot-style2"></span> Accelerator For Developers</a>
-                </li>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Products
-                    </a>
+                      </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="https://flow.invidelabs.com/team/intro">For Remote Teams</a>
                         <a class="dropdown-item" href="https://flow.invidelabs.com">For Developers</a>
                         <a class="dropdown-item" href="https://flow.invidelabs.com/team/intro?usecase=screening">For Hiring Managers</a>
-                        <a class="dropdown-item" href="https://flow.invidelabs.com/matchmaking?ref=invide_home">Matchmaking <span class="dot-new"></span></a>
+                        <a class="dropdown-item" href="https://flow.invidelabs.com/matchmaking?ref=invide_home">Try Matchmaking(beta)</a>
                     </div>
                 </li>
                 <!-- <li class="nav-item" style="width: 200px">
@@ -165,359 +135,330 @@
                 <li class="nav-item">
                     <a class="nav-link" href="https://blog.invidelabs.com">Blog</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://flow.invidelabs.com/login">Login</a>
+                <li class="nav-item big">
+                    <a class="nav-link" href="developer.html"><span class="dot-style2"></span> Accelerator For Developers</a>
                 </li>
-                <li class="nav-item">
-                    <a class="ga-hire-expert btn btn-danger btn-lg rounded-0 btn-pa" href="https://flow.invidelabs.com/jobPosting/form/homepage?ref=menu">Hire
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a class="ga-hire-expert btn btn-danger btn-lg rounded-0 btn-pa" href="https://flow.invidelabs.com/start?ref=menu">Hire
                         Developer</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="d-xl-none off-canvas-menu" id="off-menu">
-            <span id="close-menu" class="float-right">
-                <i class="far fa-times-circle fa-3x"></i>
-            </span>
-            <ul class="list-unstyled">
-                <li>
-                    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        Products
-                    </a>
-                    <div class="collapse mobile-accordian-menu" id="collapseExample">
-                        <a class="dropdown-item menu-item" href="https://flow.invidelabs.com/team/intro">For Remote
-                            Teams</a>
-                        <a class="dropdown-item menu-item" href="https://flow.invidelabs.com">For Developers</a>
-                        <a class="dropdown-item" href="https://flow.invidelabs.com/matchmaking?ref=invide_home">Matchmaking</a>
-                    </div>
-                </li>
-                <!-- ` -->
-                <li class="">
-                    <a href="developer.html" class="menu-item">Accelerator For Developers</a>
-                </li>
-                <li class="">
-                    <a href="https://blog.invidelabs.com" class="menu-item">Blog</a>
-                </li>
-                <li class="">
-                    <a href="https://flow.invidelabs.com/login">Login</a>
-                </li>
-                <li class="">
-                    <a class="ga-hire-expert btn btn-danger btn-lg rounded-0 btn-pa" href="https://flow.invidelabs.com/jobPosting/form/homepage?ref=menu" class="menu-item">Hire Developer</a>
-                </li>
-            </ul>
+            </form>
         </div>
     </nav>
 
-    <!-- start of section-1 -->
-    <section class="section-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6 order-md-2 text-center mb-5">
-                    <img data-src="assets/img/home/s1/artboard-sm.png" alt="Ask Expert" class="img-fluid">
-                </div>
-                <div class="col-xs-12 col-md-6 order-md-1 d-flex justify-content-center flex-column content-wrap text-center text-md-left">
-                    <p class="main-heading font-weight-bold">
-                        Where top developers hangout
-                    </p>
-                    <h2 style="opacity: 0.7;">Invite-only network of top developers</h2>
-                    <p style="opacity: 0.6; font-size: 140%;">Supporting top emerging developers since 2016
-                    </p>
-                    <div class="w-100">
-                        <!-- <span style="padding-left: 12px;padding-top: 24px;">Hire on easy month-on-month basis</span><br/> -->
-                        <a class="btn btn-outline-danger rounded-0 btn-lg btn-apply-as-expert" href="developer.html">Apply
+    <main role="main">
+        <!-- start of section-1 -->
+        <section class="section-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 order-md-2 text-center mb-5">
+                        <img data-src="assets/img/home/s1/artboard-sm.png" alt="Ask Expert" class="img-fluid">
+                    </div>
+                    <div class="col-xs-12 col-md-6 order-md-1 d-flex justify-content-center flex-column content-wrap text-center text-md-left my-auto">
+                        <p class="main-heading font-weight-bold">
+                            World's first accelerator for developers
+                            <!-- Where top developers hangout -->
+                        </p>
+                        <h2 style="opacity: 0.7;">Invite-only network of top developers</h2>
+                        <p style="opacity: 0.6; font-size: 140%;">Supporting top emerging developers since 2016
+                        </p>
+                        <div class="w-100">
+                            <!-- <span style="padding-left: 12px;padding-top: 24px;">Hire on easy month-on-month basis</span><br/> -->
+                            <a class="btn btn-outline-danger rounded-0 btn-lg btn-apply-as-expert" href="developer.html">Apply
                                 as developer</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-lg-10 col-xl-8 pr-3">
+                                <div class="share-email-wrapper">
+                                    <form method="POST" action="https://flow.invidelabs.com/start">
+
+                                        <input name="email" type="email" required="true" class="form-control il-input" placeholder="Share your email">
+
+                                        <button class="ga-hire-expert btn btn-danger rounded-0 btn-lg btn-hire-expert" type="submit">Hire
+                                        Developer</button>
+                                    </form>
+                                </div>
+                                <br/>
+                                <div id="value-highlights" style="color: #333; font-size: 120%; opacity: 0.5;display: flex;
+  align-items: center;">
+                                    <span class="dot"></span> <span style="padding-left: 6px;padding-right: 6px;">3x productive</span>
+                                    <span class="dot"></span> <span style="padding-left: 6px;padding-right: 6px;">Pre-vetted</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end of section-1 -->
+
+        <!-- start of section 6 -->
+        <section class="section-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 text-center text-md-right order-md-2 d-none d-md-block">
+                        <picture>
+                            <source srcset="assets/img/home/s6/work-sm.png" media="(max-width: 1200px)">
+                            <img src="assets/img/home/s6/work-md.png" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
+                        <p><br/><br/><br/><br/>Where top emerging tech companies</p>
+                        <p class="section-heading font-weight-bold">
+                            Fund top developers
+                            <br/> Build winning tech team</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end of section 6 -->
+
+
+        <!-- start of section 5 -->
+        <section class="section-5 sec-py" id="invider_onboarding_process">
+            <div class="text-center">
+                <p class="section-heading highlight font-weight-bold text-bg text-bg-dark" data-content="The Only">Accelerator for developers</p>
+                <div class="container content-wrapper-mb">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 text-center">
+                            <img data-src="assets/img/home/s5/screening-sm.png" alt="Screening resume" class="img-fluid">
+                        </div>
+                        <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
+                            <p class="process-count">01</p>
+                            <p class="section-heading-sm font-weight-bold">Application</p>
+                            <p>Apply and self-assess yourself</p>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 col-md-12 col-lg-10 col-xl-8 pr-3">
-                            <div class="share-email-wrapper">
-                                <form method="POST" action="https://flow.invidelabs.com/start">
+                        <div class="col-xs-12 col-md-6 text-center text-md-left order-md-2">
+                            <img data-src="assets/img/home/s5/online-fo-sm.png" alt="Online face off" class="img-fluid">
+                        </div>
+                        <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
+                            <p class="process-count">02</p>
+                            <p class="section-heading-sm font-weight-bold">Screening</p>
+                            <p>Our secret sauce of maintaining high standards</p>
+                        </div>
 
-                                    <input name="email" type="email" required="true" class="form-control il-input" placeholder="Share your email">
-
-                                    <button class="ga-hire-expert btn btn-danger rounded-0 btn-lg btn-hire-expert" type="submit">Hire
-                                        Developer</button>
-                                </form>
-                            </div>
-                            <br/>
-                            <div id="value-highlights" style="color: #333; font-size: 120%; opacity: 0.5;display: flex;
-  align-items: center;">
-                                <span class="dot"></span> <span style="padding-left: 6px;padding-right: 6px;">3x productive</span>
-                                <span class="dot"></span> <span style="padding-left: 6px;padding-right: 6px;">Pre-vetted</span>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 text-center text-md-right">
+                            <img data-src="assets/img/home/s5/project-sm.png" alt="Minor project(1-7 days)" class="img-fluid">
+                        </div>
+                        <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
+                            <p class="process-count">03</p>
+                            <p class="section-heading-sm font-weight-bold">Demo Day</p>
+                            <p>The day when you present yourself in front of community</p>
                         </div>
                     </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- end of section-1 -->
-
-    <!-- start of section 6 -->
-    <section class="section-6">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6 text-center text-md-right order-md-2 d-none d-md-block">
-                    <picture>
-                        <source srcset="assets/img/home/s6/work-sm.png" media="(max-width: 1200px)">
-                        <img src="assets/img/home/s6/work-md.png" alt="" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
-                    <p><br/><br/><br/><br/>Where top emerging tech companies</p>
-                    <p class="section-heading font-weight-bold">
-                        Fund top developers
-                        <br/> Build winning tech team</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- end of section 6 -->
-
-
-    <!-- start of section 5 -->
-    <section class="section-5 sec-py" id="invider_onboarding_process">
-        <div class="text-center">
-            <p class="section-heading highlight font-weight-bold text-bg text-bg-dark" data-content="The Only">Accelerator for developers</p>
-            <div class="container content-wrapper-mb">
-                <div class="row">
-                    <div class="col-xs-12 col-md-6 text-center">
-                        <img data-src="assets/img/home/s5/screening-sm.png" alt="Screening resume" class="img-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 text-center text-md-left order-md-2">
+                            <img data-src="assets/img/home/s5/assessment-sm.png" alt="Personality assessment" class="img-fluid">
+                        </div>
+                        <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
+                            <p class="process-count">04</p>
+                            <p class="section-heading-sm font-weight-bold">Community Activities</p>
+                            <p>Being part of activities helps you seek and offer support to community members</p>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
-                        <p class="process-count">01</p>
-                        <p class="section-heading-sm font-weight-bold">Application</p>
-                        <p>Apply and self-assess yourself</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 text-center text-md-right">
+                            <img data-src="assets/img/home/s5/onboard-sm.png" alt="A invider is onboard" class="img-fluid">
+                        </div>
+                        <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
+                            <p class="process-count">05</p>
+                            <p class="section-heading-sm font-weight-bold">Rise Up</p>
+                            <p>Get rewards and matching opportunities curated for you</p>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6 text-center text-md-left order-md-2">
-                        <img data-src="assets/img/home/s5/online-fo-sm.png" alt="Online face off" class="img-fluid">
-                    </div>
-                    <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
-                        <p class="process-count">02</p>
-                        <p class="section-heading-sm font-weight-bold">Screening</p>
-                        <p>Our secret sauce of maintaining high standards</p>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6 text-center text-md-right">
-                        <img data-src="assets/img/home/s5/project-sm.png" alt="Minor project(1-7 days)" class="img-fluid">
-                    </div>
-                    <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
-                        <p class="process-count">03</p>
-                        <p class="section-heading-sm font-weight-bold">Demo Day</p>
-                        <p>The day when you present yourself in front of community</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6 text-center text-md-left order-md-2">
-                        <img data-src="assets/img/home/s5/assessment-sm.png" alt="Personality assessment" class="img-fluid">
-                    </div>
-                    <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
-                        <p class="process-count">04</p>
-                        <p class="section-heading-sm font-weight-bold">Community Activities</p>
-                        <p>Being part of activities helps you seek and offer support to community members</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6 text-center text-md-right">
-                        <img data-src="assets/img/home/s5/onboard-sm.png" alt="A invider is onboard" class="img-fluid">
-                    </div>
-                    <div class="col-xs-12 col-md-6 text-center text-md-left d-flex justify-content-around flex-column align-self-center">
-                        <p class="process-count">05</p>
-                        <p class="section-heading-sm font-weight-bold">Rise Up</p>
-                        <p>Get rewards and matching opportunities curated for you</p>
-                    </div>
-                </div>
-                <div class="row mb-5 mt-5 pt-5">
-                    <div class="col-xs-12 col-sm-6 text-cbtn-hire-expert enter text-md-right mb-3 px-3">
-                        <a class="ga-hire-expert btn btn-danger rounded-0 btn-lg btn-pa btn-w-xs-fixed" href="https://flow.invidelabs.com/start?ref=trial" target="_blank">
+                    <div class="row mb-5 mt-5 pt-5">
+                        <div class="col-xs-12 col-sm-6 text-cbtn-hire-expert enter text-md-right mb-3 px-3">
+                            <a class="ga-hire-expert btn btn-danger rounded-0 btn-lg btn-pa btn-w-xs-fixed" href="https://flow.invidelabs.com/start?ref=trial" target="_blank">
                                 Fund/Hire Inviders for a month
                             </a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 text-center text-md-left mb-5 pb-3 px-3">
-                        <a class="btn btn-outline-danger rounded-0 btn-lg btn-pa btn-w-xs-fixed" href="https://www.invidelabs.com/developer.html" onclick="ga('send', 'event', { eventCategory: 'Accelerator For Developers', eventAction: 'Invider Application', eventLabel: 'Homepage Invider Application', eventValue: 2});"
-                            target="_blank">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 text-center text-md-left mb-5 pb-3 px-3">
+                            <a class="btn btn-outline-danger rounded-0 btn-lg btn-pa btn-w-xs-fixed" href="https://www.invidelabs.com/developer.html" onclick="ga('send', 'event', { eventCategory: 'Accelerator For Developers', eventAction: 'Invider Application', eventLabel: 'Homepage Invider Application', eventValue: 2});"
+                                target="_blank">
                                 Apply as developer
                             </a>
-                    </div>
-                </div>
-                <div class="inner-content-wrapper">
-                    <p class="font-weight-bold mb-2">Invide Research</p>
-                    <p>Want to learn about points of failure in team building?</p>
-                    <p class="pt-4">Read our article
-                        <a href="https://blog.invidelabs.com/points-of-failure-in-building-high-performing-tech-teams/" class="default-link" target="_blank">here</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of section 5 -->
-
-    <!-- start of section 2 -->
-    <section class="section-2 sec-py" id="how_to_use">
-        <div class="container-fluid text-center">
-            <p class="section-heading highlight font-weight-bold text-bg" data-content="Team">
-                Top emerging companies hire from Invide
-            </p>
-            <div class="row">
-                <div class="col-xs-12 col-md-4 mb-5">
-                    <picture>
-                        <source srcset="assets/img/home/s2/extend-team-sm.png" media="(max-width: 1200px)">
-                        <img src="assets/img/home/s2/extend-team-md.png" alt="Extend Team" class="img-fluid mb-5">
-                    </picture>
-                    <p class="section-heading-sm font-weight-bold mb-1">Better Sourcing</p>
-                    <p class="content-light">Motivated & filtered tech talent</p>
-                </div>
-                <div class="col-xs-12 col-md-4 mb-5">
-                    <picture>
-                        <source srcset="assets/img/home/s2/try-talent-sm.png" media="(max-width: 1200px)">
-                        <img src="assets/img/home/s2/try-talent-md.png" alt="Extend Team" class="img-fluid mb-5">
-                    </picture>
-                    <p class="section-heading-sm font-weight-bold mb-1">Better Screening</p>
-                    <p class="content-light">Move to YES/NO faster from MAYBE</p>
-                </div>
-                <div class="col-xs-12 col-md-4 mb-5">
-                    <picture>
-                        <source srcset="assets/img/home/s2/outsource-sm.png" media="(max-width: 1200px)">
-                        <img src="assets/img/home/s2/outsource-md.png" alt="Extend Team" class="img-fluid mb-5">
-                    </picture>
-                    <p class="section-heading-sm font-weight-bold mb-1">Better Onboarding</p>
-                    <p class="content-light">Never lose good candidates again</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of section 2 -->
-
-    <!-- start of section 3 -->
-    <section class="section-3 sec-py" id="features">
-        <div class="container content-wrapper-mb">
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <img data-src="assets/img/home/s3/experts-sm.png" alt="Experts" class="img-fluid">
-                </div>
-                <div class="col-xs-12 col-md-6 d-flex justify-content-around flex-column align-self-center text-center text-md-left">
-                    <p class="section-heading-alt font-weight-bold">
-                        Engage with top developers
-                    </p>
-                    <p>
-                        Found and nurtured through accelerator program
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6 order-md-2">
-                    <img data-src="assets/img/home/s3/invite-sm.png" alt="Invite" class="img-fluid">
-                </div>
-                <div class="col-xs-12 col-md-6 d-flex justify-content-around flex-column align-self-center order-md-1 text-center text-md-left">
-                    <p class="section-heading-alt font-weight-bold">
-                        Invite developers to join your team
-                    </p>
-                    <p>
-                        Use our cognitive science and AI to find the match
-                    </p>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <img data-src="assets/img/home/s3/productivity-sm.png" alt="Productivity" class="img-fluid">
-                </div>
-                <div class="col-xs-12 col-md-6 d-flex justify-content-around flex-column align-self-center text-center text-md-left">
-                    <p class="section-heading-alt font-weight-bold">
-                        Make better decisions with data
-                    </p>
-                    <p>
-                        AI enabled analytics + Transparency = Better decisions
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of section 3 -->
-
-    <!-- start of section 4 -->
-    <section class="section-4" id="success_story">
-        <div class="text-center">
-            <p class="section-heading highlight font-weight-bold text-bg text-bg-dark" data-content="Results">Success Stories
-            </p>
-            <div class="slider-region">
-                <div class="owl-carousel owl-theme">
-                    <div class="item container" data-attr="qikstay">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-5 order-md-2 img-col">
-                                <img data-src="assets/img/home/s4/0 Qikstay.png" alt="Qikstay app">
-                            </div>
-                            <div class="col-xs-12 col-md-7 d-flex justify-content-around flex-column align-self-start text-center text-md-left item-inner order-md-1">
-                                <div class="slider-content-header">
-                                    <!-- <p class="slider-content-header__type">Hotel Booking App</p> -->
-                                    <p class="slider-content-header__title">Qikstay</p>
-                                </div>
-                                <div class="slider-content-body">
-                                    <p class="slider-content-body__review">"Thanks to Invide, we launched
-                                        <a target="_blank" href="https://play.google.com/store/apps/details?id=in.qikstay.app" class="stories-app-link">Qikstay</a> faster and hired perfect developer"</p>
-                                    <p class="slider-content-body__review-by">- Jasveer, CEO at Qikstay, Forbes 30 Under 30</p>
-                                </div>
-                                <div class="slider-content-footer">
-                                    <ul class="list-inline">
-                                        <li>300,000+ Downloads</li>
-                                        <li>$250,000 raised</li>
-                                        <li>Launched within 3 months</li>
-                                    </ul>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
-                    <div class="item container" data-attr="designbids">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-5 order-md-2 img-col">
-                                <img data-src="assets/img/home/s4/1 designbids.png" alt="Desingbids app">
-                            </div>
-                            <div class="col-xs-12 col-md-7 d-flex justify-content-around flex-column align-self-start text-center text-md-left item-inner order-md-1">
-                                <div class="slider-content-header">
-                                    <p class="slider-content-header__title">Designbids</p>
-                                </div>
-                                <div class="slider-content-body">
-                                    <p class="slider-content-body__review">"Inviders helped me launch
-                                        <a target="_blank" class="stories-app-link" href="https://play.google.com/store/apps/details?id=in.designbids.android">Designbids</a> app quickly"</p>
-                                    <p class="slider-content-body__review-by">- Nithish, CEO at
-                                        <a target="_blank" href="http://designbids.in">Designbids</a>
-                                    </p>
-                                </div>
-                                <div class="slider-content-footer">
-                                    <ul class="list-inline">
-                                        <li>Raised seed funds from IAN</li>
-                                        <li>Launched within 2 months</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="inner-content-wrapper">
+                        <p class="font-weight-bold mb-2">Invide Research</p>
+                        <p>Want to learn about points of failure in team building?</p>
+                        <p class="pt-4">Read our article
+                            <a href="https://blog.invidelabs.com/points-of-failure-in-building-high-performing-tech-teams/" class="default-link" target="_blank">here</a>
+                        </p>
                     </div>
-                    <div class="item container" data-attr="pepup">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-5 order-md-2 img-col">
-                                <img data-src="assets/img/home/s4/5 pepup.png" alt="Pepup app">
-                            </div>
-                            <div class="col-xs-12 col-md-7 d-flex justify-content-around flex-column align-self-start text-center text-md-left item-inner order-md-1">
-                                <div class="slider-content-header">
-                                    <p class="slider-content-header__title">Party Messenger</p>
+                </div>
+            </div>
+        </section>
+        <!-- end of section 5 -->
+
+        <!-- start of section 2 -->
+        <section class="section-2 sec-py" id="how_to_use">
+            <div class="container-fluid text-center">
+                <p class="section-heading highlight font-weight-bold text-bg" data-content="Team">
+                    Top emerging companies hire from Invide
+                </p>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 mb-5">
+                        <picture>
+                            <source srcset="assets/img/home/s2/extend-team-sm.png" media="(max-width: 1200px)">
+                            <img src="assets/img/home/s2/extend-team-md.png" alt="Extend Team" class="img-fluid mb-5">
+                        </picture>
+                        <p class="section-heading-sm font-weight-bold mb-1">Better Sourcing</p>
+                        <p class="content-light">Motivated & filtered tech talent</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4 mb-5">
+                        <picture>
+                            <source srcset="assets/img/home/s2/try-talent-sm.png" media="(max-width: 1200px)">
+                            <img src="assets/img/home/s2/try-talent-md.png" alt="Extend Team" class="img-fluid mb-5">
+                        </picture>
+                        <p class="section-heading-sm font-weight-bold mb-1">Better Screening</p>
+                        <p class="content-light">Move to YES/NO faster from MAYBE</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4 mb-5">
+                        <picture>
+                            <source srcset="assets/img/home/s2/outsource-sm.png" media="(max-width: 1200px)">
+                            <img src="assets/img/home/s2/outsource-md.png" alt="Extend Team" class="img-fluid mb-5">
+                        </picture>
+                        <p class="section-heading-sm font-weight-bold mb-1">Better Onboarding</p>
+                        <p class="content-light">Never lose good candidates again</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of section 2 -->
+
+        <!-- start of section 3 -->
+        <section class="section-3 sec-py" id="features">
+            <div class="container content-wrapper-mb">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <img data-src="assets/img/home/s3/experts-sm.png" alt="Experts" class="img-fluid">
+                    </div>
+                    <div class="col-xs-12 col-md-6 d-flex justify-content-around flex-column align-self-center text-center text-md-left">
+                        <p class="section-heading-alt font-weight-bold">
+                            Engage with top developers
+                        </p>
+                        <p>
+                            Found and nurtured through accelerator program
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 order-md-2">
+                        <img data-src="assets/img/home/s3/invite-sm.png" alt="Invite" class="img-fluid">
+                    </div>
+                    <div class="col-xs-12 col-md-6 d-flex justify-content-around flex-column align-self-center order-md-1 text-center text-md-left">
+                        <p class="section-heading-alt font-weight-bold">
+                            Invite developers to join your team
+                        </p>
+                        <p>
+                            Use our cognitive science and AI to find the match
+                        </p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <img data-src="assets/img/home/s3/productivity-sm.png" alt="Productivity" class="img-fluid">
+                    </div>
+                    <div class="col-xs-12 col-md-6 d-flex justify-content-around flex-column align-self-center text-center text-md-left">
+                        <p class="section-heading-alt font-weight-bold">
+                            Make better decisions with data
+                        </p>
+                        <p>
+                            AI enabled analytics + Transparency = Better decisions
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of section 3 -->
+
+        <!-- start of section 4 -->
+        <section class="section-4" id="success_story">
+            <div class="text-center">
+                <p class="section-heading highlight font-weight-bold text-bg text-bg-dark" data-content="Results">Success Stories
+                </p>
+                <div class="slider-region">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item container" data-attr="qikstay">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-5 order-md-2 img-col">
+                                    <img data-src="assets/img/home/s4/0 Qikstay.png" alt="Qikstay app">
                                 </div>
-                                <div class="slider-content-body">
-                                    <p class="slider-content-body__review">"Poke your friends for parties with
-                                        <a target="_blank" class="stories-app-link" href="https://play.google.com/store/apps/details?id=com.getpepup.app&utm_source=invide_site">Party
+                                <div class="col-xs-12 col-md-7 d-flex justify-content-around flex-column align-self-start text-center text-md-left item-inner order-md-1">
+                                    <div class="slider-content-header">
+                                        <!-- <p class="slider-content-header__type">Hotel Booking App</p> -->
+                                        <p class="slider-content-header__title">Qikstay</p>
+                                    </div>
+                                    <div class="slider-content-body">
+                                        <p class="slider-content-body__review">"Thanks to Invide, we launched
+                                            <a target="_blank" href="https://play.google.com/store/apps/details?id=in.qikstay.app" class="stories-app-link">Qikstay</a> faster and hired perfect developer"</p>
+                                        <p class="slider-content-body__review-by">- Jasveer, CEO at Qikstay, Forbes 30 Under 30</p>
+                                    </div>
+                                    <div class="slider-content-footer">
+                                        <ul class="list-inline">
+                                            <li>300,000+ Downloads</li>
+                                            <li>$250,000 raised</li>
+                                            <li>Launched within 3 months</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item container" data-attr="designbids">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-5 order-md-2 img-col">
+                                    <img data-src="assets/img/home/s4/1 designbids.png" alt="Desingbids app">
+                                </div>
+                                <div class="col-xs-12 col-md-7 d-flex justify-content-around flex-column align-self-start text-center text-md-left item-inner order-md-1">
+                                    <div class="slider-content-header">
+                                        <p class="slider-content-header__title">Designbids</p>
+                                    </div>
+                                    <div class="slider-content-body">
+                                        <p class="slider-content-body__review">"Inviders helped me launch
+                                            <a target="_blank" class="stories-app-link" href="https://play.google.com/store/apps/details?id=in.designbids.android">Designbids</a> app quickly"</p>
+                                        <p class="slider-content-body__review-by">- Nithish, CEO at
+                                            <a target="_blank" href="http://designbids.in">Designbids</a>
+                                        </p>
+                                    </div>
+                                    <div class="slider-content-footer">
+                                        <ul class="list-inline">
+                                            <li>Raised seed funds from IAN</li>
+                                            <li>Launched within 2 months</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item container" data-attr="pepup">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-5 order-md-2 img-col">
+                                    <img data-src="assets/img/home/s4/5 pepup.png" alt="Pepup app">
+                                </div>
+                                <div class="col-xs-12 col-md-7 d-flex justify-content-around flex-column align-self-start text-center text-md-left item-inner order-md-1">
+                                    <div class="slider-content-header">
+                                        <p class="slider-content-header__title">Party Messenger</p>
+                                    </div>
+                                    <div class="slider-content-body">
+                                        <p class="slider-content-body__review">"Poke your friends for parties with
+                                            <a target="_blank" class="stories-app-link" href="https://play.google.com/store/apps/details?id=com.getpepup.app&utm_source=invide_site">Party
                                             Messenger</a>"</p>
-                                    <p class="slider-content-body__review-by">- Invide Garage Project Team</p>
-                                </div>
-                                <div class="slider-content-footer">
-                                    <ul class="list-inline">
-                                        <li>Launched within a month</li>
-                                    </ul>
+                                        <p class="slider-content-body__review-by">- Invide Garage Project Team</p>
+                                    </div>
+                                    <div class="slider-content-footer">
+                                        <ul class="list-inline">
+                                            <li>Launched within a month</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -542,7 +483,8 @@
 
                             <button class="ga-hire-expert btn btn-danger rounded-0 btn-lg btn-hire-expert" type="submit">Get
                                     Started</button>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -573,34 +515,35 @@
                         Whatsapp
                         <img src="imgs/whatsapp.png" alt="" style="height: 17px; vertical-align: sub" target="_blank">
                     </a> -->
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- end of section 7 -->
+        </section>
+        <!-- end of section 7 -->
 
-    <div class="container-fluid footer d-none">
-        <div class="row">
-            <div class="col-xs-12 col-md-6 text-center text-md-left pb-3">
-                <!-- <a href="mailto:hello@invidelabs.com" class="brand--contact">hello@invidelabs.com</a> -->
-                <a href="https://www.facebook.com/InvideLabs-1686586228269135/" class="social-icon facebook" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/7799786/" class="social-icon linkedin" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com/invide_labs" class="social-icon twitter" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a class="social-icon" href="https://wa.me/918826701901?text=Hi%20there%2c%20I%20have%20a%20query%20about%20Invide">
-                    <img src="imgs/whatsapp.png" alt="" style="height: 17px; vertical-align: sub" target="_blank">
-                </a>
-                <a href="https://www.instagram.com/invidelabs/" class="social-icon instagram" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-6 text-center text-md-right">
-                <p>Made with
-                    <span class="text-danger">♥</span> on planet earth Ⓒ Invide Labs</p>
+        <div class="container-fluid footer d-none">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 text-center text-md-left pb-3">
+                    <!-- <a href="mailto:hello@invidelabs.com" class="brand--contact">hello@invidelabs.com</a> -->
+                    <a href="https://www.facebook.com/InvideLabs-1686586228269135/" class="social-icon facebook" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/7799786/" class="social-icon linkedin" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/invide_labs" class="social-icon twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social-icon" href="https://wa.me/918826701901?text=Hi%20there%2c%20I%20have%20a%20query%20about%20Invide">
+                        <img src="imgs/whatsapp.png" alt="" style="height: 17px; vertical-align: sub" target="_blank">
+                    </a>
+                    <a href="https://www.instagram.com/invidelabs/" class="social-icon instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-6 text-center text-md-right">
+                    <p>Made with
+                        <span class="text-danger">♥</span> on planet earth Ⓒ Invide Labs</p>
+                </div>
             </div>
         </div>
     </div>
@@ -699,10 +642,12 @@
         </div>
     </footer>
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    </main>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascripts/vendors/jquery.2.1.3.min.js"></script>
     <script src="assets/library/owl-carousal/owl.carousel.min.js"></script>
     <script src="assets/library/tingle-popup/tingle.min.js"></script>
     <script src="js/popup.js"></script>
@@ -722,22 +667,6 @@
             navText: ["<span class='owl-left-chev'></span>", "<span class='owl-right-chev'></span>"]
         })
 
-        var showBtn = document.getElementById('toggle-menu');
-        var menu = document.getElementById('off-menu');
-        var closeBtn = document.getElementById('close-menu');
-        var menuItem = document.getElementsByClassName('menu-item');
-        var bodyElem = document.getElementById('on-menu-show');
-
-        window.onload = closeMenu;
-
-        showBtn.addEventListener('click', () => {
-            menu.classList.add('show');
-            bodyElem.classList.add('bg-fade');
-        });
-        closeBtn.addEventListener('click', () => {
-            closeMenu();
-        });
-
         var owl = $('.owl-carousel');
         owl.owlCarousel();
         // Listen to owl events:
@@ -751,32 +680,10 @@
             }, 0);
         })
 
-        function closeMenu() {
-            menu.classList.remove('show');
-            bodyElem.classList.remove('bg-fade');
-        }
-
-        for (let i = 0; i < menuItem.length; i++) {
-            menuItem[i].addEventListener('click', () => {
-                menu.classList.remove('show');
-                bodyElem.classList.remove('bg-fade');
-            });
-        }
-
         $('img').bind('contextmenu', function(e) {
             return false;
         });
 
-        $(window).scroll(() => {
-            var scrollHeight = $(window).scrollTop();
-            var navbar = $('.navbar.od');
-
-            if (scrollHeight > 10) {
-                navbar.addClass('fixed-nav');
-            } else {
-                navbar.removeClass('fixed-nav');
-            }
-        });
 
         let detectmob = () => {
             if (navigator.userAgent.match(/Android/i) ||

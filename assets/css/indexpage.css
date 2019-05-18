@@ -804,7 +804,7 @@ footer {
 
 footer .advanced a,
 p {
-    font-size: 1.6em;
+    /*font-size: 1.6em;*/
 }
 
 footer .advanced {
@@ -830,14 +830,14 @@ footer .advanced li {
 
 .advanced a {
     color: #a6a6a6;
-    font-weight: normal;
+    /*font-weight: 500;*/
 }
 
 .advanced a:hover,
 a:focus {
     text-decoration: none;
     color: #fff;
-    font-weight: 500;
+    /*font-weight: 500;*/
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
