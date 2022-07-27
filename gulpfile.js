@@ -29,7 +29,7 @@ gulp.task('copy-font', () => {
 })
 
 gulp.task('copy-files', () => {
-    return gulp.src(['favicon/**/*.*', 'robots.txt', 'sitemap.txt', 'app.json', 'CNAME', 'assets/library/**/*.*'], {base: './'})
+    return gulp.src(['favicon/**/*.*', 'robots.txt', 'sitemap.xml', 'app.json', 'CNAME', 'assets/library/**/*.*'], {base: './'})
     .pipe(gulp.dest('build'))
 })
 
